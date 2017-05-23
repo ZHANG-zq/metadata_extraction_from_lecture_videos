@@ -1,0 +1,7844 @@
+﻿1
+00:00:00,000 --> 00:00:09,689
+ok let's get started
+
+2
+00:00:05,878 --> 00:00:13,349
+welcome to CS 294 112 deeper enforcement
+
+3
+00:00:09,689 --> 00:00:15,629
+learning so for today's lecture we're
+
+4
+00:00:13,349 --> 00:00:17,698
+going to go over some you know basic
+
+5
+00:00:15,630 --> 00:00:19,500
+course logistics and then each of the
+
+6
+00:00:17,699 --> 00:00:23,519
+course instructors will give sort of a
+
+7
+00:00:19,500 --> 00:00:25,198
+20 minutes talk about kind of what each
+
+8
+00:00:23,518 --> 00:00:26,608
+of us find exciting about deeper enforce
+
+9
+00:00:25,199 --> 00:00:29,340
+Marty and motivate some the material
+
+10
+00:00:26,609 --> 00:00:30,810
+that you see later on the course but
+
+11
+00:00:29,339 --> 00:00:33,058
+before we get into that let's let's do
+
+12
+00:00:30,809 --> 00:00:35,820
+some logistics and some introductions so
+
+13
+00:00:33,058 --> 00:00:37,500
+this semester we're going to have three
+
+14
+00:00:35,820 --> 00:00:40,409
+constructors in this class
+
+15
+00:00:37,500 --> 00:00:43,230
+Chelsea fin who's a PhD student in
+
+16
+00:00:40,409 --> 00:00:46,199
+uniques John showman who is a research
+
+17
+00:00:43,229 --> 00:00:48,898
+scientist at open AI and myself i'm a
+
+18
+00:00:46,200 --> 00:00:50,489
+professor and antiques actually just
+
+19
+00:00:48,899 --> 00:00:53,489
+starting this year
+
+20
+00:00:50,488 --> 00:00:54,839
+alright and each of us will teach some
+
+21
+00:00:53,488 --> 00:00:57,149
+portion of the lectures in each of us
+
+22
+00:00:54,840 --> 00:00:58,739
+will hold office hours after our our
+
+23
+00:00:57,149 --> 00:01:02,039
+lecture after class
+
+24
+00:00:58,738 --> 00:01:03,780
+so a little bit of course information so
+
+25
+00:01:02,039 --> 00:01:04,978
+there's the course website please do
+
+26
+00:01:03,780 --> 00:01:06,780
+check out the course website we have
+
+27
+00:01:04,978 --> 00:01:08,609
+lots of useful information on there
+
+28
+00:01:06,780 --> 00:01:12,150
+including how to sign up for the for
+
+29
+00:01:08,609 --> 00:01:13,289
+Piazza which you should all do for those
+
+30
+00:01:12,150 --> 00:01:14,939
+of you that are not enrolled in the
+
+31
+00:01:13,290 --> 00:01:17,880
+class but are following the class online
+
+32
+00:01:14,938 --> 00:01:18,959
+uh the videos will be on youtube so
+
+33
+00:01:17,879 --> 00:01:21,839
+you're falling online that's probably
+
+34
+00:01:18,959 --> 00:01:23,399
+what you're watching and for for you we
+
+35
+00:01:21,840 --> 00:01:25,259
+have a subreddit that we made so we'd
+
+36
+00:01:23,400 --> 00:01:27,118
+ask that only enrolled students actually
+
+37
+00:01:25,259 --> 00:01:28,349
+signed up for the Piazza discussion but
+
+38
+00:01:27,118 --> 00:01:30,000
+for those who are not enrolled you're
+
+39
+00:01:28,349 --> 00:01:32,009
+welcome to check out the subreddit and
+
+40
+00:01:30,000 --> 00:01:35,609
+have discussions there
+
+41
+00:01:32,009 --> 00:01:37,650
+we're going to have office hours a day
+
+42
+00:01:35,609 --> 00:01:39,840
+after class each lecture except for this
+
+43
+00:01:37,650 --> 00:01:41,520
+one and except for the invited speaker
+
+44
+00:01:39,840 --> 00:01:43,740
+lecture so during my speakers there's no
+
+45
+00:01:41,519 --> 00:01:44,609
+office hours but after normal lecture
+
+46
+00:01:43,739 --> 00:01:46,769
+will have upstairs immediately
+
+47
+00:01:44,609 --> 00:01:48,090
+afterwards and the location for that
+
+48
+00:01:46,769 --> 00:01:51,298
+will be posted on the course website
+
+49
+00:01:48,090 --> 00:01:56,460
+it'll be Chelsea's that in this building
+
+50
+00:01:51,299 --> 00:01:57,450
+or sth okay so some mondays in this
+
+51
+00:01:56,459 --> 00:01:59,669
+building on the fourth floor and
+
+52
+00:01:57,450 --> 00:02:01,618
+wednesdays it'll be across the street
+
+53
+00:01:59,670 --> 00:02:03,390
+and started I upstairs on the second
+
+54
+00:02:01,618 --> 00:02:07,078
+floor and that will be on the course
+
+55
+00:02:03,390 --> 00:02:08,729
+website and the the lecture was giving a
+
+56
+00:02:07,078 --> 00:02:11,549
+lecture also holding office hours that
+
+57
+00:02:08,729 --> 00:02:12,810
+day so that's also for the officers
+
+58
+00:02:11,550 --> 00:02:13,120
+would you ask you guys to sign up in
+
+59
+00:02:12,810 --> 00:02:15,580
+advance
+
+60
+00:02:13,120 --> 00:02:17,709
+and just put down your name because if
+
+61
+00:02:15,580 --> 00:02:20,530
+nobody signs up then obviously we don't
+
+62
+00:02:17,709 --> 00:02:22,299
+wanna go in sit empty room but do sign
+
+63
+00:02:20,530 --> 00:02:23,680
+up you can make sure that you reserve a
+
+64
+00:02:22,299 --> 00:02:25,060
+slot so that there's lots of people who
+
+65
+00:02:23,680 --> 00:02:28,780
+sign up you actually get a chance to ask
+
+66
+00:02:25,060 --> 00:02:31,780
+questions and we ask that because the
+
+67
+00:02:28,780 --> 00:02:32,860
+this kind of a large glass and the you
+
+68
+00:02:31,780 --> 00:02:34,959
+know that there's not a lot of teaching
+
+69
+00:02:32,860 --> 00:02:36,010
+staff for classes large so please do you
+
+70
+00:02:34,959 --> 00:02:38,439
+sign up you can come to office hours
+
+71
+00:02:36,009 --> 00:02:41,979
+okay
+
+72
+00:02:38,439 --> 00:02:43,870
+prerequisites so hopefully all of you
+
+73
+00:02:41,979 --> 00:02:45,939
+are aware of the of this we do ask all
+
+74
+00:02:43,870 --> 00:02:50,379
+enrolled students to have taken either
+
+75
+00:02:45,939 --> 00:02:53,169
+CS 189 CS 289 or to anyone a and if you
+
+76
+00:02:50,378 --> 00:02:55,179
+are a PhD student and you took sort of
+
+77
+00:02:53,169 --> 00:02:57,429
+an equivalent class an undergrad that's
+
+78
+00:02:55,180 --> 00:02:58,689
+fine if you're not quite sure or you
+
+79
+00:02:57,430 --> 00:03:01,180
+think maybe it's official but maybe not
+
+80
+00:02:58,689 --> 00:03:03,639
+quite do come ask me we don't consider
+
+81
+00:03:01,180 --> 00:03:05,260
+you know things like the Coursera
+
+82
+00:03:03,639 --> 00:03:07,628
+machine learning course to meet the
+
+83
+00:03:05,259 --> 00:03:09,818
+prerequisites but he took a sort of a
+
+84
+00:03:07,628 --> 00:03:10,899
+graduate level or advanced undergraduate
+
+85
+00:03:09,818 --> 00:03:12,608
+level machine learning course that
+
+86
+00:03:10,900 --> 00:03:14,379
+counts and if you're not sure just come
+
+87
+00:03:12,609 --> 00:03:16,269
+ask me not that's totally fine
+
+88
+00:03:14,378 --> 00:03:17,739
+please enroll for three units by default
+
+89
+00:03:16,269 --> 00:03:20,409
+if you want to enroll for a different
+
+90
+00:03:17,739 --> 00:03:22,689
+number of units again come ask me you
+
+91
+00:03:20,409 --> 00:03:23,889
+can enroll in less but the class will be
+
+92
+00:03:22,689 --> 00:03:26,169
+exactly the same so it's exactly the
+
+93
+00:03:23,889 --> 00:03:29,349
+same requirements for everybody and we
+
+94
+00:03:26,169 --> 00:03:30,700
+expect the default to be three units the
+
+95
+00:03:29,348 --> 00:03:32,409
+waitlist is very very full for this
+
+96
+00:03:30,699 --> 00:03:34,208
+class with a 70 person class limited by
+
+97
+00:03:32,409 --> 00:03:38,348
+the size of this room the waitlist has
+
+98
+00:03:34,209 --> 00:03:39,909
+about double that so unfortunately if
+
+99
+00:03:38,348 --> 00:03:41,888
+you haven't enrolled yet and you're not
+
+100
+00:03:39,909 --> 00:03:44,198
+on the waitlist then probably you have
+
+101
+00:03:41,889 --> 00:03:45,250
+to take the class in subsequent year but
+
+102
+00:03:44,199 --> 00:03:46,810
+those are you near the top of the way
+
+103
+00:03:45,250 --> 00:03:48,549
+let's have been notified and you know
+
+104
+00:03:46,810 --> 00:03:51,789
+some people drop then if you're near the
+
+105
+00:03:48,549 --> 00:03:54,250
+top you'll be given enrollment code and
+
+106
+00:03:51,789 --> 00:03:56,560
+lectures will be recorded so since the
+
+107
+00:03:54,250 --> 00:03:59,500
+class is full we would ask that anybody
+
+108
+00:03:56,560 --> 00:04:01,120
+who is not enrolled in the class to
+
+109
+00:03:59,500 --> 00:04:02,259
+watch lectures online because we want to
+
+110
+00:04:01,120 --> 00:04:03,849
+make sure that there's enough seats in
+
+111
+00:04:02,259 --> 00:04:04,780
+the room for all the enrolled students
+
+112
+00:04:03,848 --> 00:04:06,638
+to be able to come to class and
+
+113
+00:04:04,780 --> 00:04:08,318
+participate because participation is
+
+114
+00:04:06,639 --> 00:04:09,819
+part of your grade so please do come to
+
+115
+00:04:08,318 --> 00:04:14,560
+class questions and engage with the
+
+116
+00:04:09,818 --> 00:04:16,509
+lectures all right um what you should
+
+117
+00:04:14,560 --> 00:04:18,038
+know so there's sort of the the formal
+
+118
+00:04:16,509 --> 00:04:21,459
+prerequisites we wanted to have taken
+
+119
+00:04:18,038 --> 00:04:23,199
+189 or an equivalent class assignments
+
+120
+00:04:21,459 --> 00:04:25,019
+will require you to
+
+121
+00:04:23,199 --> 00:04:26,699
+unsurprisingly trained neural net
+
+122
+00:04:25,019 --> 00:04:28,680
+works and it's a good idea to be
+
+123
+00:04:26,699 --> 00:04:30,689
+familiar with standard automatic
+
+124
+00:04:28,680 --> 00:04:33,840
+differentiation tools for deep learning
+
+125
+00:04:30,689 --> 00:04:37,288
+you may use densiflora Theon i think by
+
+126
+00:04:33,839 --> 00:04:38,638
+default will sort of a go with sensitive
+
+127
+00:04:37,288 --> 00:04:40,949
+about it should be possible to do the
+
+128
+00:04:38,639 --> 00:04:43,139
+assignments at the honor as well I if
+
+129
+00:04:40,949 --> 00:04:45,389
+you are not familiar with either 10th
+
+130
+00:04:43,139 --> 00:04:47,280
+floor Theano or feel like maybe you're
+
+131
+00:04:45,389 --> 00:04:50,848
+you're a little rusty on that or would
+
+132
+00:04:47,279 --> 00:04:53,549
+like a bit of a refresher we will a kind
+
+133
+00:04:50,848 --> 00:04:56,279
+of on demand will do reviews section in
+
+134
+00:04:53,550 --> 00:04:57,598
+week 2 Chelsea fan will conduct that but
+
+135
+00:04:56,279 --> 00:04:59,038
+since we don't know how many of you want
+
+136
+00:04:57,598 --> 00:05:01,800
+to come or what your background
+
+137
+00:04:59,038 --> 00:05:03,689
+necessarily our please do fill out that
+
+138
+00:05:01,800 --> 00:05:04,770
+form the lingual is also on the course
+
+139
+00:05:03,689 --> 00:05:06,810
+website so you don't have to write it
+
+140
+00:05:04,769 --> 00:05:09,029
+down but fill out that form tell us when
+
+141
+00:05:06,810 --> 00:05:11,610
+you when you're available to do the
+
+142
+00:05:09,029 --> 00:05:13,859
+section if you want to do section and
+
+143
+00:05:11,610 --> 00:05:15,270
+kind of a good rule of thumb is if
+
+144
+00:05:13,860 --> 00:05:16,379
+you're not sure sort of your background
+
+145
+00:05:15,269 --> 00:05:18,060
+is a strong enough
+
+146
+00:05:16,379 --> 00:05:19,408
+check out the tensile and this tutorial
+
+147
+00:05:18,060 --> 00:05:21,240
+if you check out the terms of lameness
+
+148
+00:05:19,408 --> 00:05:22,439
+tutorial and it's like super easy for
+
+149
+00:05:21,240 --> 00:05:25,050
+you breeze right through it then you're
+
+150
+00:05:22,439 --> 00:05:27,240
+good and if you feel like it's something
+
+151
+00:05:25,050 --> 00:05:29,520
+that you're not completely comfortable
+
+152
+00:05:27,240 --> 00:05:33,240
+with then you come to the review section
+
+153
+00:05:29,519 --> 00:05:37,318
+and we'll get you right on track
+
+154
+00:05:33,240 --> 00:05:39,598
+ok so what we'll be covering this class
+
+155
+00:05:37,319 --> 00:05:42,180
+so the full syllabus for this course is
+
+156
+00:05:39,598 --> 00:05:45,389
+on the course website and we're going to
+
+157
+00:05:42,180 --> 00:05:47,430
+have sort of a five main units in the
+
+158
+00:05:45,389 --> 00:05:48,990
+class it's a fulsome of all semester
+
+159
+00:05:47,430 --> 00:05:50,699
+long class last year we had a kind of a
+
+160
+00:05:48,990 --> 00:05:53,460
+shorter version of this this this year
+
+161
+00:05:50,699 --> 00:05:54,840
+it's a full-length and we'll really sort
+
+162
+00:05:53,459 --> 00:05:56,098
+of cover deep reinforcement learning in
+
+163
+00:05:54,839 --> 00:05:59,129
+the broadest sense
+
+164
+00:05:56,098 --> 00:06:00,329
+basically the many ways in which deep
+
+165
+00:05:59,129 --> 00:06:02,310
+learning interacts with sequential
+
+166
+00:06:00,329 --> 00:06:06,300
+decision-making so we'll begin with the
+
+167
+00:06:02,310 --> 00:06:08,788
+relatively kind of gentle introduction
+
+168
+00:06:06,300 --> 00:06:10,680
+where we'll talk about how supervised
+
+169
+00:06:08,788 --> 00:06:11,968
+learning relates to decision making with
+
+170
+00:06:10,680 --> 00:06:13,740
+things like imitation learning and
+
+171
+00:06:11,968 --> 00:06:16,500
+behavior cloning so we'll discuss that
+
+172
+00:06:13,740 --> 00:06:18,478
+in the first unit next week and a little
+
+173
+00:06:16,500 --> 00:06:20,278
+bit the week after that and we'll also
+
+174
+00:06:18,478 --> 00:06:22,139
+talk about model learning learning I
+
+175
+00:06:20,278 --> 00:06:24,060
+monitoring system dynamics and using
+
+176
+00:06:22,139 --> 00:06:26,069
+those for decision-making then we'll
+
+177
+00:06:24,060 --> 00:06:27,478
+have a unit on basic reinforcement
+
+178
+00:06:26,069 --> 00:06:29,098
+learning methods so we'll talk about
+
+179
+00:06:27,478 --> 00:06:31,379
+q-learning policy gradients make sure
+
+180
+00:06:29,098 --> 00:06:32,968
+you get all the all the math in place to
+
+181
+00:06:31,379 --> 00:06:36,088
+really understand the core reinforcement
+
+182
+00:06:32,968 --> 00:06:37,389
+learning algorithms then we'll switch
+
+183
+00:06:36,088 --> 00:06:40,990
+gears again and have a unit
+
+184
+00:06:37,389 --> 00:06:43,300
+advanced model learning and imitation
+
+185
+00:06:40,990 --> 00:06:45,430
+learning with things like learning to
+
+186
+00:06:43,300 --> 00:06:47,199
+predict images policy distillation
+
+187
+00:06:45,430 --> 00:06:49,629
+learning reward function for
+
+188
+00:06:47,199 --> 00:06:53,050
+demonstration things like that then
+
+189
+00:06:49,629 --> 00:06:54,430
+we'll switch back to a two course
+
+190
+00:06:53,050 --> 00:06:56,560
+learning albums and we'll talk about
+
+191
+00:06:54,430 --> 00:06:58,600
+advanced deeper algorithms things like
+
+192
+00:06:56,560 --> 00:07:01,629
+policy grading method with trust regions
+
+193
+00:06:58,600 --> 00:07:03,640
+extra credit calgary flames will cover
+
+194
+00:07:01,629 --> 00:07:06,370
+DQ networks and so on and there will
+
+195
+00:07:03,639 --> 00:07:08,079
+also be an assignment on both on
+
+196
+00:07:06,370 --> 00:07:12,939
+advanced policy great algorithms and on
+
+197
+00:07:08,079 --> 00:07:15,099
+the Pew of networks and then in the in
+
+198
+00:07:12,939 --> 00:07:16,089
+the last sort of third of the class when
+
+199
+00:07:15,100 --> 00:07:18,550
+most of you are going to be working on
+
+200
+00:07:16,089 --> 00:07:20,979
+your final projects will have open
+
+201
+00:07:18,550 --> 00:07:22,240
+problems research talks invited lectures
+
+202
+00:07:20,980 --> 00:07:24,220
+and the purpose of that will really to
+
+203
+00:07:22,240 --> 00:07:25,900
+be to get all you really familiar with
+
+204
+00:07:24,220 --> 00:07:27,850
+sort of what is the state of the art now
+
+205
+00:07:25,899 --> 00:07:29,829
+what are the limitations or the big
+
+206
+00:07:27,850 --> 00:07:32,800
+frontier questions and and really that
+
+207
+00:07:29,829 --> 00:07:34,359
+should get you ready to to think hard
+
+208
+00:07:32,800 --> 00:07:36,550
+about the most important problems in
+
+209
+00:07:34,360 --> 00:07:38,110
+this field hopefully and we also have an
+
+210
+00:07:36,550 --> 00:07:39,430
+excellent slate of invited speakers
+
+211
+00:07:38,110 --> 00:07:44,860
+lined up and will probably be inviting
+
+212
+00:07:39,430 --> 00:07:48,040
+one or two more okay assignments so
+
+213
+00:07:44,860 --> 00:07:49,629
+we'll have for homework since class the
+
+214
+00:07:48,040 --> 00:07:52,360
+homeworks will not be very large so that
+
+215
+00:07:49,629 --> 00:07:53,740
+addition there should be two honors and
+
+216
+00:07:52,360 --> 00:07:56,560
+then a final project was meant to be
+
+217
+00:07:53,740 --> 00:07:58,120
+kind of a larger assignment so the first
+
+218
+00:07:56,560 --> 00:08:00,639
+homework will cover imitation learning
+
+219
+00:07:58,120 --> 00:08:02,709
+so we'll give you a little little free
+
+220
+00:08:00,639 --> 00:08:04,719
+trade policy which will be sort of a
+
+221
+00:08:02,709 --> 00:08:06,549
+substitute for human demonstrator and
+
+222
+00:08:04,720 --> 00:08:08,680
+your job will be to experimentation
+
+223
+00:08:06,550 --> 00:08:11,230
+learning algorithms to imitate that
+
+224
+00:08:08,680 --> 00:08:13,060
+policy then we'll have an assignment on
+
+225
+00:08:11,230 --> 00:08:14,230
+some sort of basic reinforcement
+
+226
+00:08:13,060 --> 00:08:16,000
+learning algorithms kind of the core
+
+227
+00:08:14,230 --> 00:08:17,800
+algorithms which will not be deep
+
+228
+00:08:16,000 --> 00:08:19,269
+reinforcement learning but just shallow
+
+229
+00:08:17,800 --> 00:08:21,220
+reinforcement learning to get familiar
+
+230
+00:08:19,269 --> 00:08:22,419
+with the algorithms i will have an
+
+231
+00:08:21,220 --> 00:08:24,400
+assignment deep you learning and then
+
+232
+00:08:22,420 --> 00:08:26,199
+we'll have an assignment on policy
+
+233
+00:08:24,399 --> 00:08:29,079
+gradients with neural network policies
+
+234
+00:08:26,199 --> 00:08:31,269
+so those will really get you some
+
+235
+00:08:29,079 --> 00:08:33,879
+hands-on experience with a kind of
+
+236
+00:08:31,269 --> 00:08:35,769
+modern DRL methods and then a final
+
+237
+00:08:33,879 --> 00:08:37,330
+project so the final project expectation
+
+238
+00:08:35,769 --> 00:08:39,909
+here is that this is sort of a research
+
+239
+00:08:37,330 --> 00:08:42,250
+level project on topic of your choice
+
+240
+00:08:39,909 --> 00:08:44,439
+you may form a group for this project of
+
+241
+00:08:42,250 --> 00:08:45,879
+23 students you can also work by
+
+242
+00:08:44,440 --> 00:08:48,310
+yourself if you'd like we'll sort of
+
+243
+00:08:45,879 --> 00:08:49,960
+adjust expectations accordingly there
+
+244
+00:08:48,309 --> 00:08:52,149
+will be a final presentation and a final
+
+245
+00:08:49,960 --> 00:08:53,259
+product report at the end and you're
+
+246
+00:08:52,149 --> 00:08:54,879
+more than welcome to start on the
+
+247
+00:08:53,259 --> 00:08:56,319
+project early so if you have some idea
+
+248
+00:08:54,879 --> 00:08:58,269
+of the project you want to do or you
+
+249
+00:08:56,320 --> 00:08:59,170
+have some idea of the the group that you
+
+250
+00:08:58,269 --> 00:09:01,210
+want to work with
+
+251
+00:08:59,169 --> 00:09:02,409
+by all means to get started early if
+
+252
+00:09:01,210 --> 00:09:04,780
+you're not sure about the topic just
+
+253
+00:09:02,409 --> 00:09:08,079
+contact the core staff will also have a
+
+254
+00:09:04,779 --> 00:09:10,059
+list of prospective topics that can get
+
+255
+00:09:08,080 --> 00:09:11,980
+you thinking about the stuff posted on
+
+256
+00:09:10,059 --> 00:09:12,969
+the course website shortly but you're
+
+257
+00:09:11,980 --> 00:09:15,550
+also welcome to come up with something
+
+258
+00:09:12,970 --> 00:09:17,259
+of your own and were generally fairly
+
+259
+00:09:15,549 --> 00:09:18,849
+open ended about the kind of projects
+
+260
+00:09:17,259 --> 00:09:21,220
+you want to work on they should have
+
+261
+00:09:18,850 --> 00:09:24,040
+something to do with deep learning and
+
+262
+00:09:21,220 --> 00:09:25,450
+decision making but you know what we
+
+263
+00:09:24,039 --> 00:09:27,039
+expect to be reasonably flexible on that
+
+264
+00:09:25,450 --> 00:09:29,470
+so if you're not sure if your topic fits
+
+265
+00:09:27,039 --> 00:09:32,319
+just let us know and we can chat about
+
+266
+00:09:29,470 --> 00:09:34,000
+grades a most of the greatest going to
+
+267
+00:09:32,320 --> 00:09:36,400
+be based on the final project each of
+
+268
+00:09:34,000 --> 00:09:37,720
+the other homeworks is worth ten percent
+
+269
+00:09:36,399 --> 00:09:40,480
+of your grade for total forty percent
+
+270
+00:09:37,720 --> 00:09:41,740
+and then if you are enrolled students we
+
+271
+00:09:40,480 --> 00:09:43,720
+do expect to come to class
+
+272
+00:09:41,740 --> 00:09:46,149
+you're welcome to watch the lectures and
+
+273
+00:09:43,720 --> 00:09:47,620
+and online and get a review of it but we
+
+274
+00:09:46,149 --> 00:09:49,689
+do expect them to class and we'll have a
+
+275
+00:09:47,620 --> 00:09:51,039
+little participation grade so please do
+
+276
+00:09:49,690 --> 00:09:53,230
+show up and make sure that you get the
+
+277
+00:09:51,039 --> 00:09:54,579
+participation rate for those of you that
+
+278
+00:09:53,230 --> 00:09:56,139
+are standing back there are a couple of
+
+279
+00:09:54,580 --> 00:09:57,700
+seats here in the middle
+
+280
+00:09:56,139 --> 00:10:03,069
+although probably not enough for all of
+
+281
+00:09:57,700 --> 00:10:04,660
+you yeah hopefully in later classes you
+
+282
+00:10:03,070 --> 00:10:05,290
+know please do make sure that you come
+
+283
+00:10:04,659 --> 00:10:09,459
+to class
+
+284
+00:10:05,289 --> 00:10:12,339
+you're an infection roll student ok so
+
+285
+00:10:09,460 --> 00:10:13,570
+and I said the the main purpose of
+
+286
+00:10:12,340 --> 00:10:14,740
+today's lecture will be pretty sure the
+
+287
+00:10:13,570 --> 00:10:18,070
+course instructors to give a little
+
+288
+00:10:14,740 --> 00:10:20,080
+introduction with their own perspectives
+
+289
+00:10:18,070 --> 00:10:21,550
+on the barrel and that's what we'll do
+
+290
+00:10:20,080 --> 00:10:22,570
+next but if any of you have any
+
+291
+00:10:21,549 --> 00:10:24,459
+questions about course logistics
+
+292
+00:10:22,570 --> 00:10:25,870
+assignments or anything like that you
+
+293
+00:10:24,460 --> 00:10:30,730
+have a quick question you're welcome to
+
+294
+00:10:25,870 --> 00:10:36,860
+us that now
+
+295
+00:10:30,730 --> 00:10:39,649
+ok yes
+
+296
+00:10:36,860 --> 00:10:41,360
+the number of units should be three you
+
+297
+00:10:39,649 --> 00:10:43,669
+may enroll for less if you'd like but it
+
+298
+00:10:41,360 --> 00:10:46,759
+will not affect any of the assignments
+
+299
+00:10:43,669 --> 00:10:48,139
+or our expectation so I if you if you
+
+300
+00:10:46,759 --> 00:10:49,819
+have some technical reason to enroll for
+
+301
+00:10:48,139 --> 00:10:54,620
+less that's fine but the same
+
+302
+00:10:49,820 --> 00:10:56,420
+expectation everyone okay so let me get
+
+303
+00:10:54,620 --> 00:10:58,490
+started with with sort of my 20-minute
+
+304
+00:10:56,419 --> 00:11:00,439
+picture and then we'll switch to the to
+
+305
+00:10:58,490 --> 00:11:01,580
+the next instructor so my portion of it
+
+306
+00:11:00,440 --> 00:11:04,100
+will be a little bit high level but then
+
+307
+00:11:01,580 --> 00:11:09,350
+Chelsea and John will hopefully delve
+
+308
+00:11:04,100 --> 00:11:12,920
+more into some of the details so here's
+
+309
+00:11:09,350 --> 00:11:15,560
+a sort of my high level picture of this
+
+310
+00:11:12,919 --> 00:11:17,179
+in my work I'm very concerned with how
+
+311
+00:11:15,559 --> 00:11:18,349
+we build intelligent machines and we can
+
+312
+00:11:17,179 --> 00:11:19,969
+kind of go through this interesting
+
+313
+00:11:18,350 --> 00:11:22,009
+thought exercise and ask ourselves well
+
+314
+00:11:19,970 --> 00:11:24,620
+you know how how could we build
+
+315
+00:11:22,009 --> 00:11:25,939
+intelligent machines 11 way that we can
+
+316
+00:11:24,620 --> 00:11:27,799
+get started on building intelligent
+
+317
+00:11:25,940 --> 00:11:29,150
+machines we can think about well we have
+
+318
+00:11:27,799 --> 00:11:31,159
+all these intelligent people and we can
+
+319
+00:11:29,149 --> 00:11:33,769
+try to figure out what is it that makes
+
+320
+00:11:31,159 --> 00:11:37,429
+people able to have this kind of really
+
+321
+00:11:33,769 --> 00:11:40,009
+flexible and adaptable intelligence and
+
+322
+00:11:37,429 --> 00:11:40,879
+how can we replicate that machines so if
+
+323
+00:11:40,009 --> 00:11:42,379
+you want to build in telling machine
+
+324
+00:11:40,879 --> 00:11:45,350
+where to start
+
+325
+00:11:42,379 --> 00:11:46,580
+well you can look at a person you can
+
+326
+00:11:45,350 --> 00:11:48,590
+look at a person's brain and say that
+
+327
+00:11:46,580 --> 00:11:50,780
+well person's brain can do all these
+
+328
+00:11:48,590 --> 00:11:51,980
+different things they have they have
+
+329
+00:11:50,779 --> 00:11:53,299
+some part of the brain that does motor
+
+330
+00:11:51,980 --> 00:11:55,070
+control some part of the process visual
+
+331
+00:11:53,299 --> 00:11:56,750
+images some part of the process smells
+
+332
+00:11:55,070 --> 00:12:00,379
+we're going to dig down to each of these
+
+333
+00:11:56,750 --> 00:12:01,549
+try to you know analyze what goes in
+
+334
+00:12:00,379 --> 00:12:04,639
+what comes out what are some of the
+
+335
+00:12:01,549 --> 00:12:06,769
+mistakes that that module makes try to
+
+336
+00:12:04,639 --> 00:12:08,090
+get something about its function and
+
+337
+00:12:06,769 --> 00:12:09,769
+then write down a piece of code that we
+
+338
+00:12:08,090 --> 00:12:12,170
+believe does something qualitatively
+
+339
+00:12:09,769 --> 00:12:14,689
+similar and this is you know in in very
+
+340
+00:12:12,169 --> 00:12:16,579
+broad terms is essential but a lot of
+
+341
+00:12:14,690 --> 00:12:19,460
+artificial intelligence is concerned
+
+342
+00:12:16,580 --> 00:12:21,020
+with and you know that this kind of view
+
+343
+00:12:19,460 --> 00:12:22,639
+of the brain as a connected collection
+
+344
+00:12:21,019 --> 00:12:24,019
+of connected modules I mean I sort of
+
+345
+00:12:22,639 --> 00:12:26,210
+intentionally shows someone facetious
+
+346
+00:12:24,019 --> 00:12:28,789
+picture here you know you can you can
+
+347
+00:12:26,210 --> 00:12:30,379
+break up the the system the the
+
+348
+00:12:28,789 --> 00:12:32,299
+incredibly complex system in many many
+
+349
+00:12:30,379 --> 00:12:34,909
+different ways some of those ways makes
+
+350
+00:12:32,299 --> 00:12:38,389
+sense of them make less sense in in the
+
+351
+00:12:34,909 --> 00:12:39,469
+early days of the scientific method so
+
+352
+00:12:38,389 --> 00:12:41,029
+to speak some of the ways that people
+
+353
+00:12:39,470 --> 00:12:42,680
+thought about the brain didn't entirely
+
+354
+00:12:41,029 --> 00:12:45,230
+make sense now we have much more
+
+355
+00:12:42,679 --> 00:12:46,789
+sophisticated views of this and we even
+
+356
+00:12:45,230 --> 00:12:48,039
+with the kind of the the best of our
+
+357
+00:12:46,789 --> 00:12:50,379
+current technology
+
+358
+00:12:48,039 --> 00:12:51,849
+we can still somewhat break things up
+
+359
+00:12:50,379 --> 00:12:54,070
+into these interconnected modules and
+
+360
+00:12:51,850 --> 00:12:55,149
+see if you hopefully reasonably accurate
+
+361
+00:12:54,070 --> 00:12:57,430
+things about what each of those modules
+
+362
+00:12:55,149 --> 00:12:58,839
+does but it gets really really
+
+363
+00:12:57,429 --> 00:13:01,328
+complicated especially if you want to
+
+364
+00:12:58,839 --> 00:13:03,279
+you know construct a theory that has
+
+365
+00:13:01,328 --> 00:13:05,019
+some bearing on reality so you know that
+
+366
+00:13:03,278 --> 00:13:05,708
+the different ology theory there on the
+
+367
+00:13:05,019 --> 00:13:07,509
+left
+
+368
+00:13:05,708 --> 00:13:09,250
+presumably has relatively little bearing
+
+369
+00:13:07,509 --> 00:13:11,528
+on reality my review of neuroscience
+
+370
+00:13:09,250 --> 00:13:13,299
+hopefully is much much more accurate but
+
+371
+00:13:11,528 --> 00:13:15,009
+it still dizzyingly complex when it
+
+372
+00:13:13,299 --> 00:13:16,599
+comes to trying to think through how
+
+373
+00:13:15,009 --> 00:13:20,440
+each of those components could be
+
+374
+00:13:16,600 --> 00:13:23,050
+implemented in code and computer so what
+
+375
+00:13:20,440 --> 00:13:24,910
+if instead of trying to implement each
+
+376
+00:13:23,049 --> 00:13:28,208
+of these things actually program
+
+377
+00:13:24,909 --> 00:13:30,338
+yourself what if we had a an adaptive
+
+378
+00:13:28,208 --> 00:13:31,568
+learning based method and there's I
+
+379
+00:13:30,339 --> 00:13:33,610
+think a reasonable argument to be made
+
+380
+00:13:31,568 --> 00:13:35,740
+that learning can be viewed as the basis
+
+381
+00:13:33,610 --> 00:13:37,568
+of intelligence because while there are
+
+382
+00:13:35,740 --> 00:13:40,269
+some things that we can all do
+
+383
+00:13:37,568 --> 00:13:41,919
+perhaps due to our natural aptitude for
+
+384
+00:13:40,269 --> 00:13:43,810
+example basic motor control there's an
+
+385
+00:13:41,919 --> 00:13:45,429
+argument that some animals kind of
+
+386
+00:13:43,809 --> 00:13:47,049
+basically come preprogrammed with some
+
+387
+00:13:45,429 --> 00:13:48,849
+basic motor control like walking
+
+388
+00:13:47,049 --> 00:13:50,379
+especially if they can walk immediately
+
+389
+00:13:48,850 --> 00:13:51,940
+after being born of course humans can't
+
+390
+00:13:50,379 --> 00:13:53,379
+do that but you know it's probably
+
+391
+00:13:51,940 --> 00:13:55,360
+reasonable to say that humans have some
+
+392
+00:13:53,379 --> 00:13:57,939
+innate attitudes towards things like
+
+393
+00:13:55,360 --> 00:13:59,230
+recognizing faces that are exaggerated
+
+394
+00:13:57,940 --> 00:14:00,970
+beyond what they would get through
+
+395
+00:13:59,230 --> 00:14:02,440
+learning alone but there are some things
+
+396
+00:14:00,970 --> 00:14:04,000
+that we can do that are clearly not
+
+397
+00:14:02,440 --> 00:14:06,220
+things that we could possibly it be
+
+398
+00:14:04,000 --> 00:14:08,589
+pre-programmed for that are clearly the
+
+399
+00:14:06,220 --> 00:14:09,579
+result of learning like operating a car
+
+400
+00:14:08,589 --> 00:14:12,310
+which is not something that we could
+
+401
+00:14:09,578 --> 00:14:17,198
+have possibly evolved to do I so clearly
+
+402
+00:14:12,309 --> 00:14:19,479
+learning is a very big component of of
+
+403
+00:14:17,198 --> 00:14:21,490
+our intelligence and we can learn a very
+
+404
+00:14:19,480 --> 00:14:23,440
+huge variety of things including very
+
+405
+00:14:21,490 --> 00:14:24,850
+very difficult things so with a little
+
+406
+00:14:23,440 --> 00:14:26,949
+bit of a leap of faith we can make the
+
+407
+00:14:24,850 --> 00:14:29,110
+argument that well perhaps are learning
+
+408
+00:14:26,948 --> 00:14:30,578
+mechanisms so powerful that even if we
+
+409
+00:14:29,110 --> 00:14:34,389
+do have some things that are innate
+
+410
+00:14:30,578 --> 00:14:36,159
+perhaps that's sort of not the the
+
+411
+00:14:34,389 --> 00:14:37,419
+strict minimum necessity for for some
+
+412
+00:14:36,159 --> 00:14:39,068
+degree of intelligence that if you want
+
+413
+00:14:37,419 --> 00:14:41,799
+to have a sufficiently powerful learning
+
+414
+00:14:39,068 --> 00:14:42,789
+machine then it then it can it can learn
+
+415
+00:14:41,799 --> 00:14:47,289
+everything it needs to behave
+
+416
+00:14:42,789 --> 00:14:48,698
+intelligently and adaptively so so
+
+417
+00:14:47,289 --> 00:14:50,198
+therefore the learning mechanisms
+
+418
+00:14:48,698 --> 00:14:52,240
+powerful and if we can just figure out
+
+419
+00:14:50,198 --> 00:14:53,500
+the right learning mechanism could have
+
+420
+00:14:52,240 --> 00:14:55,389
+that power without having to manually
+
+421
+00:14:53,500 --> 00:14:57,549
+program each of these modules and figure
+
+422
+00:14:55,389 --> 00:14:58,389
+out how they're wired together this is
+
+423
+00:14:57,549 --> 00:15:00,879
+sort of the
+
+424
+00:14:58,389 --> 00:15:02,409
+you know the high-level hypothesis of
+
+425
+00:15:00,879 --> 00:15:04,269
+course the main practice be very
+
+426
+00:15:02,409 --> 00:15:06,039
+convenient to hard-code a few a few
+
+427
+00:15:04,269 --> 00:15:09,669
+basic things for example to get the
+
+428
+00:15:06,039 --> 00:15:10,929
+process bootstraps but the big big
+
+429
+00:15:09,669 --> 00:15:15,129
+challenge might just be to get the right
+
+430
+00:15:10,929 --> 00:15:16,719
+learning mechanism so there's a there's
+
+431
+00:15:15,129 --> 00:15:19,779
+another hypothesis that kind of arises
+
+432
+00:15:16,720 --> 00:15:21,820
+from this that if if learning is the the
+
+433
+00:15:19,779 --> 00:15:23,110
+basis of intelligence which may or may
+
+434
+00:15:21,820 --> 00:15:24,760
+not be but hopefully I made some
+
+435
+00:15:23,110 --> 00:15:26,649
+somewhat of an argument to that effect
+
+436
+00:15:24,759 --> 00:15:28,330
+if that is the basis of intelligence
+
+437
+00:15:26,649 --> 00:15:31,209
+that isn't the case that you need sort
+
+438
+00:15:28,330 --> 00:15:33,639
+of different learning mechanisms for
+
+439
+00:15:31,210 --> 00:15:35,710
+each of the you know individual modules
+
+440
+00:15:33,639 --> 00:15:36,759
+so have we actually want us one
+
+441
+00:15:35,710 --> 00:15:38,560
+ourselves anything or are we simply
+
+442
+00:15:36,759 --> 00:15:40,029
+replace the problem of building a bunch
+
+443
+00:15:38,559 --> 00:15:41,229
+of modules manually with the problem
+
+444
+00:15:40,029 --> 00:15:45,100
+building a bunch of learning algorithms
+
+445
+00:15:41,230 --> 00:15:48,159
+manually that's a good question
+
+446
+00:15:45,100 --> 00:15:50,200
+a fairly deep one and it may be that
+
+447
+00:15:48,159 --> 00:15:51,669
+sort of bad news and the learning
+
+448
+00:15:50,200 --> 00:15:52,810
+mechanism you need to learn how to see
+
+449
+00:15:51,669 --> 00:15:54,309
+is completely different learning
+
+450
+00:15:52,809 --> 00:15:55,359
+mechanism we need to learn how to move
+
+451
+00:15:54,309 --> 00:15:57,189
+which is different from the one you need
+
+452
+00:15:55,360 --> 00:15:59,649
+to learn how to smell and so on and then
+
+453
+00:15:57,190 --> 00:16:01,300
+we perhaps one ourselves a little bit
+
+454
+00:15:59,649 --> 00:16:02,740
+maybe building those learning albums
+
+455
+00:16:01,299 --> 00:16:04,779
+easier than building individual modules
+
+456
+00:16:02,740 --> 00:16:09,399
+but we're still kind of in this is
+
+457
+00:16:04,779 --> 00:16:11,199
+really painful systems building problem
+
+458
+00:16:09,399 --> 00:16:14,019
+but perhaps that's not the case perhaps
+
+459
+00:16:11,200 --> 00:16:16,150
+it's enough to build one or a small
+
+460
+00:16:14,019 --> 00:16:18,909
+number of very flexible algorithms that
+
+461
+00:16:16,149 --> 00:16:22,600
+can accomplish the job of actually
+
+462
+00:16:18,909 --> 00:16:23,889
+building each of these modules and there
+
+463
+00:16:22,600 --> 00:16:26,769
+was actually a little bit of evidence to
+
+464
+00:16:23,889 --> 00:16:28,419
+suggest that perhaps this is the case so
+
+465
+00:16:26,769 --> 00:16:30,850
+i'll show you a few pieces of evidence
+
+466
+00:16:28,419 --> 00:16:33,250
+here these are somewhat shamelessly a
+
+467
+00:16:30,850 --> 00:16:36,250
+borrowed from some slides by entering
+
+468
+00:16:33,250 --> 00:16:39,370
+who gave an excellent talk on this topic
+
+469
+00:16:36,250 --> 00:16:42,519
+few years back with a few examples of
+
+470
+00:16:39,370 --> 00:16:44,769
+learned behaviors and humans that seem
+
+471
+00:16:42,519 --> 00:16:47,620
+to suggest an extremely high degree of
+
+472
+00:16:44,769 --> 00:16:49,870
+adaptability at least when it comes to
+
+473
+00:16:47,620 --> 00:16:52,330
+processing sensory information so this
+
+474
+00:16:49,870 --> 00:16:55,210
+picture here is a little device consists
+
+475
+00:16:52,330 --> 00:16:57,490
+of a camera attached to an electrode
+
+476
+00:16:55,210 --> 00:17:01,690
+array they can put in your time and the
+
+477
+00:16:57,490 --> 00:17:03,009
+individual notes on this array will send
+
+478
+00:17:01,690 --> 00:17:04,809
+a little electrical impulse based on
+
+479
+00:17:03,009 --> 00:17:06,819
+what the camera is seeing n turns out
+
+480
+00:17:04,809 --> 00:17:09,579
+they could actually do a test on a human
+
+481
+00:17:06,819 --> 00:17:11,558
+subject to test their visual acuity when
+
+482
+00:17:09,579 --> 00:17:13,720
+their eyes are covered or closed
+
+483
+00:17:11,558 --> 00:17:16,990
+or if they're blind and show that indeed
+
+484
+00:17:13,720 --> 00:17:18,578
+using this little tongue based electrode
+
+485
+00:17:16,990 --> 00:17:19,990
+array with signals coming from the
+
+486
+00:17:18,578 --> 00:17:21,428
+camera they have some degree of visual
+
+487
+00:17:19,990 --> 00:17:23,048
+acuity which essentially means that you
+
+488
+00:17:21,429 --> 00:17:24,129
+can learn to see with your Tom now
+
+489
+00:17:23,048 --> 00:17:27,099
+clearly the tongue was never designed
+
+490
+00:17:24,128 --> 00:17:29,558
+for this and i'm at least not aware of
+
+491
+00:17:27,099 --> 00:17:31,058
+any animals and nature that that let's
+
+492
+00:17:29,558 --> 00:17:32,378
+see what their tongue but people can
+
+493
+00:17:31,058 --> 00:17:36,548
+figure that out and that that's just a
+
+494
+00:17:32,378 --> 00:17:38,259
+very very high degree of adaptability in
+
+495
+00:17:36,548 --> 00:17:41,440
+anticipation of somatosensory cortex
+
+496
+00:17:38,259 --> 00:17:45,339
+that perhaps is not easily explained
+
+497
+00:17:41,440 --> 00:17:48,070
+with the modular view over here people
+
+498
+00:17:45,339 --> 00:17:50,709
+can learn to use a sound and their voice
+
+499
+00:17:48,069 --> 00:17:52,720
+to localize objects and obstacles this
+
+500
+00:17:50,710 --> 00:17:54,999
+is called echolocation are examples of
+
+501
+00:17:52,720 --> 00:17:58,629
+echolocation nature in animals like bats
+
+502
+00:17:54,999 --> 00:18:00,278
+people are insane sort of out-of-the-box
+
+503
+00:17:58,628 --> 00:18:02,980
+equipped to do that but with enough
+
+504
+00:18:00,278 --> 00:18:04,450
+practice and enough incentive turns out
+
+505
+00:18:02,980 --> 00:18:08,019
+they can actually do a passable job of
+
+506
+00:18:04,450 --> 00:18:09,730
+it and perhaps the one of the more
+
+507
+00:18:08,019 --> 00:18:12,759
+compelling piece of evidence for this
+
+508
+00:18:09,730 --> 00:18:14,409
+degree of plasticity is the the physical
+
+509
+00:18:12,759 --> 00:18:16,450
+therapy wiring experiment so this is
+
+510
+00:18:14,409 --> 00:18:18,369
+sort of experiment that was conducted on
+
+511
+00:18:16,450 --> 00:18:19,629
+on ferrets and I believe it it's since
+
+512
+00:18:18,368 --> 00:18:22,418
+been replicated other animals as well
+
+513
+00:18:19,628 --> 00:18:24,519
+where the the optic nerve is actually
+
+514
+00:18:22,419 --> 00:18:27,190
+severed and reconnected to the auditory
+
+515
+00:18:24,519 --> 00:18:28,960
+cortex in the brain and after that again
+
+516
+00:18:27,190 --> 00:18:30,399
+you conduct some experiments and you can
+
+517
+00:18:28,960 --> 00:18:31,659
+test the animals visual acuity and it
+
+518
+00:18:30,398 --> 00:18:33,849
+turns out that after adaptation period
+
+519
+00:18:31,659 --> 00:18:36,100
+the animal can actually cover some
+
+520
+00:18:33,849 --> 00:18:37,569
+degree of visual acuity essentially by
+
+521
+00:18:36,099 --> 00:18:39,908
+processing visual information using the
+
+522
+00:18:37,569 --> 00:18:41,980
+auditory cortex so that again suggests a
+
+523
+00:18:39,909 --> 00:18:43,929
+very high degree of a plasticity and
+
+524
+00:18:41,980 --> 00:18:46,659
+adaptability and effective anatomical
+
+525
+00:18:43,929 --> 00:18:48,669
+studies sort of also suggest that the at
+
+526
+00:18:46,659 --> 00:18:49,929
+least in your cortex or somewhat uniform
+
+527
+00:18:48,669 --> 00:18:51,999
+throughout different parts of the brain
+
+528
+00:18:49,929 --> 00:18:53,200
+so that if you at least of course level
+
+529
+00:18:51,999 --> 00:18:54,519
+if you look at the composition of the
+
+530
+00:18:53,200 --> 00:18:58,119
+auditory cortex or the visual cortex
+
+531
+00:18:54,519 --> 00:18:59,409
+there's not any e in gross anatomical
+
+532
+00:18:58,118 --> 00:19:01,148
+differences that immediately jump out at
+
+533
+00:18:59,409 --> 00:19:03,190
+you wish for the support this idea that
+
+534
+00:19:01,148 --> 00:19:04,658
+perhaps there's a sort of a single
+
+535
+00:19:03,190 --> 00:19:06,369
+uniform substrate that's adaptable
+
+536
+00:19:04,659 --> 00:19:07,929
+enough to process all these different
+
+537
+00:19:06,368 --> 00:19:12,249
+kind of sensor information
+
+538
+00:19:07,929 --> 00:19:14,288
+ok so maybe this is you know not not
+
+539
+00:19:12,249 --> 00:19:16,419
+completely open and shut case but some
+
+540
+00:19:14,288 --> 00:19:20,679
+convincing evidence that a certain
+
+541
+00:19:16,419 --> 00:19:22,389
+degree of a plasticity is president
+
+542
+00:19:20,679 --> 00:19:23,590
+perhaps there's a single adaptation
+
+543
+00:19:22,388 --> 00:19:25,058
+mechanism that allows each of these
+
+544
+00:19:23,589 --> 00:19:26,319
+components to
+
+545
+00:19:25,058 --> 00:19:30,700
+have to process the information they're
+
+546
+00:19:26,319 --> 00:19:34,628
+receiving so if we buy into this idea
+
+547
+00:19:30,700 --> 00:19:37,870
+that perhaps a single algorithm can can
+
+548
+00:19:34,628 --> 00:19:39,459
+perform are all the the drop of all
+
+549
+00:19:37,869 --> 00:19:40,869
+these different module or at least can
+
+550
+00:19:39,460 --> 00:19:42,429
+train all these modules to perform their
+
+551
+00:19:40,869 --> 00:19:44,678
+job then we can ask yourself the
+
+552
+00:19:42,429 --> 00:19:46,210
+following question if we'd like to
+
+553
+00:19:44,679 --> 00:19:49,419
+design a single algorithm that can be
+
+554
+00:19:46,210 --> 00:19:50,950
+the basis of learning basic intelligence
+
+555
+00:19:49,419 --> 00:19:53,409
+what is this algo need to be able to do
+
+556
+00:19:50,950 --> 00:19:55,179
+I can we at least write down some sort
+
+557
+00:19:53,409 --> 00:19:58,869
+of bare minimum things that needs to be
+
+558
+00:19:55,179 --> 00:20:02,499
+able to do well it needs to be able to
+
+559
+00:19:58,868 --> 00:20:05,648
+interpret sensor signals I and at least
+
+560
+00:20:02,499 --> 00:20:08,409
+44 us are our sensors are actually quite
+
+561
+00:20:05,648 --> 00:20:09,699
+complex they don't seem to be
+
+562
+00:20:08,409 --> 00:20:15,190
+particularly optimized to produce
+
+563
+00:20:09,700 --> 00:20:16,690
+low-dimensional inputs so you know our
+
+564
+00:20:15,190 --> 00:20:18,879
+sense of touch is extremely high
+
+565
+00:20:16,690 --> 00:20:20,798
+bandwidth our eyesight is unbelievably
+
+566
+00:20:18,878 --> 00:20:22,509
+high bandwidth and there are ways to
+
+567
+00:20:20,798 --> 00:20:24,128
+compress this information but for
+
+568
+00:20:22,509 --> 00:20:26,349
+whatever reason we don't do it and the
+
+569
+00:20:24,128 --> 00:20:28,628
+most obvious ways to end our machines
+
+570
+00:20:26,349 --> 00:20:29,949
+with with sensors like this also be very
+
+571
+00:20:28,628 --> 00:20:31,719
+high bandwidth things like cameras
+
+572
+00:20:29,950 --> 00:20:33,308
+lighting on and so on so it seems like
+
+573
+00:20:31,720 --> 00:20:35,079
+being able to process rich extremely
+
+574
+00:20:33,308 --> 00:20:38,440
+high dimensional sensor information is a
+
+575
+00:20:35,079 --> 00:20:41,769
+crucial component of having this kind of
+
+576
+00:20:38,440 --> 00:20:43,990
+learning based intelligence and then the
+
+577
+00:20:41,769 --> 00:20:45,308
+other thing is that uh we need are
+
+578
+00:20:43,990 --> 00:20:48,368
+intelligent machine to be able to choose
+
+579
+00:20:45,308 --> 00:20:49,808
+complex actions and here again it's
+
+580
+00:20:48,368 --> 00:20:51,730
+actually the same story that you know
+
+581
+00:20:49,808 --> 00:20:53,440
+there are ways to build actuation
+
+582
+00:20:51,730 --> 00:20:55,628
+mechanisms that are extremely low
+
+583
+00:20:53,440 --> 00:20:57,340
+dimensional that have a very small
+
+584
+00:20:55,628 --> 00:20:59,678
+number of commands that give rise to
+
+585
+00:20:57,339 --> 00:21:01,808
+complex behaviors and that doesn't
+
+586
+00:20:59,679 --> 00:21:03,639
+appear to be what's going on with at
+
+587
+00:21:01,808 --> 00:21:05,859
+least with humans with with some animals
+
+588
+00:21:03,638 --> 00:21:08,648
+especially insects that sometimes is the
+
+589
+00:21:05,859 --> 00:21:11,528
+case with humans is not we have actually
+
+590
+00:21:08,648 --> 00:21:13,268
+more more muscles than we have degrees
+
+591
+00:21:11,528 --> 00:21:15,940
+of freedom in our skeleton the system is
+
+592
+00:21:13,269 --> 00:21:18,579
+over complete and somehow that doesn't
+
+593
+00:21:15,940 --> 00:21:19,629
+seem to be bothering us very much so it
+
+594
+00:21:18,579 --> 00:21:21,038
+seems like we're able to deal with
+
+595
+00:21:19,628 --> 00:21:23,949
+complex actions with complex very
+
+596
+00:21:21,038 --> 00:21:26,528
+high-dimensional outputs just fine
+
+597
+00:21:23,950 --> 00:21:27,999
+so then we can kind of hypothesize that
+
+598
+00:21:26,528 --> 00:21:29,230
+we need to be able to interpret sensory
+
+599
+00:21:27,999 --> 00:21:35,019
+signals and will be able to choose
+
+600
+00:21:29,230 --> 00:21:36,730
+complex options so why is it a kind of a
+
+601
+00:21:35,019 --> 00:21:37,509
+good idea to look at deep reinforcement
+
+602
+00:21:36,730 --> 00:21:40,390
+learning and roll
+
+603
+00:21:37,509 --> 00:21:41,769
+and methods as one of the ways to get
+
+604
+00:21:40,390 --> 00:21:45,220
+there
+
+605
+00:21:41,769 --> 00:21:47,379
+well the deep part refers i guess a
+
+606
+00:21:45,220 --> 00:21:49,420
+traditionally training deep neural
+
+607
+00:21:47,380 --> 00:21:51,610
+networks but more generally large
+
+608
+00:21:49,420 --> 00:21:53,860
+high-capacity models that sperm to be a
+
+609
+00:21:51,609 --> 00:21:55,569
+very effective way to process complex
+
+610
+00:21:53,859 --> 00:21:57,490
+instruments so if you have to process
+
+611
+00:21:55,569 --> 00:22:00,159
+complicated very very high-dimensional
+
+612
+00:21:57,490 --> 00:22:01,870
+input that involves all these different
+
+613
+00:22:00,160 --> 00:22:03,519
+complicated factors of variational
+
+614
+00:22:01,869 --> 00:22:05,229
+superimposed together it seems a
+
+615
+00:22:03,519 --> 00:22:07,990
+large-capacity models like neural
+
+616
+00:22:05,230 --> 00:22:09,670
+networks do a remarkably good job of
+
+617
+00:22:07,990 --> 00:22:12,279
+that probably better than any other
+
+618
+00:22:09,670 --> 00:22:14,440
+mechanism that we know today so it seems
+
+619
+00:22:12,279 --> 00:22:16,930
+like a good idea to include that as one
+
+620
+00:22:14,440 --> 00:22:18,549
+of the ingredients and more generally
+
+621
+00:22:16,930 --> 00:22:19,779
+deep neural networks are very good at
+
+622
+00:22:18,549 --> 00:22:21,669
+computing all sorts of really complex
+
+623
+00:22:19,779 --> 00:22:22,899
+functions so while we have very very
+
+624
+00:22:21,670 --> 00:22:23,980
+convincing evidence that there
+
+625
+00:22:22,900 --> 00:22:26,410
+well suited for dealing with high
+
+626
+00:22:23,980 --> 00:22:27,730
+dimensional sensory and but I it seems
+
+627
+00:22:26,410 --> 00:22:29,680
+reasonable to hypothesize that might
+
+628
+00:22:27,730 --> 00:22:31,960
+also be really good at dealing with very
+
+629
+00:22:29,680 --> 00:22:36,100
+high-dimensional outputs and computing
+
+630
+00:22:31,960 --> 00:22:38,829
+really complex functions and my
+
+631
+00:22:36,099 --> 00:22:40,509
+reinforcement learning well there is the
+
+632
+00:22:38,829 --> 00:22:41,379
+reason for that is that as i mentioned
+
+633
+00:22:40,509 --> 00:22:44,079
+before we need to be able to choose
+
+634
+00:22:41,380 --> 00:22:45,520
+complex actions and deep learning by
+
+635
+00:22:44,079 --> 00:22:47,169
+itself doesn't actually tell us much
+
+636
+00:22:45,519 --> 00:22:48,700
+about how we can make decisions that
+
+637
+00:22:47,170 --> 00:22:51,279
+just tell us how we can build very
+
+638
+00:22:48,700 --> 00:22:52,690
+expressive models so the reinforcement
+
+639
+00:22:51,279 --> 00:22:53,740
+learning part is there because that's
+
+640
+00:22:52,690 --> 00:22:55,870
+good that's what's going to give us
+
+641
+00:22:53,740 --> 00:22:57,250
+hopefully the algorithmic tools to be
+
+642
+00:22:55,869 --> 00:22:59,769
+able to reason about making decisions
+
+643
+00:22:57,250 --> 00:23:02,440
+and in some ways sort of the deep in the
+
+644
+00:22:59,769 --> 00:23:03,609
+reinforcement learning parts are two two
+
+645
+00:23:02,440 --> 00:23:04,990
+separate questions keep is about
+
+646
+00:23:03,609 --> 00:23:08,469
+representation reinforcement learning is
+
+647
+00:23:04,990 --> 00:23:10,299
+about algorithm and it's not that we
+
+648
+00:23:08,470 --> 00:23:11,470
+need any one particular reinforcement
+
+649
+00:23:10,299 --> 00:23:13,299
+learning algorithm although maybe we do
+
+650
+00:23:11,470 --> 00:23:14,440
+we just don't know about it yet but it
+
+651
+00:23:13,299 --> 00:23:16,149
+seems like we we need something that can
+
+652
+00:23:14,440 --> 00:23:18,610
+solve the reinforcement learning problem
+
+653
+00:23:16,150 --> 00:23:21,100
+the problem of choosing good actions are
+
+654
+00:23:18,609 --> 00:23:22,779
+in situations that don't give you ten
+
+655
+00:23:21,099 --> 00:23:24,250
+supervision and will will define
+
+656
+00:23:22,779 --> 00:23:25,389
+reinforcement more formal and subsequent
+
+657
+00:23:24,250 --> 00:23:30,400
+lectures as well
+
+658
+00:23:25,390 --> 00:23:31,930
+ok so that's that's sort of the the
+
+659
+00:23:30,400 --> 00:23:34,570
+someone hand way the hypothesis now
+
+660
+00:23:31,930 --> 00:23:36,759
+let's look at a little bit of work that
+
+661
+00:23:34,569 --> 00:23:38,740
+maybe sheds a little bit of light on why
+
+662
+00:23:36,759 --> 00:23:40,930
+these components the deep learning in
+
+663
+00:23:38,740 --> 00:23:43,089
+the reinforcement learning are actually
+
+664
+00:23:40,930 --> 00:23:44,650
+perhaps worth examining so first I'm
+
+665
+00:23:43,089 --> 00:23:46,959
+going to briefly talk about this paper
+
+666
+00:23:44,650 --> 00:23:49,210
+from
+
+667
+00:23:46,960 --> 00:23:51,940
+I'm Andrew sacks and a few other
+
+668
+00:23:49,210 --> 00:23:56,019
+students from entering ripples from 2011
+
+669
+00:23:51,940 --> 00:23:57,759
+that examines features sensory features
+
+670
+00:23:56,019 --> 00:24:00,038
+learned by deep neural networks and
+
+671
+00:23:57,759 --> 00:24:01,329
+compares them to the statistical
+
+672
+00:24:00,038 --> 00:24:03,308
+properties of features absorbance
+
+673
+00:24:01,329 --> 00:24:06,908
+sensory cortices of animals and humans
+
+674
+00:24:03,308 --> 00:24:08,950
+so they have a number of experiments
+
+675
+00:24:06,909 --> 00:24:10,149
+they present in this work and if you're
+
+676
+00:24:08,950 --> 00:24:11,409
+interested in this topic actually
+
+677
+00:24:10,148 --> 00:24:14,139
+strongly encourage you to read this
+
+678
+00:24:11,409 --> 00:24:15,730
+paper and delve into this in more detail
+
+679
+00:24:14,140 --> 00:24:17,770
+but I'll just summarize some of the
+
+680
+00:24:15,730 --> 00:24:21,640
+experiments very briefly at a very high
+
+681
+00:24:17,769 --> 00:24:23,889
+level so the their experiments on visual
+
+682
+00:24:21,640 --> 00:24:25,899
+data show if you really interesting
+
+683
+00:24:23,890 --> 00:24:27,850
+things one of the things that they did
+
+684
+00:24:25,898 --> 00:24:29,949
+in this work is that they they simulated
+
+685
+00:24:27,849 --> 00:24:33,339
+the prismatic glasses experiments was on
+
+686
+00:24:29,950 --> 00:24:35,798
+an experiment that tradition was done on
+
+687
+00:24:33,339 --> 00:24:37,898
+on kittens where kids are reared with
+
+688
+00:24:35,798 --> 00:24:39,099
+special glasses that actually distort
+
+689
+00:24:37,898 --> 00:24:41,648
+what they're seeing
+
+690
+00:24:39,099 --> 00:24:43,298
+so that on there the image that they see
+
+691
+00:24:41,648 --> 00:24:45,009
+are essentially smeared vertically so
+
+692
+00:24:43,298 --> 00:24:48,490
+you can see an example that in its top
+
+693
+00:24:45,009 --> 00:24:49,960
+row and the world but this experiment to
+
+694
+00:24:48,490 --> 00:24:52,450
+test this how do the visual features
+
+695
+00:24:49,960 --> 00:24:53,860
+that are learned by the visual cortex of
+
+696
+00:24:52,450 --> 00:24:55,149
+the of the count
+
+697
+00:24:53,859 --> 00:24:57,398
+how are those visual features altered
+
+698
+00:24:55,148 --> 00:24:59,798
+based on the the the kind of perceptual
+
+699
+00:24:57,398 --> 00:25:03,908
+data that it receives in the critical
+
+700
+00:24:59,798 --> 00:25:06,038
+phase of its of its life and you can
+
+701
+00:25:03,909 --> 00:25:07,720
+fight you can here on this experiment if
+
+702
+00:25:06,038 --> 00:25:10,269
+you you know have a lab that works with
+
+703
+00:25:07,720 --> 00:25:13,269
+kittens you can find out that the
+
+704
+00:25:10,269 --> 00:25:14,528
+sensitivity in the visual cortex to
+
+705
+00:25:13,269 --> 00:25:16,960
+features of certain orientations
+
+706
+00:25:14,528 --> 00:25:18,609
+unsurprising changes if all the things
+
+707
+00:25:16,960 --> 00:25:20,500
+the kitten season its life are things
+
+708
+00:25:18,609 --> 00:25:22,298
+that are these vertical bars facilities
+
+709
+00:25:20,500 --> 00:25:24,788
+more natural images so the physical
+
+710
+00:25:22,298 --> 00:25:26,379
+properties of the features change in
+
+711
+00:25:24,788 --> 00:25:28,778
+particular their sensitivity to
+
+712
+00:25:26,380 --> 00:25:30,278
+orientation of edges changes which makes
+
+713
+00:25:28,778 --> 00:25:32,528
+sense because it only sees vertical
+
+714
+00:25:30,278 --> 00:25:34,419
+edges it presumably will not understand
+
+715
+00:25:32,528 --> 00:25:35,980
+what horizontal interested you can
+
+716
+00:25:34,419 --> 00:25:37,630
+repeat the same experiment with with
+
+717
+00:25:35,980 --> 00:25:39,640
+internet works again in their case they
+
+718
+00:25:37,630 --> 00:25:41,620
+run on supervised learning algorithm on
+
+719
+00:25:39,640 --> 00:25:43,299
+natural images and image that have been
+
+720
+00:25:41,619 --> 00:25:45,069
+stored in this way and they find it
+
+721
+00:25:43,298 --> 00:25:46,869
+actually the the gross statistical
+
+722
+00:25:45,069 --> 00:25:48,308
+properties more or less line up with the
+
+723
+00:25:46,869 --> 00:25:51,250
+ones that are observed in the indicated
+
+724
+00:25:48,308 --> 00:25:53,589
+Mary experiments to conducting
+
+725
+00:25:51,250 --> 00:25:56,829
+experiments sort of a similar vein on
+
+726
+00:25:53,589 --> 00:25:58,869
+auditorium where they again look at
+
+727
+00:25:56,829 --> 00:26:00,168
+sensitivity in this case of frequencies
+
+728
+00:25:58,869 --> 00:26:03,768
+between
+
+729
+00:26:00,169 --> 00:26:05,600
+algebra courses and animals and neural
+
+730
+00:26:03,769 --> 00:26:09,558
+networks trained on public speech data
+
+731
+00:26:05,599 --> 00:26:10,969
+another the the last experiment that i'm
+
+732
+00:26:09,558 --> 00:26:12,648
+going to measure from this paper that i
+
+733
+00:26:10,970 --> 00:26:16,100
+thought was actually really creative as
+
+734
+00:26:12,648 --> 00:26:18,888
+a an experiment try to evaluate teachers
+
+735
+00:26:16,099 --> 00:26:20,358
+for the sense of touch and compare that
+
+736
+00:26:18,888 --> 00:26:23,449
+with the conservative somatosensory
+
+737
+00:26:20,358 --> 00:26:25,099
+cortex and for this experiment the an
+
+738
+00:26:23,450 --> 00:26:26,720
+animal data actually comes from a cock
+
+739
+00:26:25,099 --> 00:26:28,488
+which is where there's a device that
+
+740
+00:26:26,720 --> 00:26:29,989
+actually it looks a little bit like a
+
+741
+00:26:28,489 --> 00:26:32,210
+drum with indentations on it
+
+742
+00:26:29,989 --> 00:26:33,980
+mark puts hand on the drum basically
+
+743
+00:26:32,210 --> 00:26:36,019
+touches the hand in different places and
+
+744
+00:26:33,980 --> 00:26:38,480
+they have an an electrode in the in the
+
+745
+00:26:36,019 --> 00:26:40,399
+monkeys brain and that rewards basically
+
+746
+00:26:38,480 --> 00:26:46,069
+the the sensitive different texture
+
+747
+00:26:40,398 --> 00:26:47,449
+features yes yes and I'm going to get to
+
+748
+00:26:46,069 --> 00:26:48,980
+that at the end of the slide that's a
+
+749
+00:26:47,450 --> 00:26:52,429
+very good question
+
+750
+00:26:48,980 --> 00:26:54,169
+so with the with the touch experiment
+
+751
+00:26:52,429 --> 00:26:55,519
+the there's this drum mechanism for
+
+752
+00:26:54,169 --> 00:26:56,989
+getting the data from the macaque which
+
+753
+00:26:55,519 --> 00:26:58,788
+they didn't doing this paper the actual
+
+754
+00:26:56,989 --> 00:27:01,369
+site a previous work that does this and
+
+755
+00:26:58,788 --> 00:27:02,720
+then to train the deep network you know
+
+756
+00:27:01,368 --> 00:27:04,038
+deep networks aren't connected to human
+
+757
+00:27:02,720 --> 00:27:06,470
+hands typically so what they actually do
+
+758
+00:27:04,038 --> 00:27:08,658
+instead is they get this funny blue
+
+759
+00:27:06,470 --> 00:27:10,129
+glove and they have a person handle an
+
+760
+00:27:08,659 --> 00:27:11,749
+object has been dusted with ass white
+
+761
+00:27:10,128 --> 00:27:13,638
+dust and then once the person has
+
+762
+00:27:11,749 --> 00:27:15,618
+touched the object they put the glove on
+
+763
+00:27:13,638 --> 00:27:18,019
+a piece of paper record an image of it
+
+764
+00:27:15,618 --> 00:27:19,368
+and I get some these kind of touch any
+
+765
+00:27:18,019 --> 00:27:22,190
+impressions and then they train their
+
+766
+00:27:19,368 --> 00:27:24,528
+unsupervised I'd did not work on it and
+
+767
+00:27:22,190 --> 00:27:26,720
+again look at the statistical properties
+
+768
+00:27:24,528 --> 00:27:28,460
+of the features that they learned and
+
+769
+00:27:26,720 --> 00:27:29,480
+again the the gross statistics agree of
+
+770
+00:27:28,460 --> 00:27:32,659
+course in the details things are a
+
+771
+00:27:29,480 --> 00:27:34,128
+little different now it's it's
+
+772
+00:27:32,659 --> 00:27:37,340
+interesting to think about these results
+
+773
+00:27:34,128 --> 00:27:39,259
+a little bit because you know 11
+
+774
+00:27:37,339 --> 00:27:40,548
+conclusion might raw from this which is
+
+775
+00:27:39,259 --> 00:27:42,230
+not the conclusion section claimant
+
+776
+00:27:40,548 --> 00:27:44,210
+paper one conclusion my drawers of the
+
+777
+00:27:42,230 --> 00:27:45,889
+particular algorithm that they use works
+
+778
+00:27:44,210 --> 00:27:48,619
+like the brain that's not necessarily
+
+779
+00:27:45,888 --> 00:27:51,079
+the right conclusion i think you know
+
+780
+00:27:48,618 --> 00:27:54,288
+going to go back to the comment earlier
+
+781
+00:27:51,079 --> 00:27:57,439
+it's just as possible that in fact
+
+782
+00:27:54,288 --> 00:27:59,028
+what's going on is that the these
+
+783
+00:27:57,440 --> 00:28:00,739
+sensory modalities have certain
+
+784
+00:27:59,028 --> 00:28:02,720
+statistical properties and especially
+
+785
+00:28:00,739 --> 00:28:04,159
+powerful function approximator whether
+
+786
+00:28:02,720 --> 00:28:05,538
+it's a it's a deep neural network or
+
+787
+00:28:04,159 --> 00:28:08,239
+something else can capture those
+
+788
+00:28:05,538 --> 00:28:09,798
+statistics that's still interesting
+
+789
+00:28:08,239 --> 00:28:11,778
+because it means that whatever is being
+
+790
+00:28:09,798 --> 00:28:12,888
+captured in the features in the in the
+
+791
+00:28:11,778 --> 00:28:14,839
+brain and the brains of these animals
+
+792
+00:28:12,888 --> 00:28:16,008
+sort of lines up with what we get
+
+793
+00:28:14,839 --> 00:28:17,298
+using special power function
+
+794
+00:28:16,009 --> 00:28:19,460
+approximator but it doesn't necessarily
+
+795
+00:28:17,298 --> 00:28:20,569
+tell us that we have to be using the
+
+796
+00:28:19,460 --> 00:28:23,538
+particular kind of deep network that
+
+797
+00:28:20,569 --> 00:28:25,428
+they use and in fact you know a little
+
+798
+00:28:23,538 --> 00:28:26,929
+bit of a kind of food for thought there
+
+799
+00:28:25,429 --> 00:28:28,909
+is that at least for the visual data
+
+800
+00:28:26,929 --> 00:28:30,889
+there are lots of albums that will
+
+801
+00:28:28,909 --> 00:28:32,210
+produce features with high level
+
+802
+00:28:30,888 --> 00:28:33,558
+statistics that match up with the ones
+
+803
+00:28:32,210 --> 00:28:35,569
+observed in the brain including things
+
+804
+00:28:33,558 --> 00:28:37,608
+like sparse coding and if you're clever
+
+805
+00:28:35,569 --> 00:28:38,989
+about even k-means so the point is not
+
+806
+00:28:37,608 --> 00:28:40,848
+so much that it has to be this
+
+807
+00:28:38,989 --> 00:28:42,079
+particular deep neural network but it
+
+808
+00:28:40,848 --> 00:28:44,868
+has to be large enough to have enough
+
+809
+00:28:42,079 --> 00:28:46,069
+capacity to be able to capture school
+
+810
+00:28:44,868 --> 00:28:49,308
+properties that are actually the data
+
+811
+00:28:46,069 --> 00:28:50,628
+and actually at least in my life is my
+
+812
+00:28:49,308 --> 00:28:52,038
+talk about deep learning what I really
+
+813
+00:28:50,628 --> 00:28:54,048
+mean is things that have enough capacity
+
+814
+00:28:52,038 --> 00:28:55,220
+which might be deep networks you've
+
+815
+00:28:54,048 --> 00:28:56,388
+never something to be really good choice
+
+816
+00:28:55,220 --> 00:28:58,009
+right now because we know how to train
+
+817
+00:28:56,388 --> 00:28:59,298
+them well but it may as well be
+
+818
+00:28:58,009 --> 00:29:00,470
+something else if we have a good
+
+819
+00:28:59,298 --> 00:29:02,628
+learning forward
+
+820
+00:29:00,470 --> 00:29:05,028
+ok so this is sort of maybe some
+
+821
+00:29:02,628 --> 00:29:06,558
+evidence that deep learning at least the
+
+822
+00:29:05,028 --> 00:29:08,450
+way I have to find it is a good choice
+
+823
+00:29:06,558 --> 00:29:10,608
+if you want to process hai bhai behan
+
+824
+00:29:08,450 --> 00:29:12,379
+with sensory data and at least a very
+
+825
+00:29:10,608 --> 00:29:13,788
+high-level what's going on seems to line
+
+826
+00:29:12,378 --> 00:29:14,988
+up with what we observe in primary
+
+827
+00:29:13,788 --> 00:29:18,710
+sensor courses
+
+828
+00:29:14,989 --> 00:29:20,119
+what about reinforcement learn well with
+
+829
+00:29:18,710 --> 00:29:21,409
+reinforcement learning actual stories
+
+830
+00:29:20,118 --> 00:29:23,959
+even better so reinforcement learning
+
+831
+00:29:21,409 --> 00:29:26,090
+was actually originally proposed as a
+
+832
+00:29:23,960 --> 00:29:28,278
+model for decision-making animals only
+
+833
+00:29:26,089 --> 00:29:30,079
+later made its way to the computer
+
+834
+00:29:28,278 --> 00:29:32,749
+sciences in AI algorithm and there's
+
+835
+00:29:30,079 --> 00:29:33,829
+extensive literature on reinforcement
+
+836
+00:29:32,749 --> 00:29:36,288
+learning animals
+
+837
+00:29:33,829 --> 00:29:38,058
+this is a survey paper by you live that
+
+838
+00:29:36,288 --> 00:29:40,158
+i would encourage you to read if you're
+
+839
+00:29:38,058 --> 00:29:41,868
+interested in this question there's
+
+840
+00:29:40,159 --> 00:29:43,970
+extensive evidence that things like
+
+841
+00:29:41,868 --> 00:29:46,878
+reinforcement learning to happen when
+
+842
+00:29:43,970 --> 00:29:48,499
+animals learned behaviors a few just a
+
+843
+00:29:46,878 --> 00:29:50,868
+few of the pieces of evidence for this
+
+844
+00:29:48,499 --> 00:29:53,419
+include things like you know if you have
+
+845
+00:29:50,868 --> 00:29:54,918
+a percept that anticipates a reward such
+
+846
+00:29:53,419 --> 00:29:56,299
+a monkey let's say that receives a
+
+847
+00:29:54,919 --> 00:29:57,919
+little bit of juice
+
+848
+00:29:56,298 --> 00:30:00,648
+initially the monkey will of course
+
+849
+00:29:57,919 --> 00:30:03,889
+associate that juice with with reward
+
+850
+00:30:00,648 --> 00:30:05,418
+and you can record from neurons in his
+
+851
+00:30:03,888 --> 00:30:06,709
+brain and see that yes there's some
+
+852
+00:30:05,419 --> 00:30:08,450
+pattern that corresponds to the monkey
+
+853
+00:30:06,710 --> 00:30:09,858
+being happy about its juice but if you
+
+854
+00:30:08,450 --> 00:30:11,989
+always precede the juice with some sort
+
+855
+00:30:09,858 --> 00:30:13,608
+of visual cue then eventually the monkey
+
+856
+00:30:11,989 --> 00:30:15,079
+will sort of backup that reward to the
+
+857
+00:30:13,608 --> 00:30:17,329
+visual cue and you'll observe the same
+
+858
+00:30:15,079 --> 00:30:18,439
+signal when it's exposed to the visual
+
+859
+00:30:17,329 --> 00:30:19,519
+cue even if the juice doesn't actually
+
+860
+00:30:18,440 --> 00:30:21,679
+follow later
+
+861
+00:30:19,519 --> 00:30:23,690
+so that's that that that is quite in
+
+862
+00:30:21,679 --> 00:30:24,730
+line what would expect from a kind of
+
+863
+00:30:23,690 --> 00:30:25,960
+bellman backup will show
+
+864
+00:30:24,730 --> 00:30:28,269
+you'll learn about later in the course
+
+865
+00:30:25,960 --> 00:30:30,548
+and then there's there's even some
+
+866
+00:30:28,269 --> 00:30:31,720
+anatomical studies that that provide
+
+867
+00:30:30,548 --> 00:30:33,369
+evidence for example the basal ganglia
+
+868
+00:30:31,720 --> 00:30:36,519
+might be at least partially responsible
+
+869
+00:30:33,369 --> 00:30:39,039
+for the rewards system that that that
+
+870
+00:30:36,519 --> 00:30:40,480
+creates this is kind of backup so
+
+871
+00:30:39,039 --> 00:30:42,308
+there's actually quite a bit of
+
+872
+00:30:40,480 --> 00:30:43,750
+anatomical studies about where the
+
+873
+00:30:42,308 --> 00:30:50,109
+reinforcement might actually happening
+
+874
+00:30:43,750 --> 00:30:51,130
+i'm now and and sort of the the problem
+
+875
+00:30:50,109 --> 00:30:52,629
+preponderance of evidence seems to
+
+876
+00:30:51,130 --> 00:30:54,760
+suggest the model free reinforcement
+
+877
+00:30:52,630 --> 00:30:56,620
+learning like adaptation is often a good
+
+878
+00:30:54,759 --> 00:30:58,419
+fit for the experimental data of animal
+
+879
+00:30:56,619 --> 00:31:01,479
+adaptation to changes in their
+
+880
+00:30:58,419 --> 00:31:03,250
+environment but not always and I'll get
+
+881
+00:31:01,480 --> 00:31:04,960
+back to this point later my talk about
+
+882
+00:31:03,250 --> 00:31:10,000
+some of the limitations of our current
+
+883
+00:31:04,960 --> 00:31:12,789
+understanding of ID bar L so what can I
+
+884
+00:31:10,000 --> 00:31:15,279
+deep learning in RL do well now and I
+
+885
+00:31:12,789 --> 00:31:17,440
+microstructures we'll talk about this in
+
+886
+00:31:15,279 --> 00:31:21,369
+a little bit more detail but at a very
+
+887
+00:31:17,440 --> 00:31:22,870
+high level deeper enforceable learning
+
+888
+00:31:21,369 --> 00:31:24,819
+right now is very good at acquiring a
+
+889
+00:31:22,869 --> 00:31:26,379
+high degree of proficiency in domains
+
+890
+00:31:24,819 --> 00:31:29,500
+that are governed by simple in own rules
+
+891
+00:31:26,380 --> 00:31:30,640
+so I you know if you the example that
+
+892
+00:31:29,500 --> 00:31:32,289
+you might already be aware of things
+
+893
+00:31:30,640 --> 00:31:35,679
+like alpha go or playing guitar games
+
+894
+00:31:32,289 --> 00:31:37,480
+quite complex domains where complex
+
+895
+00:31:35,679 --> 00:31:39,220
+behavior is a consequence of relatively
+
+896
+00:31:37,480 --> 00:31:40,808
+simple rules so an alfa GO the rules of
+
+897
+00:31:39,220 --> 00:31:42,069
+the game are well-known well understood
+
+898
+00:31:40,808 --> 00:31:43,779
+so you can simulate a large amount of
+
+899
+00:31:42,069 --> 00:31:44,740
+experience from that system and even
+
+900
+00:31:43,779 --> 00:31:45,910
+though it gives rise to a tremendous
+
+901
+00:31:44,740 --> 00:31:47,620
+complexity since the underlying
+
+902
+00:31:45,910 --> 00:31:49,509
+generator simple unknown you can
+
+903
+00:31:47,619 --> 00:31:51,969
+generate all this experience and the
+
+904
+00:31:49,509 --> 00:31:53,259
+same brother holds true for for example
+
+905
+00:31:51,970 --> 00:31:55,480
+as well
+
+906
+00:31:53,259 --> 00:31:57,579
+DPL is quite good at learning simple
+
+907
+00:31:55,480 --> 00:31:59,169
+skills with all sensory input given off
+
+908
+00:31:57,579 --> 00:32:01,210
+experience so this is an example from a
+
+909
+00:31:59,169 --> 00:32:02,710
+some research on carnegie mellon that
+
+910
+00:32:01,210 --> 00:32:04,720
+i'll hopefully discuss later on in the
+
+911
+00:32:02,710 --> 00:32:06,460
+course where robot learn how to grasp
+
+912
+00:32:04,720 --> 00:32:08,140
+objects by attempting many many
+
+913
+00:32:06,460 --> 00:32:09,880
+different graphs and then correlating
+
+914
+00:32:08,140 --> 00:32:13,390
+the images that it's all with success or
+
+915
+00:32:09,880 --> 00:32:15,429
+failure on so here this method was very
+
+916
+00:32:13,390 --> 00:32:17,290
+effective but partly was because the
+
+917
+00:32:15,429 --> 00:32:18,490
+skill itself was relatively simple and
+
+918
+00:32:17,289 --> 00:32:21,129
+it's really the sense of the sensory
+
+919
+00:32:18,490 --> 00:32:22,419
+inputs really complex on some
+
+920
+00:32:21,130 --> 00:32:25,419
+experiments that we did here at Berkeley
+
+921
+00:32:22,419 --> 00:32:27,549
+this is a lot of chelsea Finn involved
+
+922
+00:32:25,419 --> 00:32:29,620
+you know training a robot to perform
+
+923
+00:32:27,548 --> 00:32:30,970
+some manipulation skills and here again
+
+924
+00:32:29,619 --> 00:32:32,678
+it's kind of the same story that there's
+
+925
+00:32:30,970 --> 00:32:35,409
+a there's some complexity in the motor
+
+926
+00:32:32,679 --> 00:32:36,580
+control but a lot of what the the deep
+
+927
+00:32:35,409 --> 00:32:37,990
+learning is really doing
+
+928
+00:32:36,579 --> 00:32:40,178
+really well as processing that sensory
+
+929
+00:32:37,990 --> 00:32:41,409
+input and then combine that with a
+
+930
+00:32:40,179 --> 00:32:43,450
+little bit of reinforcement to get the
+
+931
+00:32:41,409 --> 00:32:46,809
+little bit of motor control complexity
+
+932
+00:32:43,450 --> 00:32:47,919
+and then the other a big success of deep
+
+933
+00:32:46,808 --> 00:32:50,319
+reinforcement learning has been an
+
+934
+00:32:47,919 --> 00:32:51,970
+actually an invitation learning i'm
+
+935
+00:32:50,319 --> 00:32:55,269
+using the term reinforcement here quite
+
+936
+00:32:51,970 --> 00:32:56,980
+broadly is imitating human behavior so
+
+937
+00:32:55,269 --> 00:32:58,870
+if you get a very large amount of human
+
+938
+00:32:56,980 --> 00:33:00,819
+demonstrations of let's say a person
+
+939
+00:32:58,869 --> 00:33:03,398
+controlling a robot a car or flying
+
+940
+00:33:00,819 --> 00:33:05,918
+vehicle you can actually do really well
+
+941
+00:33:03,398 --> 00:33:07,808
+at trying to mimic that behavior again
+
+942
+00:33:05,919 --> 00:33:12,200
+processing raw images and also certain
+
+943
+00:33:07,808 --> 00:33:15,609
+point yes
+
+944
+00:33:12,200 --> 00:33:20,048
+[Music]
+
+945
+00:33:15,609 --> 00:33:21,250
+yeah so I in this in this section
+
+946
+00:33:20,048 --> 00:33:24,129
+actually intentionally didn't get into
+
+947
+00:33:21,250 --> 00:33:26,528
+language on partly because i don't know
+
+948
+00:33:24,130 --> 00:33:27,909
+as much about it but partly also because
+
+949
+00:33:26,528 --> 00:33:30,940
+i think there there's a reasonable
+
+950
+00:33:27,909 --> 00:33:32,740
+argument to be made that I'm at the
+
+951
+00:33:30,940 --> 00:33:34,870
+stage where we're at now when it comes
+
+952
+00:33:32,740 --> 00:33:36,460
+to building intelligent machines you
+
+953
+00:33:34,869 --> 00:33:38,678
+know there are animals that don't have
+
+954
+00:33:36,460 --> 00:33:40,990
+language but have substantially more
+
+955
+00:33:38,679 --> 00:33:42,190
+capabilities than the best uh autonomous
+
+956
+00:33:40,990 --> 00:33:44,558
+systems that we can build so
+
+957
+00:33:42,190 --> 00:33:46,808
+intelligence you know is it's not
+
+958
+00:33:44,558 --> 00:33:47,980
+necessarily limited to humans right it's
+
+959
+00:33:46,808 --> 00:33:49,359
+sort of tempting forced to think that
+
+960
+00:33:47,980 --> 00:33:50,769
+were were really really smart and
+
+961
+00:33:49,359 --> 00:33:53,648
+therefore the only thing we should look
+
+962
+00:33:50,769 --> 00:33:55,569
+at humans but actually you know I have
+
+963
+00:33:53,648 --> 00:33:58,750
+no idea how to build a robot today that
+
+964
+00:33:55,569 --> 00:34:00,759
+is as adaptable as a rat for example and
+
+965
+00:33:58,750 --> 00:34:01,990
+it's not just because the rat has you
+
+966
+00:34:00,759 --> 00:34:04,000
+know is mechanically really really
+
+967
+00:34:01,990 --> 00:34:05,500
+cleverly built that's because the rat is
+
+968
+00:34:04,000 --> 00:34:07,298
+very smart adaptable but doesn't have
+
+969
+00:34:05,500 --> 00:34:08,050
+language so i think language is really
+
+970
+00:34:07,298 --> 00:34:10,509
+interesting
+
+971
+00:34:08,050 --> 00:34:13,030
+I i think that perhaps there are other
+
+972
+00:34:10,510 --> 00:34:14,530
+things that are kind of more pressing
+
+973
+00:34:13,030 --> 00:34:16,210
+challenges before particular concern
+
+974
+00:34:14,530 --> 00:34:19,899
+about trying to make you know find most
+
+975
+00:34:16,210 --> 00:34:24,010
+direct line to more intelligent systems
+
+976
+00:34:19,898 --> 00:34:25,929
+ok so what is proven challenging so far
+
+977
+00:34:24,010 --> 00:34:29,679
+so what are the things that are kind of
+
+978
+00:34:25,929 --> 00:34:31,838
+perhaps badly lacking well um one of the
+
+979
+00:34:29,679 --> 00:34:34,809
+things that humans can do and animals as
+
+980
+00:34:31,838 --> 00:34:36,608
+well including the rap is learned very
+
+981
+00:34:34,809 --> 00:34:38,858
+very quickly so this is a picture of a
+
+982
+00:34:36,608 --> 00:34:40,389
+little experimental setup it's quite
+
+983
+00:34:38,858 --> 00:34:42,460
+popular studying human motor control
+
+984
+00:34:40,389 --> 00:34:44,740
+where persons asked to move this labor
+
+985
+00:34:42,460 --> 00:34:46,480
+between two points and there's a
+
+986
+00:34:44,739 --> 00:34:48,319
+perturbation of this that introduces the
+
+987
+00:34:46,480 --> 00:34:49,880
+sleepers actual power and will
+
+988
+00:34:48,320 --> 00:34:51,980
+push the person kind of course and
+
+989
+00:34:49,880 --> 00:34:53,450
+process to adapt and compensate and
+
+990
+00:34:51,980 --> 00:34:54,980
+people can actually adapting compensate
+
+991
+00:34:53,449 --> 00:34:57,439
+for this very very quickly substantially
+
+992
+00:34:54,980 --> 00:34:59,570
+more quickly than kind of conventional
+
+993
+00:34:57,440 --> 00:35:03,409
+reinforcement learning algorithms will
+
+994
+00:34:59,570 --> 00:35:04,640
+lead you to suggest so deep
+
+995
+00:35:03,409 --> 00:35:06,859
+reinforcement learning methods are
+
+996
+00:35:04,639 --> 00:35:09,619
+usually slow they usually require more
+
+997
+00:35:06,860 --> 00:35:13,099
+experience than we typically observed is
+
+998
+00:35:09,619 --> 00:35:14,569
+necessary for humans and animals humans
+
+999
+00:35:13,099 --> 00:35:15,920
+are very very good at using past
+
+1000
+00:35:14,570 --> 00:35:18,050
+knowledge so we very rarely actually
+
+1001
+00:35:15,920 --> 00:35:19,369
+learn new things from scratch we build
+
+1002
+00:35:18,050 --> 00:35:21,560
+on what we have before we draw an
+
+1003
+00:35:19,369 --> 00:35:23,869
+analogy start past experience and
+
+1004
+00:35:21,559 --> 00:35:25,909
+currently this is not a very heavily
+
+1005
+00:35:23,869 --> 00:35:26,929
+studied problem so it's kind of transfer
+
+1006
+00:35:25,909 --> 00:35:29,089
+learning and deep reinforcement learning
+
+1007
+00:35:26,929 --> 00:35:30,679
+still an open problem and i would argue
+
+1008
+00:35:29,090 --> 00:35:32,000
+that even even sort of the the right
+
+1009
+00:35:30,679 --> 00:35:35,480
+problem formulation is not something
+
+1010
+00:35:32,000 --> 00:35:36,679
+that we completely nailed down here it's
+
+1011
+00:35:35,480 --> 00:35:37,880
+often not clear what the reward function
+
+1012
+00:35:36,679 --> 00:35:39,049
+should be on this is something that I
+
+1013
+00:35:37,880 --> 00:35:42,260
+think Chelsea we'll talk about a little
+
+1014
+00:35:39,050 --> 00:35:43,940
+bit and in her portion of the talk I and
+
+1015
+00:35:42,260 --> 00:35:45,350
+it's also not clear what the role
+
+1016
+00:35:43,940 --> 00:35:46,820
+prediction should be so I mentioned at
+
+1017
+00:35:45,349 --> 00:35:49,159
+the end of that slide and reinforcement
+
+1018
+00:35:46,820 --> 00:35:51,980
+learning that model-free adaptation
+
+1019
+00:35:49,159 --> 00:35:53,750
+often is a good explanation for behavior
+
+1020
+00:35:51,980 --> 00:35:56,840
+observed in animals but not always
+
+1021
+00:35:53,750 --> 00:35:58,940
+it's because animals and especially
+
+1022
+00:35:56,840 --> 00:36:00,800
+humans don't always adapt in a
+
+1023
+00:35:58,940 --> 00:36:02,570
+model-free way we use our ability to
+
+1024
+00:36:00,800 --> 00:36:04,700
+predict the future so down more quickly
+
+1025
+00:36:02,570 --> 00:36:05,960
+and it's not yet clear in the world of
+
+1026
+00:36:04,699 --> 00:36:08,480
+reinforcement learning how this kind of
+
+1027
+00:36:05,960 --> 00:36:10,940
+model based learning fits with the model
+
+1028
+00:36:08,480 --> 00:36:12,380
+free learning whether it's sort of hard
+
+1029
+00:36:10,940 --> 00:36:14,960
+switch between the two whether it's some
+
+1030
+00:36:12,380 --> 00:36:17,329
+combination of both and even like how do
+
+1031
+00:36:14,960 --> 00:36:18,619
+we decide which one to use when so that
+
+1032
+00:36:17,329 --> 00:36:20,420
+that's still very much an open problem
+
+1033
+00:36:18,619 --> 00:36:22,219
+in mean in many ways be related to the
+
+1034
+00:36:20,420 --> 00:36:26,570
+the first point about learning very
+
+1035
+00:36:22,219 --> 00:36:28,039
+quickly about a very high level I think
+
+1036
+00:36:26,570 --> 00:36:29,900
+that the last thing I want to leave you
+
+1037
+00:36:28,039 --> 00:36:31,759
+with this portion of the talk is that
+
+1038
+00:36:29,900 --> 00:36:33,260
+you know we can approach AI in a few
+
+1039
+00:36:31,760 --> 00:36:34,970
+different ways we can approach hi from
+
+1040
+00:36:33,260 --> 00:36:36,560
+the standpoint of saying that well we
+
+1041
+00:36:34,969 --> 00:36:37,849
+have all these different things that we
+
+1042
+00:36:36,559 --> 00:36:39,889
+want our machine to do we want to find
+
+1043
+00:36:37,849 --> 00:36:42,139
+out a way to do them when they implement
+
+1044
+00:36:39,889 --> 00:36:43,609
+those in code that's a very reasonable
+
+1045
+00:36:42,139 --> 00:36:47,299
+kind of system building way to go about
+
+1046
+00:36:43,610 --> 00:36:48,980
+it but perhaps would make sense for us
+
+1047
+00:36:47,300 --> 00:36:51,800
+to do is to try to still the system down
+
+1048
+00:36:48,980 --> 00:36:54,170
+to its basic individual components and
+
+1049
+00:36:51,800 --> 00:36:57,230
+try to come come up with algorithms that
+
+1050
+00:36:54,170 --> 00:36:59,119
+really are the the simple parsimonious
+
+1051
+00:36:57,230 --> 00:37:00,789
+generators of the complex intelligent
+
+1052
+00:36:59,119 --> 00:37:03,039
+behavior that we want to see
+
+1053
+00:37:00,789 --> 00:37:04,750
+and I will say that the Indian here that
+
+1054
+00:37:03,039 --> 00:37:06,400
+this is not by any means a new idea so
+
+1055
+00:37:04,750 --> 00:37:09,579
+there's a quote that I like very much
+
+1056
+00:37:06,400 --> 00:37:12,039
+that i'd like to share with you here
+
+1057
+00:37:09,579 --> 00:37:14,469
+I instead of trying to produce a program
+
+1058
+00:37:12,039 --> 00:37:16,599
+to simulate the adult mind when I rather
+
+1059
+00:37:14,469 --> 00:37:18,519
+try to produce one which simulates the
+
+1060
+00:37:16,599 --> 00:37:20,500
+child's if it were the subject of
+
+1061
+00:37:18,519 --> 00:37:22,900
+appropriate course of Education one
+
+1062
+00:37:20,500 --> 00:37:26,440
+would obtain the adult brain this is
+
+1063
+00:37:22,900 --> 00:37:30,670
+entering alright so i'll switch now to
+
+1064
+00:37:26,440 --> 00:37:36,550
+one of you guys maybe it makes us free
+
+1065
+00:37:30,670 --> 00:37:38,680
+to go from der yeah maybe you guys want
+
+1066
+00:37:36,550 --> 00:37:41,080
+to take like a little 30-second break to
+
+1067
+00:37:38,679 --> 00:37:54,889
+get up especially merciful and then
+
+1068
+00:37:41,079 --> 00:38:09,369
+while switch on the 10
+
+1069
+00:37:54,889 --> 00:38:11,480
+ok
+
+1070
+00:38:09,369 --> 00:39:01,009
+this here
+
+1071
+00:38:11,480 --> 00:39:15,860
+[Music]
+
+1072
+00:39:01,010 --> 00:39:27,490
+ok
+
+1073
+00:39:15,860 --> 00:39:35,380
+[Music]
+
+1074
+00:39:27,489 --> 00:39:36,819
+can I have everyone's attention tiny
+
+1075
+00:39:35,380 --> 00:39:40,539
+depressing
+
+1076
+00:39:36,820 --> 00:39:43,840
+ok this is a recording ok ya know
+
+1077
+00:39:40,539 --> 00:39:48,940
+ok ok can I have her in detention
+
+1078
+00:39:43,840 --> 00:39:50,050
+thank you so I'm John I think with their
+
+1079
+00:39:48,940 --> 00:39:55,059
+nature at the beginning of the class
+
+1080
+00:39:50,050 --> 00:39:58,390
+okay I unfortunately ok yeah so I'm
+
+1081
+00:39:55,059 --> 00:40:01,090
+gonna Sergei very nice motivating and
+
+1082
+00:39:58,389 --> 00:40:02,769
+inspiring introduction with neuroscience
+
+1083
+00:40:01,090 --> 00:40:04,390
+and everything i'm going to talk a
+
+1084
+00:40:02,769 --> 00:40:06,849
+little bit more about the formalism of
+
+1085
+00:40:04,389 --> 00:40:08,559
+reinforcement learning and what is
+
+1086
+00:40:06,849 --> 00:40:11,860
+reinforcement learning and what isn't
+
+1087
+00:40:08,559 --> 00:40:13,480
+reinforcement learning so so
+
+1088
+00:40:11,860 --> 00:40:17,110
+reinforcement learning is concerned with
+
+1089
+00:40:13,480 --> 00:40:20,199
+taking sequences of actions usually we
+
+1090
+00:40:17,110 --> 00:40:24,039
+this is illustrated using an agent and
+
+1091
+00:40:20,199 --> 00:40:25,419
+an environment so on every time step the
+
+1092
+00:40:24,039 --> 00:40:27,219
+agent emits an action and the
+
+1093
+00:40:25,420 --> 00:40:29,590
+environment replies with an observation
+
+1094
+00:40:27,219 --> 00:40:31,629
+and reward and the observation is
+
+1095
+00:40:29,590 --> 00:40:33,640
+usually a high dimensional quantity of
+
+1096
+00:40:31,630 --> 00:40:35,710
+the reward is a scalar and the agent is
+
+1097
+00:40:33,639 --> 00:40:39,940
+trying to maximize the cumulative sum of
+
+1098
+00:40:35,710 --> 00:40:41,650
+rewards on this process can be
+
+1099
+00:40:39,940 --> 00:40:43,510
+formalized as a partially observable
+
+1100
+00:40:41,650 --> 00:40:46,210
+markov decision process which we're
+
+1101
+00:40:43,510 --> 00:40:49,690
+going to define more precisely later on
+
+1102
+00:40:46,210 --> 00:40:51,670
+pond eps and MVPs are in a way the key
+
+1103
+00:40:49,690 --> 00:40:52,210
+mathematical objects and reinforcement
+
+1104
+00:40:51,670 --> 00:40:54,280
+learning
+
+1105
+00:40:52,210 --> 00:40:56,320
+however not everything we're going to
+
+1106
+00:40:54,280 --> 00:40:58,630
+talk about in this class is how to
+
+1107
+00:40:56,320 --> 00:41:01,030
+maximize rewards in ponte peas because
+
+1108
+00:40:58,630 --> 00:41:03,010
+as Sergei point that sometimes you don't
+
+1109
+00:41:01,030 --> 00:41:05,680
+have the reward function for example
+
+1110
+00:41:03,010 --> 00:41:06,820
+invitation learning also to be more
+
+1111
+00:41:05,679 --> 00:41:09,460
+inclusive we might say that
+
+1112
+00:41:06,820 --> 00:41:12,100
+reinforcement deep reinforcement
+
+1113
+00:41:09,460 --> 00:41:14,050
+learning will be about how to solve upon
+
+1114
+00:41:12,099 --> 00:41:24,489
+dp's and also some things that aren't on
+
+1115
+00:41:14,050 --> 00:41:26,769
+GPS yeah right i'm so let's just give a
+
+1116
+00:41:24,489 --> 00:41:28,329
+few examples of what the observations
+
+1117
+00:41:26,769 --> 00:41:31,719
+and rewards might be in different kinds
+
+1118
+00:41:28,329 --> 00:41:33,940
+of problems so in robotics your
+
+1119
+00:41:31,719 --> 00:41:36,279
+observations might be camera images and
+
+1120
+00:41:33,940 --> 00:41:39,309
+joint angles for the robot actions would
+
+1121
+00:41:36,280 --> 00:41:41,410
+be for example joint torques
+
+1122
+00:41:39,309 --> 00:41:43,090
+and the rewards would depend on the
+
+1123
+00:41:41,409 --> 00:41:45,699
+precise problem you're trying to solve
+
+1124
+00:41:43,090 --> 00:41:47,559
+but it could be to stay balanced or
+
+1125
+00:41:45,699 --> 00:41:49,629
+navigate to some target locations or
+
+1126
+00:41:47,559 --> 00:41:53,170
+something more abstract like serve and
+
+1127
+00:41:49,630 --> 00:41:54,849
+protect humans another motivating
+
+1128
+00:41:53,170 --> 00:41:56,530
+application for reinforcement learning
+
+1129
+00:41:54,849 --> 00:41:58,779
+which has been around for awhile is
+
+1130
+00:41:56,530 --> 00:42:01,180
+various decision-making problems in
+
+1131
+00:41:58,780 --> 00:42:03,220
+business operations so one classic
+
+1132
+00:42:01,179 --> 00:42:06,399
+example is inventory management where
+
+1133
+00:42:03,219 --> 00:42:09,459
+you have observations are your current
+
+1134
+00:42:06,400 --> 00:42:11,559
+inventory levels and actions are how
+
+1135
+00:42:09,460 --> 00:42:14,260
+many of units of each item to purchase
+
+1136
+00:42:11,559 --> 00:42:18,250
+and rewards are your profit
+
+1137
+00:42:14,260 --> 00:42:19,660
+reinforcement learning is also starting
+
+1138
+00:42:18,250 --> 00:42:21,400
+to be used a lot another machine
+
+1139
+00:42:19,659 --> 00:42:23,349
+learning problems that don't look
+
+1140
+00:42:21,400 --> 00:42:24,760
+exactly like decision-making problems
+
+1141
+00:42:23,349 --> 00:42:26,139
+but it turns out that it's natural to
+
+1142
+00:42:24,760 --> 00:42:30,910
+solve them that way
+
+1143
+00:42:26,139 --> 00:42:33,670
+I'm so one example is classification on
+
+1144
+00:42:30,909 --> 00:42:35,920
+with so-called heart attention so in
+
+1145
+00:42:33,670 --> 00:42:37,480
+normal image classification you have an
+
+1146
+00:42:35,920 --> 00:42:39,159
+image and you have to figure out if
+
+1147
+00:42:37,480 --> 00:42:43,900
+there's a cat in that the major dog in
+
+1148
+00:42:39,159 --> 00:42:46,629
+that image and maybe it's so the problem
+
+1149
+00:42:43,900 --> 00:42:48,519
+is what if it's a really big image it
+
+1150
+00:42:46,630 --> 00:42:50,110
+might not make sense to just take the
+
+1151
+00:42:48,519 --> 00:42:52,329
+whole image and pass it into your neural
+
+1152
+00:42:50,110 --> 00:42:53,860
+network on it might make more sense to
+
+1153
+00:42:52,329 --> 00:42:56,500
+solve it the way he would solve it which
+
+1154
+00:42:53,860 --> 00:42:58,030
+is on you see a little thing in the
+
+1155
+00:42:56,500 --> 00:43:00,099
+corner of your eye which might be a cat
+
+1156
+00:42:58,030 --> 00:43:02,410
+or a dog then you put your eye at the
+
+1157
+00:43:00,099 --> 00:43:04,299
+object and look at it in high resolution
+
+1158
+00:43:02,409 --> 00:43:06,879
+and then you classified as a cat or a
+
+1159
+00:43:04,300 --> 00:43:08,590
+dog and so if you want to capture do
+
+1160
+00:43:06,880 --> 00:43:12,340
+this kind of thing with a neural network
+
+1161
+00:43:08,590 --> 00:43:15,250
+on what you might do is you on you might
+
+1162
+00:43:12,340 --> 00:43:17,140
+want some kind of model that decides how
+
+1163
+00:43:15,250 --> 00:43:19,090
+to crop the image so it looks at the
+
+1164
+00:43:17,139 --> 00:43:21,039
+image that take yours out i want to look
+
+1165
+00:43:19,090 --> 00:43:23,829
+at that corner of the image and crop sit
+
+1166
+00:43:21,039 --> 00:43:25,809
+there and then outputs classification
+
+1167
+00:43:23,829 --> 00:43:28,059
+choice now so in that case your
+
+1168
+00:43:25,809 --> 00:43:29,920
+observation would be the current image
+
+1169
+00:43:28,059 --> 00:43:32,860
+window action would be where to look
+
+1170
+00:43:29,920 --> 00:43:36,400
+next and reward would be +1 if you
+
+1171
+00:43:32,860 --> 00:43:38,230
+classified correctly for example this is
+
+1172
+00:43:36,400 --> 00:43:43,210
+also used in a lot of domains other than
+
+1173
+00:43:38,230 --> 00:43:45,639
+image classification on another area is
+
+1174
+00:43:43,210 --> 00:43:47,679
+on where you have to make you have to
+
+1175
+00:43:45,639 --> 00:43:49,809
+output some complex object with your
+
+1176
+00:43:47,679 --> 00:43:52,589
+neural network on instead of just a
+
+1177
+00:43:49,809 --> 00:43:54,150
+classification decision like cat vs dog
+
+1178
+00:43:52,590 --> 00:43:55,740
+so for example in machine translation
+
+1179
+00:43:54,150 --> 00:43:57,869
+where you have to output a whole
+
+1180
+00:43:55,739 --> 00:44:01,739
+sentence translating from one language
+
+1181
+00:43:57,869 --> 00:44:03,210
+to another so in this case your
+
+1182
+00:44:01,739 --> 00:44:04,589
+observations would be words in the
+
+1183
+00:44:03,210 --> 00:44:08,490
+source language that you're translating
+
+1184
+00:44:04,590 --> 00:44:11,250
+from the actions would be to admit words
+
+1185
+00:44:08,489 --> 00:44:14,459
+in the target language and your awards
+
+1186
+00:44:11,250 --> 00:44:16,320
+would be some kind of on metric of how
+
+1187
+00:44:14,460 --> 00:44:20,070
+accurate your translation is how good
+
+1188
+00:44:16,320 --> 00:44:22,800
+your translation is so we're fortunate
+
+1189
+00:44:20,070 --> 00:44:24,600
+enough to have a guest lecture Muhammad
+
+1190
+00:44:22,800 --> 00:44:26,760
+noroozi he's going to talk about his
+
+1191
+00:44:24,599 --> 00:44:30,089
+work on this topic later in the course
+
+1192
+00:44:26,760 --> 00:44:31,830
+using a reinforcement learning ideas to
+
+1193
+00:44:30,090 --> 00:44:34,320
+help with machine translation
+
+1194
+00:44:31,829 --> 00:44:37,139
+ok what is deep reinforcement learning
+
+1195
+00:44:34,320 --> 00:44:39,480
+circle already gave some nice on
+
+1196
+00:44:37,139 --> 00:44:42,539
+definitions of it in terms of in terms
+
+1197
+00:44:39,480 --> 00:44:44,309
+of representation learning on you can
+
+1198
+00:44:42,539 --> 00:44:46,019
+usually take the word deep and put it in
+
+1199
+00:44:44,309 --> 00:44:48,029
+front of any machine learning concept
+
+1200
+00:44:46,019 --> 00:44:49,679
+and it means that at least one function
+
+1201
+00:44:48,030 --> 00:44:52,680
+is going to be approximated by a neural
+
+1202
+00:44:49,679 --> 00:44:54,480
+network so the nice thing about
+
+1203
+00:44:52,679 --> 00:44:56,849
+reinforcement learning is you actually
+
+1204
+00:44:54,480 --> 00:44:58,740
+have a lot of creativity in where you're
+
+1205
+00:44:56,849 --> 00:45:00,000
+going to put your neural network as
+
+1206
+00:44:58,739 --> 00:45:01,739
+opposed to some other fields where
+
+1207
+00:45:00,000 --> 00:45:06,599
+there's basically only one sensible
+
+1208
+00:45:01,739 --> 00:45:08,699
+choice so so three they're basically at
+
+1209
+00:45:06,599 --> 00:45:12,329
+least three choices of where to put it
+
+1210
+00:45:08,699 --> 00:45:14,339
+well 11 place is you could try to
+
+1211
+00:45:12,329 --> 00:45:16,110
+approximate a policy which is just a
+
+1212
+00:45:14,340 --> 00:45:18,360
+function that outputs actions as a
+
+1213
+00:45:16,110 --> 00:45:20,220
+function of your history of what the
+
+1214
+00:45:18,360 --> 00:45:22,500
+agent is seen so far
+
+1215
+00:45:20,219 --> 00:45:24,629
+another choice is to approximate value
+
+1216
+00:45:22,500 --> 00:45:26,579
+function which is a function that tells
+
+1217
+00:45:24,630 --> 00:45:28,349
+you how good a different given state is
+
+1218
+00:45:26,579 --> 00:45:31,079
+which states are good and which states
+
+1219
+00:45:28,349 --> 00:45:34,679
+are bad or measures the goodness of it a
+
+1220
+00:45:31,079 --> 00:45:36,599
+state action pair on or lastly you could
+
+1221
+00:45:34,679 --> 00:45:40,799
+try to approximate a dynamics model
+
+1222
+00:45:36,599 --> 00:45:43,110
+which is trying to approximate how the
+
+1223
+00:45:40,800 --> 00:45:45,240
+the system is going to evolve over time
+
+1224
+00:45:43,110 --> 00:45:47,220
+so for example robotics you're trying to
+
+1225
+00:45:45,239 --> 00:45:49,559
+approximate physics to figure out where
+
+1226
+00:45:47,219 --> 00:45:52,199
+is the robot going to be one second
+
+1227
+00:45:49,559 --> 00:45:55,559
+later
+
+1228
+00:45:52,199 --> 00:45:57,659
+so one natural question is how does
+
+1229
+00:45:55,559 --> 00:46:00,029
+reinforcement learning relate to other
+
+1230
+00:45:57,659 --> 00:46:01,980
+machine learning problems so in
+
+1231
+00:46:00,030 --> 00:46:04,200
+supervised learning you're out putting a
+
+1232
+00:46:01,980 --> 00:46:04,780
+label on to classify something as a
+
+1233
+00:46:04,199 --> 00:46:07,299
+quatre
+
+1234
+00:46:04,780 --> 00:46:09,820
+isn't that also does a decision so isn't
+
+1235
+00:46:07,300 --> 00:46:13,000
+that also decision-making so the key
+
+1236
+00:46:09,820 --> 00:46:14,769
+thing so in the next few slides I'm
+
+1237
+00:46:13,000 --> 00:46:16,210
+going to talk about what's the
+
+1238
+00:46:14,769 --> 00:46:18,880
+difference between reinforcement
+
+1239
+00:46:16,210 --> 00:46:22,690
+learning and supervised learning so it
+
+1240
+00:46:18,880 --> 00:46:24,190
+and don't like dwell too much on the the
+
+1241
+00:46:22,690 --> 00:46:27,369
+notation i'm using I'm just trying to
+
+1242
+00:46:24,190 --> 00:46:30,070
+make them use the same variable names so
+
+1243
+00:46:27,369 --> 00:46:32,109
+so in supervised learning on the
+
+1244
+00:46:30,070 --> 00:46:34,360
+environment samples and input/output
+
+1245
+00:46:32,110 --> 00:46:37,240
+pair access your input why's your output
+
+1246
+00:46:34,360 --> 00:46:39,910
+from some distribution on the agent
+
+1247
+00:46:37,239 --> 00:46:42,129
+makes a prediction for what the what why
+
+1248
+00:46:39,909 --> 00:46:44,349
+should be what the output should be and
+
+1249
+00:46:42,130 --> 00:46:48,070
+then receives a loss telling the agent
+
+1250
+00:46:44,349 --> 00:46:51,099
+if it's right or wrong on and/or and and
+
+1251
+00:46:48,070 --> 00:46:53,680
+also on the agent gets to see what the
+
+1252
+00:46:51,099 --> 00:46:56,799
+correct answer was so or the agent gets
+
+1253
+00:46:53,679 --> 00:46:58,659
+to see what the loss function was so so
+
+1254
+00:46:56,800 --> 00:47:00,550
+to summarize the environment ask the
+
+1255
+00:46:58,659 --> 00:47:01,389
+agent a question and then tells it the
+
+1256
+00:47:00,550 --> 00:47:02,980
+right answer
+
+1257
+00:47:01,389 --> 00:47:07,119
+so the agent can try to adjust its
+
+1258
+00:47:02,980 --> 00:47:08,650
+answering process to be more correct so
+
+1259
+00:47:07,119 --> 00:47:10,659
+there's an intermediate problem setting
+
+1260
+00:47:08,650 --> 00:47:11,740
+which is halfway between supervised
+
+1261
+00:47:10,659 --> 00:47:15,009
+learning and reinforcement learning
+
+1262
+00:47:11,739 --> 00:47:17,259
+called the contextual bandit setting so
+
+1263
+00:47:15,010 --> 00:47:20,560
+in the contextual bandit setting the
+
+1264
+00:47:17,260 --> 00:47:22,930
+environment samples and input the agent
+
+1265
+00:47:20,559 --> 00:47:24,579
+takes an action based on that input and
+
+1266
+00:47:22,929 --> 00:47:27,039
+then the agent received some kind of
+
+1267
+00:47:24,579 --> 00:47:29,529
+cost which is noisy and then it comes
+
+1268
+00:47:27,039 --> 00:47:33,309
+from some distribution depending on
+
+1269
+00:47:29,530 --> 00:47:36,670
+depending on the input and the agents
+
+1270
+00:47:33,309 --> 00:47:39,099
+action and the agent doesn't know what
+
+1271
+00:47:36,670 --> 00:47:43,389
+this cost function is so the only way it
+
+1272
+00:47:39,099 --> 00:47:47,559
+can improve its process is to interact
+
+1273
+00:47:43,389 --> 00:47:49,629
+with the environment a lot so so this
+
+1274
+00:47:47,559 --> 00:47:51,429
+setting is the environment ask the agent
+
+1275
+00:47:49,630 --> 00:47:53,440
+a question and it gives the agent and
+
+1276
+00:47:51,429 --> 00:47:54,369
+noisy score on its answer but it doesn't
+
+1277
+00:47:53,440 --> 00:47:56,440
+tell the agent what it should have
+
+1278
+00:47:54,369 --> 00:47:58,239
+output so the agent might have to search
+
+1279
+00:47:56,440 --> 00:48:00,789
+over lots of different possible outputs
+
+1280
+00:47:58,239 --> 00:48:02,649
+and you the agent has to explore
+
+1281
+00:48:00,789 --> 00:48:05,110
+different possible outputs so you get
+
+1282
+00:48:02,650 --> 00:48:09,190
+the exploration problem captured here
+
+1283
+00:48:05,110 --> 00:48:12,099
+and this is actually this has a lot of
+
+1284
+00:48:09,190 --> 00:48:15,630
+lucrative applications like how to
+
+1285
+00:48:12,099 --> 00:48:18,029
+provide people with recommendations like
+
+1286
+00:48:15,630 --> 00:48:20,369
+you go to amazon and amazon knows your
+
+1287
+00:48:18,030 --> 00:48:22,650
+shopping history so it can decide to
+
+1288
+00:48:20,369 --> 00:48:24,239
+propose some item that you might want to
+
+1289
+00:48:22,650 --> 00:48:27,389
+buy you'll see you might be interested
+
+1290
+00:48:24,239 --> 00:48:29,219
+in so-and-so I'm so here the contextual
+
+1291
+00:48:27,389 --> 00:48:31,289
+banded problem would be they have your
+
+1292
+00:48:29,219 --> 00:48:32,849
+shopping history that's the input and
+
+1293
+00:48:31,289 --> 00:48:36,210
+then they can their action is to choose
+
+1294
+00:48:32,849 --> 00:48:38,279
+like what on to propose for you what to
+
+1295
+00:48:36,210 --> 00:48:42,329
+advertise to you and then the reward is
+
+1296
+00:48:38,280 --> 00:48:43,560
+like whether or not you buy it but they
+
+1297
+00:48:42,329 --> 00:48:45,989
+don't know what you really want to buy
+
+1298
+00:48:43,559 --> 00:48:47,369
+that's hidden to to the website so
+
+1299
+00:48:45,989 --> 00:48:49,679
+that's something that has to be
+
+1300
+00:48:47,369 --> 00:48:52,799
+discovered through explain exploration
+
+1301
+00:48:49,679 --> 00:48:55,169
+with a lot of different people and
+
+1302
+00:48:52,800 --> 00:48:57,539
+finally reinforcement learning is a very
+
+1303
+00:48:55,170 --> 00:49:00,210
+similar setup but now you have a
+
+1304
+00:48:57,539 --> 00:49:04,590
+stateful world so now it's not just that
+
+1305
+00:49:00,210 --> 00:49:07,380
+the now the input on that the agent gets
+
+1306
+00:49:04,590 --> 00:49:09,990
+is not just randomly sampled
+
+1307
+00:49:07,380 --> 00:49:11,940
+independently each time step now it
+
+1308
+00:49:09,989 --> 00:49:15,599
+depends on the previous inputs and the
+
+1309
+00:49:11,940 --> 00:49:17,099
+agents previous actions on so so the the
+
+1310
+00:49:15,599 --> 00:49:18,869
+the environment has some state and the
+
+1311
+00:49:17,099 --> 00:49:21,299
+input depends on your previous actions
+
+1312
+00:49:18,869 --> 00:49:26,130
+and that makes the problem quite a bit
+
+1313
+00:49:21,300 --> 00:49:27,870
+harder because now now you and if you
+
+1314
+00:49:26,130 --> 00:49:29,760
+change your what the agent is doing you
+
+1315
+00:49:27,869 --> 00:49:31,619
+start receiving different data so it's
+
+1316
+00:49:29,760 --> 00:49:33,270
+like the input data to your agent change
+
+1317
+00:49:31,619 --> 00:49:34,739
+of the function of what the agent is
+
+1318
+00:49:33,269 --> 00:49:37,679
+doing and that makes it hard to come up
+
+1319
+00:49:34,739 --> 00:49:40,679
+with a stable algorithm i'm so so here
+
+1320
+00:49:37,679 --> 00:49:43,109
+on the agent takes an action and then it
+
+1321
+00:49:40,679 --> 00:49:44,759
+receives a cost function depending on on
+
+1322
+00:49:43,110 --> 00:49:48,599
+the current state of the world and the
+
+1323
+00:49:44,760 --> 00:49:52,200
+action took on so so in this case this
+
+1324
+00:49:48,599 --> 00:49:55,500
+so just to summarize the on these three
+
+1325
+00:49:52,199 --> 00:49:56,879
+settings on there are really two big
+
+1326
+00:49:55,500 --> 00:49:59,880
+differences between supervised learning
+
+1327
+00:49:56,880 --> 00:50:01,619
+and reinforcement learning the first one
+
+1328
+00:49:59,880 --> 00:50:04,230
+is you don't have access to the function
+
+1329
+00:50:01,619 --> 00:50:06,449
+to the reward function or the function
+
+1330
+00:50:04,230 --> 00:50:08,309
+of trying to optimize you have to query
+
+1331
+00:50:06,449 --> 00:50:10,289
+the system through interaction so that's
+
+1332
+00:50:08,309 --> 00:50:12,599
+like this is the contextual bandit
+
+1333
+00:50:10,289 --> 00:50:14,639
+setting also has this property that you
+
+1334
+00:50:12,599 --> 00:50:17,400
+don't you don't have analytic access to
+
+1335
+00:50:14,639 --> 00:50:20,429
+the loss function on you just have to
+
+1336
+00:50:17,400 --> 00:50:22,470
+interact with the system and and use
+
+1337
+00:50:20,429 --> 00:50:24,419
+that for learning and the other
+
+1338
+00:50:22,469 --> 00:50:25,949
+difference which makes reinforcement
+
+1339
+00:50:24,420 --> 00:50:28,500
+learning different from contextual band
+
+1340
+00:50:25,949 --> 00:50:29,338
+the contextual band setting is you have
+
+1341
+00:50:28,500 --> 00:50:33,869
+a state forward
+
+1342
+00:50:29,338 --> 00:50:39,690
+where the its history dependent
+
+1343
+00:50:33,869 --> 00:50:42,749
+ok so so deep reinforcement learning is
+
+1344
+00:50:39,690 --> 00:50:44,608
+a pretty hot topic right now on and it
+
+1345
+00:50:42,748 --> 00:50:46,649
+hasn't and this is the first time
+
+1346
+00:50:44,608 --> 00:50:49,828
+Berkeley has a full course offering on
+
+1347
+00:50:46,650 --> 00:50:51,960
+as far as i know but actually some of
+
+1348
+00:50:49,829 --> 00:50:53,489
+the the idea of combining green for
+
+1349
+00:50:51,960 --> 00:50:54,989
+combining neural networks with
+
+1350
+00:50:53,489 --> 00:50:57,389
+controlling with reinforcement learning
+
+1351
+00:50:54,989 --> 00:51:00,659
+is actually had been around for a while
+
+1352
+00:50:57,389 --> 00:51:05,728
+I'm so it's not it's useful to be aware
+
+1353
+00:51:00,659 --> 00:51:07,858
+of the history so we can both so we can
+
+1354
+00:51:05,728 --> 00:51:10,379
+look back and say what it
+
+1355
+00:51:07,858 --> 00:51:11,728
+well first of all where they missing and
+
+1356
+00:51:10,380 --> 00:51:14,789
+what do they get riding what were they
+
+1357
+00:51:11,728 --> 00:51:15,568
+missing and also just to be give credit
+
+1358
+00:51:14,789 --> 00:51:18,960
+where it's due
+
+1359
+00:51:15,568 --> 00:51:21,449
+and so the I mean using neural networks
+
+1360
+00:51:18,960 --> 00:51:25,048
+for control has been around since at
+
+1361
+00:51:21,449 --> 00:51:26,189
+least the nineties and people so this
+
+1362
+00:51:25,048 --> 00:51:27,659
+has been using the control theory
+
+1363
+00:51:26,190 --> 00:51:31,889
+community a lot there's even a book on
+
+1364
+00:51:27,659 --> 00:51:34,739
+neural networks for control on so this
+
+1365
+00:51:31,889 --> 00:51:35,969
+on also combining reinforcement like
+
+1366
+00:51:34,739 --> 00:51:37,829
+combining neural networks with
+
+1367
+00:51:35,969 --> 00:51:40,920
+reinforcement learning algorithms like
+
+1368
+00:51:37,829 --> 00:51:42,630
+you learning has also been around for
+
+1369
+00:51:40,920 --> 00:51:45,838
+awhile i mean you can see it in some of
+
+1370
+00:51:42,630 --> 00:51:47,338
+the classic and in some of the older
+
+1371
+00:51:45,838 --> 00:51:48,869
+papers and reinforcement learning that
+
+1372
+00:51:47,338 --> 00:51:51,150
+the people working on that we're also
+
+1373
+00:51:48,869 --> 00:51:53,099
+interested in neural networks but
+
+1374
+00:51:51,150 --> 00:51:56,430
+actually i particularly like this
+
+1375
+00:51:53,099 --> 00:52:02,068
+reading this basis which is launched in
+
+1376
+00:51:56,429 --> 00:52:04,679
+linz thesis from 1991 1993 and I'd say
+
+1377
+00:52:02,068 --> 00:52:07,978
+this is the first deep RL thesis for
+
+1378
+00:52:04,679 --> 00:52:10,798
+written and the funny thing about it is
+
+1379
+00:52:07,978 --> 00:52:12,538
+when you read the abstract to it you
+
+1380
+00:52:10,798 --> 00:52:15,268
+think on that could have been written
+
+1381
+00:52:12,539 --> 00:52:17,190
+today and it would have seen seems like
+
+1382
+00:52:15,268 --> 00:52:18,598
+modern and this is this is why people
+
+1383
+00:52:17,190 --> 00:52:21,179
+are the same question people are
+
+1384
+00:52:18,599 --> 00:52:23,309
+thinking about now so it's got like he's
+
+1385
+00:52:21,179 --> 00:52:24,838
+talking about combining reinforcement
+
+1386
+00:52:23,309 --> 00:52:27,809
+learning algorithms with neural networks
+
+1387
+00:52:24,838 --> 00:52:30,088
+to get better generalization experience
+
+1388
+00:52:27,809 --> 00:52:32,670
+replay that's that's an idea that's
+
+1389
+00:52:30,088 --> 00:52:34,889
+become prominent again recently on
+
+1390
+00:52:32,670 --> 00:52:37,858
+learning from demonstrations to speed up
+
+1391
+00:52:34,889 --> 00:52:39,989
+the process and having some kind of
+
+1392
+00:52:37,858 --> 00:52:41,400
+hierarchy where you have like high-level
+
+1393
+00:52:39,989 --> 00:52:42,050
+actions as opposed to just a low-level
+
+1394
+00:52:41,400 --> 00:52:46,190
+action
+
+1395
+00:52:42,050 --> 00:52:49,970
+on and so on so it so that it just makes
+
+1396
+00:52:46,190 --> 00:52:52,880
+you think a little bit on so i would say
+
+1397
+00:52:49,969 --> 00:52:55,039
+that the first the first really
+
+1398
+00:52:52,880 --> 00:52:56,990
+impressive result obtained using
+
+1399
+00:52:55,039 --> 00:53:01,969
+reinforcement learning and neural
+
+1400
+00:52:56,989 --> 00:53:04,309
+networks at least for game playing is TV
+
+1401
+00:53:01,969 --> 00:53:08,959
+gammon so this was back in the early
+
+1402
+00:53:04,309 --> 00:53:11,119
+nineties Jerry to sorrow use use the
+
+1403
+00:53:08,960 --> 00:53:14,480
+neural network to play the game of
+
+1404
+00:53:11,119 --> 00:53:16,460
+backgammon on where this is a board game
+
+1405
+00:53:14,480 --> 00:53:20,840
+that's where you roll dice and you move
+
+1406
+00:53:16,460 --> 00:53:25,429
+these pieces around on and the algorithm
+
+1407
+00:53:20,840 --> 00:53:27,350
+used ended up learning the using a MLP a
+
+1408
+00:53:25,429 --> 00:53:29,960
+multi-layer perceptron to approximate
+
+1409
+00:53:27,349 --> 00:53:31,549
+the value function for backhand and he
+
+1410
+00:53:29,960 --> 00:53:33,139
+learned this by having the neural
+
+1411
+00:53:31,550 --> 00:53:35,720
+network play against itself lots of
+
+1412
+00:53:33,139 --> 00:53:38,239
+times and it ended up getting up to the
+
+1413
+00:53:35,719 --> 00:53:40,609
+level of experts using is pretty simple
+
+1414
+00:53:38,239 --> 00:53:43,339
+our algorithm and eventually he was able
+
+1415
+00:53:40,610 --> 00:53:45,230
+to be on the top human experts by adding
+
+1416
+00:53:43,340 --> 00:53:48,050
+a little more hands engineering so this
+
+1417
+00:53:45,230 --> 00:53:53,240
+was a really big breakthrough on the
+
+1418
+00:53:48,050 --> 00:53:58,730
+game's friend and there's been also a
+
+1419
+00:53:53,239 --> 00:54:01,309
+lot of recent work with games using it
+
+1420
+00:53:58,730 --> 00:54:05,000
+using deep learning and reinforcement
+
+1421
+00:54:01,309 --> 00:54:06,650
+learning so Atari has become a big has
+
+1422
+00:54:05,000 --> 00:54:08,480
+become a test bed and a really popular
+
+1423
+00:54:06,650 --> 00:54:10,610
+test bed and that got people really
+
+1424
+00:54:08,480 --> 00:54:14,599
+excited about the field a few years ago
+
+1425
+00:54:10,610 --> 00:54:16,640
+when the results came out from flat knee
+
+1426
+00:54:14,599 --> 00:54:19,279
+and collaborators showing that you could
+
+1427
+00:54:16,639 --> 00:54:21,589
+learn to play a lot of Atari games with
+
+1428
+00:54:19,280 --> 00:54:23,750
+this algorithm called q-learning plus
+
+1429
+00:54:21,590 --> 00:54:25,880
+their modifications and more recently
+
+1430
+00:54:23,750 --> 00:54:28,369
+people have applied different kinds of
+
+1431
+00:54:25,880 --> 00:54:30,860
+algorithms policy gradient algorithms
+
+1432
+00:54:28,369 --> 00:54:33,049
+that's another kind of our algorithm and
+
+1433
+00:54:30,860 --> 00:54:35,420
+dagger which is sort of imitation
+
+1434
+00:54:33,050 --> 00:54:37,550
+learning algorithm on you guys are going
+
+1435
+00:54:35,420 --> 00:54:40,970
+to implement all of these in the class
+
+1436
+00:54:37,550 --> 00:54:44,810
+and robotic there's also been some
+
+1437
+00:54:40,969 --> 00:54:47,809
+success in success in the robotics
+
+1438
+00:54:44,809 --> 00:54:50,779
+domain so here might 20 teachers in an
+
+1439
+00:54:47,809 --> 00:54:54,469
+awesome picture along with our advisor
+
+1440
+00:54:50,780 --> 00:54:55,480
+feeder appeal doing a using guided
+
+1441
+00:54:54,469 --> 00:54:58,989
+policy search
+
+1442
+00:54:55,480 --> 00:55:00,400
+that's that's an algorithm that will not
+
+1443
+00:54:58,989 --> 00:55:02,469
+learn about later in the class
+
+1444
+00:55:00,400 --> 00:55:05,200
+I'm to learn the robotic manipulation
+
+1445
+00:55:02,469 --> 00:55:08,559
+behaviour really fast and then there's
+
+1446
+00:55:05,199 --> 00:55:11,618
+also been some work on learning robotic
+
+1447
+00:55:08,559 --> 00:55:15,880
+locomotion controllers using policy
+
+1448
+00:55:11,619 --> 00:55:18,850
+gradient algorithms and maybe the most
+
+1449
+00:55:15,880 --> 00:55:24,099
+the recent result that got the most
+
+1450
+00:55:18,849 --> 00:55:28,089
+press is alpha go back last year where
+
+1451
+00:55:24,099 --> 00:55:31,358
+this where this team from deepmind was
+
+1452
+00:55:28,090 --> 00:55:33,850
+able to get a program to beat on the
+
+1453
+00:55:31,358 --> 00:55:35,440
+world champion the go world champion or
+
+1454
+00:55:33,849 --> 00:55:40,868
+one of the top players in the world that
+
+1455
+00:55:35,440 --> 00:55:42,670
+go on and this this approach actually
+
+1456
+00:55:40,869 --> 00:55:45,010
+combines a lot of different ideas
+
+1457
+00:55:42,670 --> 00:55:46,750
+it wasn't just like one algorithm one
+
+1458
+00:55:45,010 --> 00:55:48,430
+simple algorithm that was applied at
+
+1459
+00:55:46,750 --> 00:55:50,829
+large scale it was there is sort of a
+
+1460
+00:55:48,429 --> 00:55:52,118
+grab bag of different tools on with many
+
+1461
+00:55:50,829 --> 00:55:54,309
+of which will learn about in the class
+
+1462
+00:55:52,119 --> 00:55:58,119
+so they use supervised learning where
+
+1463
+00:55:54,309 --> 00:55:59,980
+you train from tons of expert games on
+
+1464
+00:55:58,119 --> 00:56:00,789
+to try to predict what the experts are
+
+1465
+00:55:59,980 --> 00:56:02,679
+going to do
+
+1466
+00:56:00,789 --> 00:56:05,559
+that's just learning a classifier that
+
+1467
+00:56:02,679 --> 00:56:07,750
+maps from the board state to the 361
+
+1468
+00:56:05,559 --> 00:56:11,289
+outputs of which movie are going to take
+
+1469
+00:56:07,750 --> 00:56:13,059
+super so that's the supervised learning
+
+1470
+00:56:11,289 --> 00:56:14,858
+part policy gradients that's another
+
+1471
+00:56:13,059 --> 00:56:17,500
+kind of our algorithm we're going to
+
+1472
+00:56:14,858 --> 00:56:20,108
+learn about value functions and also
+
+1473
+00:56:17,500 --> 00:56:22,900
+Monte Carlo tree search which is that's
+
+1474
+00:56:20,108 --> 00:56:26,108
+a as well more classic technique that
+
+1475
+00:56:22,900 --> 00:56:27,130
+goes and searches all the possible moves
+
+1476
+00:56:26,108 --> 00:56:41,969
+from either player
+
+1477
+00:56:27,130 --> 00:57:23,559
+alright that's all for my slides Chelsea
+
+1478
+00:56:41,969 --> 00:57:25,298
+here's the thing
+
+1479
+00:57:23,559 --> 00:57:27,400
+ok so John talked a lot about
+
+1480
+00:57:25,298 --> 00:57:29,469
+reinforcement learning and a lot of the
+
+1481
+00:57:27,400 --> 00:57:31,719
+like the powerful framework of learning
+
+1482
+00:57:29,469 --> 00:57:34,630
+from reward functions and learning from
+
+1483
+00:57:31,719 --> 00:57:36,608
+learning sequence and what I'm talking
+
+1484
+00:57:34,630 --> 00:57:39,670
+about is how we can go beyond that
+
+1485
+00:57:36,608 --> 00:57:41,798
+because we work functions i guess we'll
+
+1486
+00:57:39,670 --> 00:57:45,309
+start with saying here's an example of
+
+1487
+00:57:41,798 --> 00:57:48,038
+an Atari planning agent that John
+
+1488
+00:57:45,309 --> 00:57:50,140
+mentioned earlier where the agent has
+
+1489
+00:57:48,039 --> 00:57:53,410
+learned how to play the game of breakout
+
+1490
+00:57:50,139 --> 00:57:55,748
+and the way that learns this game is by
+
+1491
+00:57:53,409 --> 00:57:58,659
+looking at the score where the score is
+
+1492
+00:57:55,748 --> 00:58:02,708
+the reward function but many real-life
+
+1493
+00:57:58,659 --> 00:58:05,170
+scenarios for example here it's unclear
+
+1494
+00:58:02,708 --> 00:58:07,958
+what the reward function would be so in
+
+1495
+00:58:05,170 --> 00:58:10,150
+Atari every time you hit a block you get
+
+1496
+00:58:07,958 --> 00:58:12,368
+some some feedback saying you're doing
+
+1497
+00:58:10,150 --> 00:58:14,349
+all the talking and you should improve
+
+1498
+00:58:12,369 --> 00:58:17,079
+and continue to do tasks that will give
+
+1499
+00:58:14,349 --> 00:58:18,939
+you that those forwards but in this
+
+1500
+00:58:17,079 --> 00:58:21,999
+scenario you don't really have example
+
+1501
+00:58:18,938 --> 00:58:25,358
+of you have this sort of detail reward
+
+1502
+00:58:21,998 --> 00:58:26,889
+feedback of the agent basically getting
+
+1503
+00:58:25,358 --> 00:58:29,078
+feedback at this learning how to the top
+
+1504
+00:58:26,889 --> 00:58:31,298
+it just pours the cup of water and then
+
+1505
+00:58:29,079 --> 00:58:34,119
+maybe it has some in a sense of internal
+
+1506
+00:58:31,298 --> 00:58:37,389
+reward once the child finally ended up
+
+1507
+00:58:34,119 --> 00:58:39,880
+drinking the water so sorry what is a
+
+1508
+00:58:37,389 --> 00:58:41,650
+little work function and in general in
+
+1509
+00:58:39,880 --> 00:58:44,469
+the real world humans don't get a score
+
+1510
+00:58:41,650 --> 00:58:45,910
+and so it's clear that plane
+
+1511
+00:58:44,469 --> 00:58:49,568
+reinforcement learning from rewards
+
+1512
+00:58:45,909 --> 00:58:53,228
+isn't the answer for a general algorithm
+
+1513
+00:58:49,568 --> 00:58:55,869
+for intelligence so what else can we do
+
+1514
+00:58:53,228 --> 00:58:57,218
+so as as John mentioned there's a lot of
+
+1515
+00:58:55,869 --> 00:59:01,749
+successes and reinforcement learning
+
+1516
+00:58:57,219 --> 00:59:05,170
+that including backgammon Atari alpha go
+
+1517
+00:59:01,748 --> 00:59:07,088
+as well as locomotion and one theme that
+
+1518
+00:59:05,170 --> 00:59:09,789
+you might notice in all of these tasks
+
+1519
+00:59:07,088 --> 00:59:11,469
+is that there is a very clear notion of
+
+1520
+00:59:09,789 --> 00:59:13,449
+what the reward function might be like
+
+1521
+00:59:11,469 --> 00:59:16,630
+the score of the game whether or not the
+
+1522
+00:59:13,449 --> 00:59:19,358
+game was one at the end or forward
+
+1523
+00:59:16,630 --> 00:59:21,130
+progress in locomotion but many
+
+1524
+00:59:19,358 --> 00:59:22,719
+real-world amends the word function is
+
+1525
+00:59:21,130 --> 00:59:25,119
+actually gonna be quite difficult to
+
+1526
+00:59:22,719 --> 00:59:27,159
+specify for example in this task before
+
+1527
+00:59:25,119 --> 00:59:28,209
+the reward function if you want to
+
+1528
+00:59:27,159 --> 00:59:30,159
+formulate this is a reinforcement
+
+1529
+00:59:28,208 --> 00:59:32,978
+learning problem what you might have to
+
+1530
+00:59:30,159 --> 00:59:34,049
+do is then design some detector that
+
+1531
+00:59:32,978 --> 00:59:36,299
+takes in and in
+
+1532
+00:59:34,050 --> 00:59:39,990
+the image and tries to tell how much
+
+1533
+00:59:36,300 --> 00:59:41,789
+water is in the cup and then given that
+
+1534
+00:59:39,989 --> 00:59:45,029
+sector than determines the score based
+
+1535
+00:59:41,789 --> 00:59:46,380
+on how how much water was in the copy
+
+1536
+00:59:45,030 --> 00:59:47,730
+versus how much water isn't in the
+
+1537
+00:59:46,380 --> 00:59:51,900
+cockpit or may have spilled onto the
+
+1538
+00:59:47,730 --> 00:59:52,829
+floor and engineering that sort of work
+
+1539
+00:59:51,900 --> 00:59:54,269
+function kind of defeats the whole
+
+1540
+00:59:52,829 --> 00:59:57,719
+purpose of learning
+
+1541
+00:59:54,269 --> 00:59:59,880
+I and god this isn't just true robotic
+
+1542
+00:59:57,719 --> 01:00:01,769
+manipulation might all end and learning
+
+1543
+00:59:59,880 --> 01:00:03,750
+to pour water and a cop is also true in
+
+1544
+01:00:01,769 --> 01:00:06,150
+many other scenarios like autonomous
+
+1545
+01:00:03,750 --> 01:00:08,280
+driving dialogue systems virtual
+
+1546
+01:00:06,150 --> 01:00:10,740
+assistants and others as well whether
+
+1547
+01:00:08,280 --> 01:00:12,000
+you have this very clear-cut reward
+
+1548
+01:00:10,739 --> 01:00:14,009
+function you may have some reward
+
+1549
+01:00:12,000 --> 01:00:16,440
+function like at the end of your task
+
+1550
+01:00:14,010 --> 01:00:18,390
+it's clear that I you succeeded vs you
+
+1551
+01:00:16,440 --> 01:00:19,710
+didn't succeed but you clearly need much
+
+1552
+01:00:18,389 --> 01:00:21,779
+more than that in order to be able to
+
+1553
+01:00:19,710 --> 01:00:25,860
+learn how to successfully perform what
+
+1554
+01:00:21,780 --> 01:00:27,930
+you want to perform so what other forms
+
+1555
+01:00:25,860 --> 01:00:31,920
+of supervision or information can we
+
+1556
+01:00:27,929 --> 01:00:33,419
+learn from so one that both Sergei and
+
+1557
+01:00:31,920 --> 01:00:36,300
+John touched on is you can learn from
+
+1558
+01:00:33,420 --> 01:00:38,190
+demonstrate behavior for example 3
+
+1559
+01:00:36,300 --> 01:00:40,890
+invitation or inferring the attempt
+
+1560
+01:00:38,190 --> 01:00:43,679
+intention of the desired behavior to try
+
+1561
+01:00:40,889 --> 01:00:48,690
+and accomplish that behavior
+
+1562
+01:00:43,679 --> 01:00:51,299
+I'm another form of information is self
+
+1563
+01:00:48,690 --> 01:00:52,619
+supervision or production so as you're
+
+1564
+01:00:51,300 --> 01:00:54,810
+acting in the world you're constantly
+
+1565
+01:00:52,619 --> 01:00:57,659
+getting feedback on what's happening at
+
+1566
+01:00:54,809 --> 01:00:59,610
+the consequence of your actions and this
+
+1567
+01:00:57,659 --> 01:01:01,409
+in itself can be a form of supervision
+
+1568
+01:00:59,610 --> 01:01:02,880
+because you can predict traffic what's
+
+1569
+01:01:01,409 --> 01:01:06,960
+going to happen if you take different
+
+1570
+01:01:02,880 --> 01:01:08,640
+actions and lastly there you can also
+
+1571
+01:01:06,960 --> 01:01:10,860
+combine these sorts of learning
+
+1572
+01:01:08,639 --> 01:01:12,389
+algorithms with other objectives and an
+
+1573
+01:01:10,860 --> 01:01:13,800
+additional sensing would always trip to
+
+1574
+01:01:12,389 --> 01:01:17,009
+primetime predict things that might be
+
+1575
+01:01:13,800 --> 01:01:20,760
+relevant to the task i'm going to talk
+
+1576
+01:01:17,010 --> 01:01:23,580
+about each of these in sequence and then
+
+1577
+01:01:20,760 --> 01:01:24,840
+won the lecture was the first learning
+
+1578
+01:01:23,579 --> 01:01:27,719
+from demonstration I'm demonstrate
+
+1579
+01:01:24,840 --> 01:01:29,519
+behavior so I it's very clear that this
+
+1580
+01:01:27,719 --> 01:01:31,349
+is something that humans do so starting
+
+1581
+01:01:29,519 --> 01:01:34,230
+at as early as eight months
+
+1582
+01:01:31,349 --> 01:01:36,029
+God we see that humans imitate very
+
+1583
+01:01:34,230 --> 01:01:37,860
+simple actions and very hot and
+
+1584
+01:01:36,030 --> 01:01:38,519
+expressions from adults that this
+
+1585
+01:01:37,860 --> 01:01:42,059
+universe
+
+1586
+01:01:38,519 --> 01:01:44,099
+and 18 months in the infants will
+
+1587
+01:01:42,059 --> 01:01:47,009
+imitate after a delay and will imitate
+
+1588
+01:01:44,099 --> 01:01:49,440
+multi-step actions and after 36 months
+
+1589
+01:01:47,010 --> 01:01:52,290
+infants will imitate multisub actions
+
+1590
+01:01:49,440 --> 01:01:54,840
+after a delay and I for example this
+
+1591
+01:01:52,289 --> 01:01:57,690
+paper they showed that actually 14
+
+1592
+01:01:54,840 --> 01:01:59,910
+months infants after a week of delay so
+
+1593
+01:01:57,690 --> 01:02:01,500
+what the way that this experiment setup
+
+1594
+01:01:59,909 --> 01:02:05,219
+is that they brought the infant's into
+
+1595
+01:02:01,500 --> 01:02:07,409
+any guy showed them an object and showed
+
+1596
+01:02:05,219 --> 01:02:08,699
+a human manipulating objects in a way
+
+1597
+01:02:07,409 --> 01:02:11,519
+that they would have never seen in the
+
+1598
+01:02:08,699 --> 01:02:13,409
+real world and then they brought brought
+
+1599
+01:02:11,519 --> 01:02:15,150
+the infant's back a week later and
+
+1600
+01:02:13,409 --> 01:02:16,619
+presented them with that object and
+
+1601
+01:02:15,150 --> 01:02:18,180
+observe that very frequently the
+
+1602
+01:02:16,619 --> 01:02:21,269
+infant's would imitate it would do what
+
+1603
+01:02:18,179 --> 01:02:22,769
+they saw a week prior with that object
+
+1604
+01:02:21,269 --> 01:02:27,059
+when they were presented with object
+
+1605
+01:02:22,769 --> 01:02:29,099
+this is a very clear signal that it's
+
+1606
+01:02:27,059 --> 01:02:31,619
+like that invitation is a big part of
+
+1607
+01:02:29,099 --> 01:02:34,289
+learning as children are learning even
+
+1608
+01:02:31,619 --> 01:02:36,420
+after a delay and even after that they
+
+1609
+01:02:34,289 --> 01:02:41,219
+haven't been around got that
+
+1610
+01:02:36,420 --> 01:02:43,800
+demonstration in awhile and so I one of
+
+1611
+01:02:41,219 --> 01:02:46,019
+the ways that invitation has been
+
+1612
+01:02:43,800 --> 01:02:50,160
+applied in AI is for autonomous driving
+
+1613
+01:02:46,019 --> 01:02:52,710
+i'm so here is a result of paper from
+
+1614
+01:02:50,159 --> 01:02:55,529
+Nvidia on learning how to basically
+
+1615
+01:02:52,710 --> 01:02:58,139
+follow lane and it was able to this is
+
+1616
+01:02:55,530 --> 01:03:00,870
+the car in the video is the car that is
+
+1617
+01:02:58,139 --> 01:03:03,299
+driving autonomously three invitation
+
+1618
+01:03:00,869 --> 01:03:06,929
+and the top right shows the vehicles
+
+1619
+01:03:03,300 --> 01:03:08,789
+camera and it's through an algorithm
+
+1620
+01:03:06,929 --> 01:03:11,309
+that you learn about in this class I
+
+1621
+01:03:08,789 --> 01:03:13,710
+basically threw straight imitation of
+
+1622
+01:03:11,309 --> 01:03:15,719
+human behavior is able to learn how to
+
+1623
+01:03:13,710 --> 01:03:18,269
+drive in a variety of conditions such as
+
+1624
+01:03:15,719 --> 01:03:23,819
+rain as i showed before as well as in
+
+1625
+01:03:18,269 --> 01:03:25,349
+snow and despite how basic the algorithm
+
+1626
+01:03:23,820 --> 01:03:27,330
+is just trying to imitate the actions
+
+1627
+01:03:25,349 --> 01:03:33,449
+that the human drivers take is quite
+
+1628
+01:03:27,329 --> 01:03:39,029
+impressive what the car is able to do
+
+1629
+01:03:33,449 --> 01:03:47,159
+yeah like a petition
+
+1630
+01:03:39,030 --> 01:03:48,840
+yeah that's a good question so the
+
+1631
+01:03:47,159 --> 01:03:50,369
+question was how old we how do we
+
+1632
+01:03:48,840 --> 01:03:52,140
+evaluate these sorts of systems that are
+
+1633
+01:03:50,369 --> 01:03:55,139
+learning by imitation are learning from
+
+1634
+01:03:52,139 --> 01:03:57,179
+demonstrations in general and I this is
+
+1635
+01:03:55,139 --> 01:04:00,420
+actually this is a challenge in a lot of
+
+1636
+01:03:57,179 --> 01:04:01,679
+problems where you're not learning from
+
+1637
+01:04:00,420 --> 01:04:03,480
+reward because if you're learning from
+
+1638
+01:04:01,679 --> 01:04:05,759
+reward a lot of ways that you the main
+
+1639
+01:04:03,480 --> 01:04:08,579
+way that you evaluated is how i have a
+
+1640
+01:04:05,760 --> 01:04:10,650
+reward can you get in a situation it's
+
+1641
+01:04:08,579 --> 01:04:13,619
+less clear-cut and usually the ways for
+
+1642
+01:04:10,650 --> 01:04:15,660
+evaluating at our task specific or
+
+1643
+01:04:13,619 --> 01:04:18,480
+domain specific for example in this case
+
+1644
+01:04:15,659 --> 01:04:21,269
+you may a common way to evaluate driving
+
+1645
+01:04:18,480 --> 01:04:24,690
+systems and and mobile robotics is the
+
+1646
+01:04:21,269 --> 01:04:27,690
+the operation time without crashing the
+
+1647
+01:04:24,690 --> 01:04:33,269
+number of times the human has to take
+
+1648
+01:04:27,690 --> 01:04:35,400
+over first for a sequence and and also
+
+1649
+01:04:33,269 --> 01:04:36,599
+if it's a non driving task it might be
+
+1650
+01:04:35,400 --> 01:04:38,010
+you might have a specific tasks that you
+
+1651
+01:04:36,599 --> 01:04:39,690
+set up that you're trying to imitate
+
+1652
+01:04:38,010 --> 01:04:43,230
+that you're trying to learn and the
+
+1653
+01:04:39,690 --> 01:04:44,970
+success rate is how you measure it but a
+
+1654
+01:04:43,230 --> 01:04:48,269
+lot of those are pretty manual processes
+
+1655
+01:04:44,969 --> 01:04:50,129
+I'm you can also define a reward
+
+1656
+01:04:48,269 --> 01:04:52,019
+function for this task and set it up as
+
+1657
+01:04:50,130 --> 01:04:54,269
+an MVP of the ad where you have
+
+1658
+01:04:52,019 --> 01:04:56,849
+demonstrated behavior and then evaluate
+
+1659
+01:04:54,269 --> 01:04:58,349
+word but that then you have to set up a
+
+1660
+01:04:56,849 --> 01:04:59,610
+reward function and then why not learn
+
+1661
+01:04:58,349 --> 01:05:00,119
+from the award function in the first
+
+1662
+01:04:59,610 --> 01:05:07,200
+place
+
+1663
+01:05:00,119 --> 01:05:09,119
+okay um and beyond imitation it's it's
+
+1664
+01:05:07,199 --> 01:05:11,429
+also there's evidence that humans are
+
+1665
+01:05:09,119 --> 01:05:14,670
+doing more than just imitating actions
+
+1666
+01:05:11,429 --> 01:05:17,069
+but imitating the result of an action
+
+1667
+01:05:14,670 --> 01:05:21,960
+and specifically inferring attention so
+
+1668
+01:05:17,070 --> 01:05:23,670
+in one paper that was done in 2006 they
+
+1669
+01:05:21,960 --> 01:05:25,380
+showed that I here's a human
+
+1670
+01:05:23,670 --> 01:05:27,090
+demonstrating a top scorer actually
+
+1671
+01:05:25,380 --> 01:05:32,250
+failing to failing to actually complete
+
+1672
+01:05:27,090 --> 01:05:34,320
+the task and the you'll see at the input
+
+1673
+01:05:32,250 --> 01:05:36,119
+that's 18 months old in this case is
+
+1674
+01:05:34,320 --> 01:05:38,430
+able to understand what the human wanted
+
+1675
+01:05:36,119 --> 01:05:41,838
+to do and help the human complete the
+
+1676
+01:05:38,429 --> 01:05:47,028
+task
+
+1677
+01:05:41,838 --> 01:05:49,308
+and there are other scenarios of this as
+
+1678
+01:05:47,028 --> 01:05:52,338
+well so in this example the human
+
+1679
+01:05:49,309 --> 01:05:56,599
+clearly wants to use the pin to hang the
+
+1680
+01:05:52,338 --> 01:05:58,880
+towel and the infant even at 18 months
+
+1681
+01:05:56,599 --> 01:06:01,548
+is able to understand the goal and able
+
+1682
+01:05:58,880 --> 01:06:09,259
+to help the help the human complete the
+
+1683
+01:06:01,548 --> 01:06:10,608
+task and here's one last example of the
+
+1684
+01:06:09,259 --> 01:06:12,559
+human kind of giving a demonstration
+
+1685
+01:06:10,608 --> 01:06:24,288
+actually failing to complete the task
+
+1686
+01:06:12,559 --> 01:06:27,229
+and I the the infinite stables a ok so
+
+1687
+01:06:24,289 --> 01:06:30,170
+how can we help me achieve this sort of
+
+1688
+01:06:27,228 --> 01:06:32,088
+intelligence in our agents I this this
+
+1689
+01:06:30,170 --> 01:06:34,039
+sort of problem setup is generally known
+
+1690
+01:06:32,088 --> 01:06:36,259
+as inverse reinforcement learning where
+
+1691
+01:06:34,039 --> 01:06:38,778
+you have some examples of the behavior
+
+1692
+01:06:36,259 --> 01:06:41,719
+that you want to achieve your goal is to
+
+1693
+01:06:38,778 --> 01:06:43,759
+infer the reward function or in for the
+
+1694
+01:06:41,719 --> 01:06:46,579
+objective the intentions of the
+
+1695
+01:06:43,759 --> 01:06:47,809
+demonstrator and it's actually a bit
+
+1696
+01:06:46,579 --> 01:06:49,460
+different than the example shown in the
+
+1697
+01:06:47,809 --> 01:06:50,778
+video i usually anniversary
+
+1698
+01:06:49,460 --> 01:06:53,929
+reinforcement learning you assume that
+
+1699
+01:06:50,778 --> 01:06:55,608
+you have behavior that is optimal or
+
+1700
+01:06:53,929 --> 01:06:57,498
+Clinton your optimal for the reward
+
+1701
+01:06:55,608 --> 01:07:00,710
+function that you're trying to infer I
+
+1702
+01:06:57,498 --> 01:07:02,058
+and then you're trying to infer that
+
+1703
+01:07:00,710 --> 01:07:02,478
+reward function and eventually learned
+
+1704
+01:07:02,059 --> 01:07:08,019
+behavior
+
+1705
+01:07:02,478 --> 01:07:12,489
+yes
+
+1706
+01:07:08,019 --> 01:07:16,539
+I not necessarily I mean these these
+
+1707
+01:07:12,489 --> 01:07:18,009
+tasks are I mean I don't know the baby
+
+1708
+01:07:16,539 --> 01:07:20,409
+probably haven't seen someone trying to
+
+1709
+01:07:18,010 --> 01:07:21,490
+use a pin to to hang a towel
+
+1710
+01:07:20,409 --> 01:07:24,099
+they may have seen kind of high-level
+
+1711
+01:07:21,489 --> 01:07:27,069
+examples of stocking objects or or
+
+1712
+01:07:24,099 --> 01:07:28,690
+moving things but they not these
+
+1713
+01:07:27,070 --> 01:07:30,160
+particular tasks they probably have some
+
+1714
+01:07:28,690 --> 01:07:35,050
+sort of intuition about what the human
+
+1715
+01:07:30,159 --> 01:07:37,000
+is trying to achieve though women and so
+
+1716
+01:07:35,050 --> 01:07:39,910
+one interesting direction is hot
+
+1717
+01:07:37,000 --> 01:07:41,199
+potentially for on the frontiers maybe
+
+1718
+01:07:39,909 --> 01:07:43,629
+for a class project is trying to learn
+
+1719
+01:07:41,199 --> 01:07:47,469
+from kind of failed demonstrations
+
+1720
+01:07:43,630 --> 01:07:48,970
+rather than expert demonstrations I'm so
+
+1721
+01:07:47,469 --> 01:07:51,129
+one of the things that you learn about
+
+1722
+01:07:48,969 --> 01:07:52,750
+those classes is is the kind of this
+
+1723
+01:07:51,130 --> 01:07:55,030
+informal setup anniversary enforcement
+
+1724
+01:07:52,750 --> 01:07:56,380
+learning and how you can develop an
+
+1725
+01:07:55,030 --> 01:07:57,640
+algorithm for inverse reinforcement
+
+1726
+01:07:56,380 --> 01:08:02,559
+learning that infers the reward function
+
+1727
+01:07:57,639 --> 01:08:05,679
+of demonstrated behavior and so some
+
+1728
+01:08:02,559 --> 01:08:08,949
+results that we did this year this is me
+
+1729
+01:08:05,679 --> 01:08:12,549
+demonstrating task with the PRT robot
+
+1730
+01:08:08,949 --> 01:08:15,609
+says specifically putting a plate into a
+
+1731
+01:08:12,550 --> 01:08:17,048
+dish rack and I through an inverse
+
+1732
+01:08:15,610 --> 01:08:18,970
+reinforcement learning algorithm is able
+
+1733
+01:08:17,048 --> 01:08:21,789
+to in for the reward function of the
+
+1734
+01:08:18,970 --> 01:08:23,710
+task which and and then successfully
+
+1735
+01:08:21,789 --> 01:08:26,680
+learned behavior using that inferred war
+
+1736
+01:08:23,710 --> 01:08:28,779
+function i'm so this case the reward
+
+1737
+01:08:26,680 --> 01:08:30,819
+function that it learned entails both
+
+1738
+01:08:28,779 --> 01:08:32,260
+being gentle with the plate and and
+
+1739
+01:08:30,819 --> 01:08:35,680
+manipulating it slowly as well as
+
+1740
+01:08:32,260 --> 01:08:38,020
+successfully completing the task
+
+1741
+01:08:35,680 --> 01:08:41,079
+I'm and we also have another example of
+
+1742
+01:08:38,020 --> 01:08:43,089
+pouring I like i said before we're and
+
+1743
+01:08:41,079 --> 01:08:46,510
+in this scenario that the cost function
+
+1744
+01:08:43,088 --> 01:08:49,960
+is more complex because you don't you
+
+1745
+01:08:46,510 --> 01:08:51,609
+want to get to the to the cup at the at
+
+1746
+01:08:49,960 --> 01:08:52,449
+the end and start pouring at the correct
+
+1747
+01:08:51,609 --> 01:08:54,069
+location
+
+1748
+01:08:52,449 --> 01:08:58,088
+I'm so here's some of the learned
+
+1749
+01:08:54,069 --> 01:08:59,410
+behavior for this task actually back to
+
+1750
+01:08:58,088 --> 01:09:01,510
+your question on evaluation the way that
+
+1751
+01:08:59,409 --> 01:09:03,579
+we decided to evaluate this is we put
+
+1752
+01:09:01,510 --> 01:09:08,199
+almonds in the cup and we measured how
+
+1753
+01:09:03,579 --> 01:09:11,048
+many almonds ended up in the Gold Cup
+
+1754
+01:09:08,199 --> 01:09:12,760
+ok I'm so the second former supervision
+
+1755
+01:09:11,048 --> 01:09:17,829
+that i mentioned before is prediction
+
+1756
+01:09:12,760 --> 01:09:20,199
+and this is the idea that you can use
+
+1757
+01:09:17,829 --> 01:09:21,260
+basically observations that are the
+
+1758
+01:09:20,199 --> 01:09:23,389
+consequences of your
+
+1759
+01:09:21,260 --> 01:09:25,699
+options I supervision trying to predict
+
+1760
+01:09:23,390 --> 01:09:27,740
+are trying to learn what's called a
+
+1761
+01:09:25,699 --> 01:09:30,380
+model in reinforcement learning which is
+
+1762
+01:09:27,739 --> 01:09:31,880
+the next observation conditioned on your
+
+1763
+01:09:30,380 --> 01:09:34,489
+current observation in your current
+
+1764
+01:09:31,880 --> 01:09:38,750
+action and there's significant evidence
+
+1765
+01:09:34,489 --> 01:09:40,609
+and and a lot of a lot of people in
+
+1766
+01:09:38,750 --> 01:09:42,890
+neuroscience believe that humans are
+
+1767
+01:09:40,609 --> 01:09:45,710
+constantly predicting the consequences
+
+1768
+01:09:42,890 --> 01:09:48,079
+of our actions and it's a central role
+
+1769
+01:09:45,710 --> 01:09:52,340
+in sensory motor control and human
+
+1770
+01:09:48,079 --> 01:09:53,420
+cognition and this resource the studies
+
+1771
+01:09:52,340 --> 01:09:57,199
+actually started in the eighteen
+
+1772
+01:09:53,420 --> 01:09:58,850
+hundreds with holds and they had very it
+
+1773
+01:09:57,199 --> 01:10:00,949
+is better this these hypotheses have
+
+1774
+01:09:58,850 --> 01:10:02,930
+been around for quite a long time and in
+
+1775
+01:10:00,949 --> 01:10:06,229
+neuroscience and their continued
+
+1776
+01:10:02,930 --> 01:10:10,789
+continuing to be studied in the brain
+
+1777
+01:10:06,229 --> 01:10:13,339
+and so is the first thing to say about
+
+1778
+01:10:10,789 --> 01:10:15,560
+this is that if you have a perfect model
+
+1779
+01:10:13,340 --> 01:10:17,630
+of the environment if you can perfectly
+
+1780
+01:10:15,560 --> 01:10:19,880
+predict what's going to happen next
+
+1781
+01:10:17,630 --> 01:10:21,770
+given your current state and what action
+
+1782
+01:10:19,880 --> 01:10:25,279
+you take then you can actually optimize
+
+1783
+01:10:21,770 --> 01:10:26,810
+for very complex behaviors and for
+
+1784
+01:10:25,279 --> 01:10:28,939
+example one thing that you can do that
+
+1785
+01:10:26,810 --> 01:10:30,770
+you can simulate what could happen for
+
+1786
+01:10:28,939 --> 01:10:32,989
+any possible action that you take and
+
+1787
+01:10:30,770 --> 01:10:35,870
+then pick the action that you like the
+
+1788
+01:10:32,989 --> 01:10:37,309
+best art or choose action that i will
+
+1789
+01:10:35,869 --> 01:10:40,670
+achieve the goal that you want to
+
+1790
+01:10:37,310 --> 01:10:41,330
+achieve or you can also optimized to
+
+1791
+01:10:40,670 --> 01:10:42,890
+that model
+
+1792
+01:10:41,329 --> 01:10:45,050
+I'm so here's an example of some
+
+1793
+01:10:42,890 --> 01:10:46,610
+behavior learned with a perfect model of
+
+1794
+01:10:45,050 --> 01:10:49,159
+the environment on this is work by jeet
+
+1795
+01:10:46,609 --> 01:10:51,949
+on at when he was at Georgia Tech and
+
+1796
+01:10:49,159 --> 01:10:56,090
+they learned here is the the agent is
+
+1797
+01:10:51,949 --> 01:10:59,449
+cycling on bumps here is cycling down a
+
+1798
+01:10:56,090 --> 01:11:03,289
+set of stairs this this sort of behavior
+
+1799
+01:10:59,449 --> 01:11:05,179
+is much more complex then is really
+
+1800
+01:11:03,289 --> 01:11:06,170
+currently capable of achieving in the
+
+1801
+01:11:05,180 --> 01:11:08,090
+real world
+
+1802
+01:11:06,170 --> 01:11:11,029
+that's very impressive and the way that
+
+1803
+01:11:08,090 --> 01:11:15,409
+the achieve this behavior is using the
+
+1804
+01:11:11,029 --> 01:11:19,969
+simulation model of of the world
+
+1805
+01:11:15,409 --> 01:11:22,939
+here's another example of a hopping over
+
+1806
+01:11:19,970 --> 01:11:27,739
+curves
+
+1807
+01:11:22,939 --> 01:11:33,559
+and then I think after this there will
+
+1808
+01:11:27,738 --> 01:11:35,959
+be stunts
+
+1809
+01:11:33,560 --> 01:11:38,960
+this isn't the only example of using
+
+1810
+01:11:35,960 --> 01:11:40,909
+models another example is out there is a
+
+1811
+01:11:38,960 --> 01:11:43,909
+lot of examples of learning locomotion
+
+1812
+01:11:40,909 --> 01:11:54,229
+learning learning other skills question
+
+1813
+01:11:43,909 --> 01:11:56,599
+arm in this case I believe it's a
+
+1814
+01:11:54,229 --> 01:12:00,319
+deterministic model arm and so that
+
+1815
+01:11:56,600 --> 01:12:02,180
+certainly helps our but what I wanted my
+
+1816
+01:12:00,319 --> 01:12:04,159
+perfect is that it knows exactly what's
+
+1817
+01:12:02,180 --> 01:12:09,380
+going to happen and that it is in this
+
+1818
+01:12:04,159 --> 01:12:12,380
+case it is deterministic as well um in
+
+1819
+01:12:09,380 --> 01:12:14,869
+this so often times people don't use
+
+1820
+01:12:12,380 --> 01:12:19,219
+differential models they might use
+
+1821
+01:12:14,869 --> 01:12:20,750
+finite differences to infer but there
+
+1822
+01:12:19,219 --> 01:12:32,288
+are actually some cases in research
+
+1823
+01:12:20,750 --> 01:12:37,479
+where people use differentiable models
+
+1824
+01:12:32,288 --> 01:12:40,898
+ok so one approach that people have
+
+1825
+01:12:37,479 --> 01:12:42,338
+taken I in other domains where we so
+
+1826
+01:12:40,899 --> 01:12:43,359
+generally in the real world we don't
+
+1827
+01:12:42,338 --> 01:12:44,498
+have a perfect model we don't know
+
+1828
+01:12:43,359 --> 01:12:45,879
+exactly what's going to happen as well
+
+1829
+01:12:44,498 --> 01:12:47,228
+as there is gonna be some sort of noise
+
+1830
+01:12:45,878 --> 01:12:51,458
+and stochastic seeing what's going to
+
+1831
+01:12:47,229 --> 01:12:52,958
+happen and and generally you also don't
+
+1832
+01:12:51,458 --> 01:12:55,838
+have this nice low dimensional
+
+1833
+01:12:52,958 --> 01:12:57,519
+representation of the world you might
+
+1834
+01:12:55,838 --> 01:13:00,010
+just have your high dimensional images
+
+1835
+01:12:57,519 --> 01:13:01,479
+that you're observing or other other son
+
+1836
+01:13:00,010 --> 01:13:09,600
+three inputs that you're receiving
+
+1837
+01:13:01,479 --> 01:13:13,980
+question
+
+1838
+01:13:09,600 --> 01:13:17,070
+oh you do it was an innovation but the
+
+1839
+01:13:13,979 --> 01:13:27,719
+survey design
+
+1840
+01:13:17,069 --> 01:13:29,729
+yeah yeah so in the real world or in
+
+1841
+01:13:27,720 --> 01:13:32,490
+other scenarios you don't you don't you
+
+1842
+01:13:29,729 --> 01:13:33,779
+don't want to max s to a model and what
+
+1843
+01:13:32,489 --> 01:13:35,069
+we can do instead is trying to learn a
+
+1844
+01:13:33,779 --> 01:13:39,779
+model to learn to predict what's gonna
+
+1845
+01:13:35,069 --> 01:13:42,239
+happen so here's an example x 0 at all
+
+1846
+01:13:39,779 --> 01:13:44,189
+from Michigan and here they learned a
+
+1847
+01:13:42,239 --> 01:13:46,559
+video production models on the left on
+
+1848
+01:13:44,189 --> 01:13:49,889
+the right is the ground truth video and
+
+1849
+01:13:46,560 --> 01:13:53,160
+on the left is the generated video from
+
+1850
+01:13:49,890 --> 01:13:55,050
+a deep neural network and as you can see
+
+1851
+01:13:53,159 --> 01:13:57,510
+it's actually learns to predict the
+
+1852
+01:13:55,050 --> 01:13:59,489
+future in the scenario fairly accurately
+
+1853
+01:13:57,510 --> 01:14:02,550
+I people closely there are some errors
+
+1854
+01:13:59,489 --> 01:14:06,599
+not in freeway cuz freeway is very sick
+
+1855
+01:14:02,550 --> 01:14:09,659
+like indeterministic but i generally the
+
+1856
+01:14:06,600 --> 01:14:11,730
+results are very impressive especially
+
+1857
+01:14:09,659 --> 01:14:14,099
+for for these sorts of domains where the
+
+1858
+01:14:11,729 --> 01:14:19,259
+images are synthetic question
+
+1859
+01:14:14,100 --> 01:14:22,530
+yeah they may download the the video on
+
+1860
+01:14:19,260 --> 01:14:24,539
+the left is generated and rolled out its
+
+1861
+01:14:22,529 --> 01:14:26,639
+not doing one separate listing many step
+
+1862
+01:14:24,539 --> 01:14:28,289
+production conditioned on the initial
+
+1863
+01:14:26,640 --> 01:14:35,820
+image and the actions that the agent
+
+1864
+01:14:28,289 --> 01:14:37,529
+took this is one example and that some
+
+1865
+01:14:35,819 --> 01:14:38,759
+people have little so some work by me
+
+1866
+01:14:37,529 --> 01:14:41,399
+and some work by other people have
+
+1867
+01:14:38,760 --> 01:14:42,720
+looked actually generating real videos
+
+1868
+01:14:41,399 --> 01:14:45,000
+with real images and when you move your
+
+1869
+01:14:42,720 --> 01:14:47,039
+real images things get a lot more
+
+1870
+01:14:45,000 --> 01:14:50,579
+interesting and a lot more about her
+
+1871
+01:14:47,039 --> 01:14:53,579
+because you get well more so pasty in
+
+1872
+01:14:50,579 --> 01:14:55,350
+the environment as well as much more
+
+1873
+01:14:53,579 --> 01:14:58,050
+complex scenes
+
+1874
+01:14:55,350 --> 01:15:01,380
+I'm so here on the top on the left we
+
+1875
+01:14:58,050 --> 01:15:04,829
+show the ground truth video and on the
+
+1876
+01:15:01,380 --> 01:15:06,750
+right of each pair we show the rolled
+
+1877
+01:15:04,829 --> 01:15:08,699
+out prediction so conditioned again on
+
+1878
+01:15:06,750 --> 01:15:10,380
+the first frame and the sequence of
+
+1879
+01:15:08,699 --> 01:15:12,779
+actions what is the future video and
+
+1880
+01:15:10,380 --> 01:15:14,579
+look like you might notice that the
+
+1881
+01:15:12,779 --> 01:15:15,809
+predictions are a bit blurry must
+
+1882
+01:15:14,579 --> 01:15:17,189
+because the model
+
+1883
+01:15:15,810 --> 01:15:19,590
+well this is something that will go into
+
+1884
+01:15:17,189 --> 01:15:21,509
+later in the course ah but in this case
+
+1885
+01:15:19,590 --> 01:15:22,679
+the model represents uncertainties blur
+
+1886
+01:15:21,510 --> 01:15:25,380
+I
+
+1887
+01:15:22,679 --> 01:15:28,139
+and so therefore the predictions come
+
+1888
+01:15:25,380 --> 01:15:30,779
+out blurry and then what we can do with
+
+1889
+01:15:28,139 --> 01:15:33,118
+this model we can actually plan through
+
+1890
+01:15:30,779 --> 01:15:35,670
+the model and and learn how to do very
+
+1891
+01:15:33,118 --> 01:15:38,188
+coarse actions for example here the goal
+
+1892
+01:15:35,670 --> 01:15:39,658
+is to push push the water bottle
+
+1893
+01:15:38,189 --> 01:15:41,610
+slightly to the left
+
+1894
+01:15:39,658 --> 01:15:44,819
+I hear the goal is to rotate the bottle
+
+1895
+01:15:41,609 --> 01:15:46,228
+we able to learn some very coarse
+
+1896
+01:15:44,819 --> 01:15:48,149
+actions by just planning through this
+
+1897
+01:15:46,229 --> 01:15:55,170
+model once we had the model of
+
+1898
+01:15:48,149 --> 01:15:56,009
+individual space and so to finish up the
+
+1899
+01:15:55,170 --> 01:15:58,349
+last thing I'm going to talk about
+
+1900
+01:15:56,010 --> 01:16:00,300
+briefly is auxiliary objectives and
+
+1901
+01:15:58,349 --> 01:16:01,260
+sensory modalities I'm so I don't know
+
+1902
+01:16:00,300 --> 01:16:03,538
+this is something that we're going to
+
+1903
+01:16:01,260 --> 01:16:04,380
+touch on in great detail in this course
+
+1904
+01:16:03,538 --> 01:16:07,198
+but i think it's something worth
+
+1905
+01:16:04,380 --> 01:16:09,208
+mentioning is that there is many other
+
+1906
+01:16:07,198 --> 01:16:11,279
+sources of supervision that can you can
+
+1907
+01:16:09,208 --> 01:16:12,899
+use to kind of aid your learning
+
+1908
+01:16:11,279 --> 01:16:14,819
+especially if you're if you're trying to
+
+1909
+01:16:12,899 --> 01:16:16,438
+learn some some big neural network
+
+1910
+01:16:14,819 --> 01:16:19,259
+function and you're trying to learn the
+
+1911
+01:16:16,439 --> 01:16:21,570
+representation from the observations up
+
+1912
+01:16:19,260 --> 01:16:23,400
+it's very helpful to have other forms of
+
+1913
+01:16:21,569 --> 01:16:25,380
+supervision beyond reward function or
+
+1914
+01:16:23,399 --> 01:16:27,598
+beyond a demonstration that can aid that
+
+1915
+01:16:25,380 --> 01:16:29,309
+representation learning some of the
+
+1916
+01:16:27,599 --> 01:16:31,319
+sources of supervision
+
+1917
+01:16:29,309 --> 01:16:33,748
+I could be other sensory modalities like
+
+1918
+01:16:31,319 --> 01:16:35,158
+touch audio gaps if you have that
+
+1919
+01:16:33,748 --> 01:16:38,158
+information so there's been some recent
+
+1920
+01:16:35,158 --> 01:16:41,129
+work by the folks of divine mercy at all
+
+1921
+01:16:38,158 --> 01:16:45,868
+and Yarber got all on combining the
+
+1922
+01:16:41,130 --> 01:16:47,099
+source of auxiliary modalities to learn
+
+1923
+01:16:45,868 --> 01:16:49,380
+more efficiently
+
+1924
+01:16:47,099 --> 01:16:51,599
+there's also learning multiple related
+
+1925
+01:16:49,380 --> 01:16:53,939
+tasks at the same time and so if if the
+
+1926
+01:16:51,599 --> 01:16:55,860
+tasks are related enough and need to
+
+1927
+01:16:53,939 --> 01:16:58,229
+share a representation the nut learning
+
+1928
+01:16:55,859 --> 01:17:01,408
+multiple tasks can hopefully aid in your
+
+1929
+01:16:58,229 --> 01:17:02,639
+representation learning and lastly if
+
+1930
+01:17:01,408 --> 01:17:04,708
+you know something about the task and
+
+1931
+01:17:02,639 --> 01:17:06,059
+you know there's some properties of the
+
+1932
+01:17:04,708 --> 01:17:08,550
+world that are relevant to that task
+
+1933
+01:17:06,059 --> 01:17:11,189
+then you can predict those properties
+
+1934
+01:17:08,550 --> 01:17:17,219
+and that can also aid in representation
+
+1935
+01:17:11,189 --> 01:17:18,630
+learning and so well first note that are
+
+1936
+01:17:17,219 --> 01:17:20,908
+all can be combined really with any of
+
+1937
+01:17:18,630 --> 01:17:22,920
+these forms of information and so in
+
+1938
+01:17:20,908 --> 01:17:24,658
+this class will be learning about beyond
+
+1939
+01:17:22,920 --> 01:17:25,889
+reinforcement learning which are covered
+
+1940
+01:17:24,658 --> 01:17:28,288
+you'll be learning about invitation
+
+1941
+01:17:25,889 --> 01:17:31,319
+inverse reinforcement learning model
+
+1942
+01:17:28,288 --> 01:17:34,618
+based control as well as other ways to
+
+1943
+01:17:31,319 --> 01:17:36,210
+provide supervision story do you have
+
+1944
+01:17:34,618 --> 01:17:42,839
+anything you'd like to add to close
+
+1945
+01:17:36,210 --> 01:17:46,079
+ok just one last question one last
+
+1946
+01:17:42,840 --> 01:17:49,140
+comment I for those of you in this class
+
+1947
+01:17:46,079 --> 01:17:52,229
+or we're not in this class you know this
+
+1948
+01:17:49,140 --> 01:17:53,579
+the the sort of a you know a deep
+
+1949
+01:17:52,229 --> 01:17:54,899
+reinforcement class assignments and
+
+1950
+01:17:53,579 --> 01:17:56,430
+projects and so on but actually parallel
+
+1951
+01:17:54,899 --> 01:17:58,229
+to this there's also a seminar series on
+
+1952
+01:17:56,430 --> 01:18:01,020
+deep learning that I want to tell you
+
+1953
+01:17:58,229 --> 01:18:04,468
+about that's going to be on mondays at
+
+1954
+01:18:01,020 --> 01:18:08,700
+1pm also in this room that's cos 294 131
+
+1955
+01:18:04,469 --> 01:18:10,079
+and this 1i is caught with the Don song
+
+1956
+01:18:08,699 --> 01:18:12,090
+and Trevor Darrell so if you're
+
+1957
+01:18:10,079 --> 01:18:12,809
+interested in deep learning topics to
+
+1958
+01:18:12,090 --> 01:18:14,760
+check that out
+
+1959
+01:18:12,810 --> 01:18:18,150
+it's sort of a more lightweight kind of
+
+1960
+01:18:14,760 --> 01:18:24,770
+seminar series style class and yeah
+
+1961
+01:18:18,149 --> 01:18:24,769
+we'll see all next week
+

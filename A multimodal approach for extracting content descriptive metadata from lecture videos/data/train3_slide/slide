@@ -1,0 +1,93 @@
+46
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_000000000.png
+Deep&51,Reinforcement&51,Learning&51,.&0,CS&43,294&43,112&43,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_000039761.png
+Course&32,Staff&32,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_000059966.png
+Class&32,Information&32,Resources&32,.&0,Course&18,website &18,.&0,Piazza &19,UC&19,Berkeley &19,CS294-112&19,.&0,Subreddit&22, for&22,students  &22,.&0,Office&19,hours &19,after&19,class&19,each&19,day&19, but&19,not&19,Sign&19,up&19,in&19,advance&19,.&0,for&16,a&16,10-minute&16,slot&16,on&16,the&16,course&16,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_000150265.png
+Prerequisites&36,Enrollment&36,.&0,All&18,enrolled&18,students&18,must&18,have&18,taken&18,CS189 &18,CS289 &18,or&18,CS281A&18,.&0,Please&15,Levine&15,if&15,you&15,.&0,Please&18,enroll&18,for&18,3&18,units&18,.&0,Wait&18,list&18,is&18, very &18,full &18,everyone&18,near&18,the&18,top&18,has&18,been&18,notiﬁed&18,.&0,Lectures&18,will&18,be&18,recorded&18,.&0,Since&15,the&15,class&15,is&15,full &15,please&15,the&15,lectures&15,If&15,you&15,are&15,enrolled&15,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_000256902.png
+What&32,.&0,you&32,.&0,should&32,know&32,.&0,Assignments&20,will&20,require&20,training&20,neural&20,networks&20,standard&20,.&0,packages&20, TensorF ow&20,or&20,Theano &20,.&0,Review&18,.&0,Chelsea&14,Finn&14,will&14,teach&14,a&14,review&14,in&14,week&14,2&14,.&0,Please&15,out&15,the&15,poll&15,here&15,to&15,help&15,us&15,choose&15,a&15,.&0,You&15,should&15,be&15,able&15,to&15,least&15,do&15,the&15,TensorF ow&15,MNIST&15,tutorial&15, if&15,not &15,come&15,.&0,to&14,the&14,review&14,secﬁon&14,and&14,ask&14,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_000342544.png
+What&29,we’  &29,cover&29,.&0,Full&17,syllabus&17,on&17,course&17,website&17,.&0,1 &18,.&0,2 &18,.&0,From&20,supervised&20,learning&20,to&20,decision&20,making&20,.&0,Basic&21,learning &21,and&21,policy&21,gradients&21,.&0,Advanced&20,model&20,learning&20,and&20,reward&20,.&0,learning&24,.&0,Advanced&20,deep&20,RL &20,trust&20,region&20,policy&20,gradients &20,.&0,exploration&23,.&0,Open&19,problems &19,research&19,invited&19,lectures&19,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_000470534.png
+Assignments&40,.&0,Homework&21,1 &21,Imitation&21,learning&21, control&21,via&21,supervised&21,learning &21,.&0,Homework&19,2 &19,Basic&19, shallow &19,RL&19,.&0,Homework&20,3 &20,Deep&20,Q&20,learning&20,.&0,Homework&21,4 &21,Deep&21,policy&21,gradients&21,.&0,Final&18,Research-level&18,project&18,of&18,your&18,choice&18, form&18,a&18,group&18,of&18,.&0,up&19,to&19,2-3&19,students &19,you're&19,welcome&19,to&19,start&19,early  &19,.&0,Grading &21,homework&21, 10 &21,each  &21,50 &21,project &21,10 &21,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_000669981.png
+How&33,do&33,we&33,building&33,intelligent&33,machines &33,.&0,Imagine&19,you&19,have&19,to&19,build&19,an&19,intelligent&19,machine &19,where&19,do&19,you&19,start &19,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_000907583.png
+Learning&40,.&0,as&24,.&0,the&34,basis&34,of&34,intelligence&34,.&0,Some&18,we&18,can&18,all&18,do&18, e g &18,walking &18,.&0,Some&19,things&19,we&19,can&19,only&19,learn&19, e g &19,driving&19,a&19,car &19,.&0,We&19,can&19,learn&19,a&19,huge&19,variety&19,of&19,things &19,including&19,very&19,difficult&19,things&19,.&0,Therefore&20,our&20,learning&20,mechanisrn s &20,are&20,likely&20,powerful&20,enough&20,to&20,.&0,do&19,everything&19,we&19,associate&19,with&19,intelligence&19,.&0,lhough&15,it&15,be&15,convenient&15,to&15, hard&15,code &15,a&15,few&15,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_001099808.png
+A&37,single&37,algorithm &37,.&0,An&19,algorithm&19,for&19,each&19,.&0,Or&19,a&19,single&19,ﬂexible&19,algorithm &19,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_001265257.png
+What&34,must&34,that&34,single&34,algorithm&34,do &34,.&0,rich&20,sensory&20,inputs&20,.&0,Choose&21,complex&21,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_001398789.png
+Why&38,deep&38,reinforcement&38,learning &38,.&0,Deep&19,can&19,process&19,complex&19,sensory&19,input&19,.&0,Reinforcement&19,learning&19,can&19,choose&19,complex&19,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_001634118.png
+Some&34,evidence&34,in&34,favor&34,of&34,deep&34,learning&34,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_001863092.png
+Some&32,evidence&32,for&32,reinforcement&32,.&0,learning&40,.&0,Percepts&20,that&20,reward&20,.&0,become&19,associated&19,with&19,similar&19,.&0,ﬁring&18,as&18,the&18,reward&18,.&0,itself&19,.&0,II&12,IIr  &12,ill&12,.&0,Basal&19,ganglia&19,appears&19,be&19,.&0,to&18,reward&18,system&18,.&0,is&17,.&0,often&19,a&19,good&19,ﬁt&19,for&19,experimental&19,.&0,data&18,of&18,animal&18,.&0,But&14,not&14,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_001996103.png
+What&33,can&33,deep&33,learning&33,RL&33,do&33,well&33,.&0,now &32,.&0,Acquire&22,high&22,degree&22,of&22,proﬁciency&22,in&22,.&0,domains&21,governed&21,by&21,known&21,.&0,rules&19,.&0,Learn&18,simple&18,skills&18,with&18,raw&18,sensory&18,.&0,inputs &22,given&22,enough&22,experience&22,.&0,Learn&19,from&19,enough&19,.&0,provided&20,expert&20,behavior&20,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_002178133.png
+What&32,has&32,proven&32,challenging&32,so&32,far &32,.&0,RL&15,.&0,Humans&19,can&19,learn&19,incredibly&19,quickly&19,.&0,Humans&17,can&17,reuse&17,past&17,knowledge&17,.&0,in&14,RL&14,Is&14,open&14,.&0,Not&18,clear&18,what&18,the&18,reward&18,should&18,be&18,.&0,Not&18,clear&18,what&18,the&18,role&18,of&18,should&18,be&18,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_002267995.png
+why&14,to&14,.&0,one&10,.&0,would&13,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_002438594.png
+What&34,is&34,Learning &34,.&0,Branch&24,of&24,machine&24,learning&24,concerned&24,with&24,taking&24,.&0,sequences&23,of&23,actions&23,.&0,Usually&23,described&23,in&23,terms&23,of&23,agent&23,interacting&23,with&23,a&23,.&0,previously&24,unknown&24,environment &24,trying&24,to&24,maximize&24,.&0,cumulative&23,reward&23,.&0,Formalized&22,as&22,partially&22,observable&22,Markov&22,decision&22,.&0,process&27, POMDP &27,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_002507238.png
+Motor&32,Control&32,and&32,Robotics&32,.&0,Robotics &24,.&0,Observations &25,camera&25,images &25,joint&25,angles&25,.&0,Actions &25,joint&25,torques&25,.&0,Rewards &25,stay&25,navigate&25,to&25,target&25,locations &25,.&0,serve&21,and&21,protect&21,humans&21,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_002533859.png
+Business&36,Operations&36,.&0,Inventory&29,Management&29,.&0,Observations &23,current&23,inventory&23,levels&23,.&0,Actions &23,number&23,of&23,units&23,of&23,each&23,item&23,to&23,purchase&23,.&0,Rewards &26,profit&26,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_002667117.png
+In&32,Other&32,ML&32,Problems&32,.&0,Classification&23,with&23,Hard&23,.&0,Observation &21,current&21,image&21,window&21,.&0,Action &20,where&20,to&20,look&20,.&0,Reward &20, 1&20,for&20,correct&20,classification&20,.&0,Sequential structured&26,prediction &26,e g  &26,machine&26,.&0,Observations &21,words&21,in&21,source&21,language&21,.&0,Action &22,emit&22,word&22,in&22,target&22,language&22,.&0,Reward &20,sentence— evel&20,accuracy&20,metric &20,e g &20,BLEU&20,score&20,.&0,‘V&12,N&12,A&12,K&12,.&0,III &11,J&11,D&11,5&11,.&0,J&11,L &11,.&0,5&11,N&11,M&11,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_002747335.png
+What&36,Is&36,Deep&36,Learning &36,.&0,Reinforcement&24,learning&24,using&24,neural&24,networks&24,to&24,approximate&24,.&0,functions&23,.&0,Policies&26, select&26,next&26,action &26,.&0,Value&23,functions&23, measure&23,goodness&23,of&23,states&23,or&23,.&0,state—action&27,pairs &27,.&0,Dynamics&25,Models&25, predict&25,next&25,states&25,and&25,rewards &25,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_002822006.png
+How&31,Does&31,RL&31,Relate&31,to&31,Other&31,ML&31,Problems &31,.&0,Supervised&29,learning &29,.&0,Environment&25,samples&25,input—output&25,pair&25,p&25,.&0,Agent&29,predicts&29,.&0,Agent&24,receives&24,loss&24,.&0,Environment&23,asks&23,agent&23,a&23,question &23,and&23,then&23,tells&23,it&23,the&23,.&0,right&22,answer&22,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_002923262.png
+How&31,Does&31,RL&31,Relate&31,to&31,Other&31,ML&31,Problems &31,.&0,Contextual&23,bandits &23,.&0,Environment&25,samples&25,input&25,p&25,.&0,Agent&25,takes&25,action&25,.&0,Agent&21,receives&21,cost&21,where&21,P&21,is&21,an&21,.&0,unknown&25,probability&25,distribution&25,.&0,Environment&22,asks&22,agent&22,a&22,question &22,and&22,gives&22,agent&22,a&22,.&0,noisy&20,score&20,on&20,its&20,answer&20,.&0,Application &26,personalized&26,recommendations&26,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_002982041.png
+How&31,Does&31,RL&31,Relate&31,to&31,Other&31,ML&31,Problems &31,.&0,Reinforcement&26,learning &26,.&0,Environment&26,samples&26,input&26,.&0,Environment&20,is&20,stateful &20,depends&20,on&20,your&20,previous&20,.&0,actions &20,.&0,Agent&25,takes&25,action&25,.&0,Agent&21,receives&21,cost&21,where&21,P&21,a&21,.&0,probability&23,distribution&23,unknown&23,to&23,the&23,agent &23,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003008874.png
+How&32,Does&32,RL&32,Relate&32,to&32,Other&32,Machine&32,Learning&32,.&0,Problems &33,.&0,Summary&25,of&25,differences&25,between&25,RL&25,and&25,supervised&25,learning &25,.&0,You&22,don't&22,have&22,full&22,access&22,to&22,the&22,function&22,you're&22,trying&22,to&22,.&0,query&23,it&23,through&23,interaction &23,.&0,Interacting&23,with&23,a&23,world &23,input&23,depend&23,on&23,your&23,.&0,previous&25,actions&25,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003083677.png
+19905 &38,beginnings&38,.&0,N&11,.&0,K&10,w&10,I&10,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003214791.png
+19905 &39,beginnings&39,.&0,G&11,5&11,G&11,MI &11,.&0,M&10,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003257372.png
+Recent&33,Success&33,Stories&33,in&33,Deep&33,RL&33,.&0,ATARI&27,using&27,deep&27,policy&27,.&0,M&10,I&10,V&10,NI&10,T&10,.&0,L&11,x&11,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003310972.png
+Recent&33,Success&33,Stories&33,in&33,Deep&33,RL&33,.&0,Robotic&27,manipulation&27,using&27,guided&27,policy&27,.&0,Robotic&26,locomotion&26,using&26,policy&26,.&0,T&11, End&11,’J&11,5&11,M&11,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003332293.png
+Recent&33,Success&33,Stories&33,in&33,Deep&33,RL&33,.&0,A phaGo &28,supervised&28,learning&28,policy&28,gradients&28,value&28,.&0,functions&21,Monte—Car o&21,tree&21,.&0,J&11,L&11,Go&11,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003453897.png
+Beyond&53,Learning&53,from&53,Reward&53,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003523796.png
+I&16,.&0,reinforcement&26,learning&26,agent&26,What&26,is&26,the&26,.&0,In&24,the&24,real&24,world &24,humans&24,don't&24,get&24,a&24,score &24,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003614453.png
+Tesauro&14,'95&14,Kohl&14,'04&14,Mnih&14,el&14,al &14,'15&14,Silver&14,al '16&14,.&0,reward&25,function&25,is&25,essential&25,for&25,RL&25,.&0,real-world&26,domains &26,reward cost&26,often&26,difﬁcult&26,to&26,specify&26,.&0,robotic&29,manipulation&29,.&0,autonomous&27,driving&27,.&0,dialog&31,systems&31,.&0,virtual&25,assistants&25,.&0,and&21,more   &21,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003677814.png
+What&36,other&36,forms&36,of&36,supervision &36,.&0,1 &26,demonstrated&26,behavior&26,imitation &26,inferring&26,intention&26,.&0,2 &27,se f—supervision &27,prediction&27,model—based&27,control&27,.&0,3 &27,auxiliary&27,objectives&27,and&27,additional&27,sensing&27,modalities&27,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003720731.png
+Human&41,Learning&41,via&41,imitation&41,.&0,8&28,months &28,imitate&28,simple&28,actions&28,expressions&28,.&0,1&27,8&27,months &27,imitate&27,after&27,a&27,delay&27,and&27,mu ti—step&27,actions&27,.&0,36&27,months &27,imitate&27,multi-step&27,actions&27,after&27,a&27,delay&27,.&0,Imitation&17,.&0,Acts&15,.&0,N&9,I&9, ll&9,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003789230.png
+Learning&43,from&43,imitation&43,.&0,For&28,autonomous&28,driving &28,.&0,Bojarski&21,et&21,al &21,'1&21,6&21,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_003996019.png
+More&39,than&39,imitation &39,.&0,inferring&46,intentions&46,.&0,18&28,months &28,understand&28,others&28,intentions&28,and&28,help&28,.&0,Warneken&20, Tomasello‘O6&20,.&0,known&26,as&26,inverse&26,reinforcement&26,learning&26,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_004112107.png
+Inverse&39,RL &39,learned&39,behavior&39,.&0,Finn&19,et&19,a  '16&19,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_004147992.png
+Behavior&46,via&46,Prediction&46,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_004175077.png
+Prediction&41,.&0,”the&26,idea&26,that&26,we&26,predict&26,the&26,consequences&26,of&26,our&26,motor&26,.&0,commands&27,has&27,emerged&27,as&27,an&27,important&27,theoretical&27,.&0,concept&28,in&28,all&28,aspects&28,of&28,sensorimotor&28,contro ”&28,.&0,In&13,.&0,Our&13,Own&13,.&0,codlng&19,In&19,cortex &19,.&0,of&15,some&15,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_004232825.png
+Prediction&42,.&0,With&29,a&29,perfect&29,model&29,optimization &29,.&0,et&19,aI ’14&19,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_004460114.png
+Learning&41,to&41,Predict&41,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_004561570.png
+Auxiliary&56,Objectives&56,and&56,Sensing&56,.&0,Modalities&47,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_004577121.png
+Sources&53,of&53,Auxiliary&53,Supervision&53,.&0,other&28,sensing&28,modalities&28, touch &28,audio &28,depth &28,.&0,learning&29,multiple &29,related&29,tasks&29,.&0,task-relevant&26,properties&26,of&26,the&26,world&26,.&0,Jaderberg&22,et&22,a  ’17&22,.&0
+CS294-112 1_18_17-8jQIKgTzQd4.mp4_004656926.png
+In&34,this&34,class   &34,.&0,1 &26,demonstrated&26,behavior&26,imitation &26,inferring&26,intention&26,.&0,2 &27,self—supervision &27,prediction&27,model—based&27,control&27,.&0,3 &27,auxiliary&27,objectives&27,and&27,additional&27,sensing&27,modalities&27,.&0,Note &24,RL&24,can&24,be&24,combined&24,with&24,these&24,other&24,forms&24,of&24,information &24,.&0

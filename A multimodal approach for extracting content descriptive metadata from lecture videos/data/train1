@@ -1,0 +1,884 @@
+
+1
+00:00:00,000 --> 00:00:03,075
+Hello.
+Welcome to the Coursera course on Neural
+
+2
+00:00:03,075 --> 00:00:09,006
+Networks for Machine Learning.
+Before we get into the details of neural
+
+3
+00:00:09,006 --> 00:00:14,004
+network learning algorithms, I want to
+talk a little bit about machine learning,
+
+4
+00:00:14,004 --> 00:00:19,015
+why we need machine learning, the kinds of
+things we use it for, and show you some
+
+5
+00:00:19,015 --> 00:00:23,087
+examples of what it can do.
+So the reason we need machine learning is
+
+6
+00:00:23,087 --> 00:00:29,010
+that the sum problem, where it's very hard
+to write the programs, recognizing a three
+
+7
+00:00:29,010 --> 00:00:33,059
+dimensional object for example.
+When it's from a novel viewpoint and new
+
+8
+00:00:33,059 --> 00:00:37,026
+lighting additions in a cluttered scene is
+very hard to do.
+
+9
+00:00:37,026 --> 00:00:42,018
+We don't know what program to write
+because we don't know how it's done in our
+
+10
+00:00:42,018 --> 00:00:45,005
+brain.
+And even if we did know what program to
+
+11
+00:00:45,005 --> 00:00:49,010
+write, it might be that it was a
+horrendously complicated program.
+
+12
+00:00:50,029 --> 00:00:55,083
+Another example is, detecting a fraudulent
+credit card transaction, where there may
+
+13
+00:00:55,083 --> 00:01:00,014
+not be any nice, simple rules that will
+tell you it's fraudulent.
+
+14
+00:01:00,014 --> 00:01:05,014
+You really need to combine, a very large
+number of, not very reliable rules.
+
+15
+00:01:05,014 --> 00:01:10,060
+And also, those rules change every time
+because people change the tricks they use
+
+16
+00:01:10,060 --> 00:01:13,084
+for fraud.
+So, we need a complicated program that
+
+17
+00:01:13,084 --> 00:01:17,062
+combines unreliable rules, and that we can
+change easily.
+
+18
+00:01:18,087 --> 00:01:24,027
+The machine learning approach, is to say,
+instead of writing each program by hand
+
+19
+00:01:24,027 --> 00:01:29,040
+for each specific task, for particular
+task, we collect a lot of examples, and
+
+20
+00:01:29,040 --> 00:01:32,029
+specify the correct output for given
+input.
+
+21
+00:01:32,062 --> 00:01:37,080
+A machine learning algorithm then takes
+these examples and produces a program that
+
+22
+00:01:37,080 --> 00:01:41,029
+does the job.
+The program produced by the linear
+
+23
+00:01:41,029 --> 00:01:45,035
+algorithm may look very different from the
+typical handwritten program.
+
+24
+00:01:45,035 --> 00:01:49,093
+For example, it might contain millions of
+numbers about how you weight different
+
+25
+00:01:49,093 --> 00:01:54,014
+kinds of evidence.
+If we do it right, the program should work
+
+26
+00:01:54,014 --> 00:01:57,004
+for new cases just as well as the ones
+it's trained on.
+
+27
+00:01:57,051 --> 00:02:03,047
+And if the data changes, we should be able
+to change the program runs very easily by
+
+28
+00:02:03,047 --> 00:02:09,627
+retraining it on the new data.
+And now massive amounts for computation
+
+29
+00:02:09,627 --> 00:02:14,084
+are cheaper that paying someone to write a
+program for a specific task, so we can
+
+30
+00:02:14,084 --> 00:02:20,000
+afford big complicated machine learning
+programs to produce these stark task
+
+31
+00:02:20,000 --> 00:02:26,023
+specific systems for us.
+Some examples of the things that are best
+
+32
+00:02:26,023 --> 00:02:32,050
+done by using a learning algorithm are
+recognizing patterns, so for example
+
+33
+00:02:32,050 --> 00:02:38,095
+objects in real scenes, or the identities
+or expressions of people's faces, or
+
+34
+00:02:38,095 --> 00:02:42,053
+spoken words.
+There's also recognizing anomalies.
+
+35
+00:02:42,053 --> 00:02:46,084
+So, an unusual sequence of credit card
+transactions would be an anomaly.
+
+36
+00:02:47,002 --> 00:02:51,098
+Another example of an anomaly would be an
+unusual pattern of sensor readings in a
+
+37
+00:02:51,098 --> 00:02:55,062
+nuclear power plant.
+And you wouldn't really want to have to
+
+38
+00:02:55,062 --> 00:02:58,034
+deal with those by doing supervised
+learning.
+
+39
+00:02:58,034 --> 00:03:03,025
+Where you look at the ones that blow up,
+and see what, what caused them to blow up.
+
+40
+00:03:03,025 --> 00:03:07,067
+You'd really like to recognize that
+something funny is happening without
+
+41
+00:03:07,067 --> 00:03:11,097
+having any supervision signal.
+It's just not behaving in its normal way.
+
+42
+00:03:12,059 --> 00:03:16,047
+And then this prediction.
+So, typically, predicting future stock
+
+43
+00:03:16,047 --> 00:03:21,333
+prices or currency exchange rates or
+predicting which movies a person will like
+
+44
+00:03:21,333 --> 00:03:25,812
+from knowing which other movies they like.
+And which movies a lot of other people
+
+45
+00:03:25,812 --> 00:03:31,226
+liked.
+So in this course I'm mean as a standard
+
+46
+00:03:31,226 --> 00:03:36,306
+example for explaining a lot of the
+machine learning algorithms.
+
+47
+00:03:36,306 --> 00:03:41,669
+This is done in a lot of science.
+In genetics for example, a lot of genetics
+
+48
+00:03:41,669 --> 00:03:45,809
+is done on fruitflies.
+And the reason is they're convenient.
+
+49
+00:03:45,809 --> 00:03:51,760
+They breed fast and a lot is already known
+about the genetics of fruit flies.
+
+50
+00:03:51,760 --> 00:03:58,840
+The MNIST database of handwritten digits
+is the machine equivalent of fruitflies.
+
+51
+00:03:58,840 --> 00:04:04,573
+It's publicly available.
+We can get machine learning algorithms to
+
+52
+00:04:04,573 --> 00:04:09,769
+learn how to recognize these handwritten
+digits quite quickly, so it's easy to try
+
+53
+00:04:09,769 --> 00:04:13,500
+lots of variations.
+And we know huge amounts about how well
+
+54
+00:04:13,500 --> 00:04:16,425
+different machine learning methods do on
+MNIST.
+
+55
+00:04:16,425 --> 00:04:21,036
+And in particular, the different machine
+learning methods were implemented by
+
+56
+00:04:21,036 --> 00:04:24,492
+people who believed in them, so we can
+rely on those results.
+
+57
+00:04:24,492 --> 00:04:29,395
+So for all those reasons, we're gonna use
+MNIST as our standard task.
+
+58
+00:04:29,395 --> 00:04:33,499
+Here's an example of some of the digits in
+MNIST.
+
+59
+00:04:33,499 --> 00:04:38,566
+These are ones that were correctly
+recognized by neural net the first time it
+
+60
+00:04:38,566 --> 00:04:42,958
+saw them.
+But the ones within the neural net wasn't
+
+61
+00:04:42,958 --> 00:04:45,819
+very confident.
+And you could see why.
+
+62
+00:04:45,819 --> 00:04:50,205
+I've arranged these digits in standard
+scan line order.
+
+63
+00:04:50,205 --> 00:04:57,163
+So zeros, then ones, then twos and so on.
+If you look at a bunch of tubes like the
+
+64
+00:04:57,163 --> 00:05:02,025
+onces in the green rectangle.
+You can see that if you knew they were 100
+
+65
+00:05:02,025 --> 00:05:04,086
+in digit you'd probably guess they were
+twos.
+
+66
+00:05:04,086 --> 00:05:08,038
+But it's very hard to say what it is that
+makes them twos.
+
+67
+00:05:08,038 --> 00:05:11,046
+Theres nothing simple that they all have
+in common.
+
+68
+00:05:11,046 --> 00:05:16,019
+In particular if you try and overlay one
+on another you'll see it doesn't fit.
+
+69
+00:05:16,019 --> 00:05:21,021
+And even if you skew it a bit, it's very
+hard to make them overlay on each other.
+
+70
+00:05:21,021 --> 00:05:25,087
+So a template isn't going to do the job.
+An in particular template is going to be
+
+71
+00:05:25,087 --> 00:05:30,090
+very hard to find that will fit those twos
+in the green box and would also fit the
+
+72
+00:05:30,090 --> 00:05:35,074
+things in the red boxes.
+So that's one thing that makes recognizing
+
+73
+00:05:35,074 --> 00:05:38,075
+handwritten digits a good task for machine
+learning.
+
+74
+00:05:39,062 --> 00:05:43,076
+Now, I don't want you to think that's the
+only thing we can do.
+
+75
+00:05:43,096 --> 00:05:48,043
+It's a relatively simple for our machine
+learning system to do now.
+
+76
+00:05:48,043 --> 00:05:53,078
+And to motivate the rest of the course, I
+want to show you some examples of much
+
+77
+00:05:53,078 --> 00:05:57,039
+more difficult things.
+So we now have neural nets with
+
+78
+00:05:57,059 --> 00:06:02,087
+approaching a hundred million parameters
+in them, that can recognize a thousand
+
+79
+00:06:02,087 --> 00:06:08,028
+different object classes in 1.3 million
+high resolution training images got from
+
+80
+00:06:08,028 --> 00:06:12,006
+the web.
+So, there was a competition in 2010, and
+
+81
+00:06:12,006 --> 00:06:17,001
+the best system got 47 percent error rate
+if you look at its first choice, and 25
+
+82
+00:06:17,001 --> 00:06:21,089
+percent error rate if you say it got it
+right if it was in its top five choices,
+
+83
+00:06:21,089 --> 00:06:24,087
+which isn't bad for 1,000 different
+objects.
+
+84
+00:06:25,008 --> 00:06:30,070
+Jitendra Malik who's an eminent neural net
+skeptic, and a leading computer vision
+
+85
+00:06:30,070 --> 00:06:36,046
+researcher, has said that this competition
+is a good test of whether deep neural
+
+86
+00:06:36,046 --> 00:06:39,066
+networks can work well for object
+recognition.
+
+87
+00:06:39,066 --> 00:06:44,068
+And a very deep neural network can now do
+considerably better than the thing that
+
+88
+00:06:44,068 --> 00:06:48,000
+won the competition.
+It can get less than 40 percent error, for
+
+89
+00:06:48,000 --> 00:06:52,023
+its first choice, and less than twenty
+percent error for its top five choices.
+
+90
+00:06:52,023 --> 00:06:55,060
+I'll describe that in much more detail in
+lecture five.
+
+91
+00:06:55,060 --> 00:06:59,065
+Here's some examples of the kinds of
+images you have to recognize.
+
+92
+00:06:59,065 --> 00:07:03,026
+These images from the test set that he's
+never seen before.
+
+93
+00:07:03,026 --> 00:07:08,062
+And below the examples, I'm showing you
+what the neural net thought the right
+
+94
+00:07:08,062 --> 00:07:12,030
+answer was.
+Where the length of the horizontal bar is
+
+95
+00:07:12,030 --> 00:07:16,006
+how confident it was, and the correct
+answer is in red.
+
+96
+00:07:16,006 --> 00:07:20,061
+So if you look in the middle, it correctly
+identified that as a snow plow.
+
+97
+00:07:20,061 --> 00:07:23,086
+But you can see that its other choices are
+fairly sensible.
+
+98
+00:07:23,086 --> 00:07:26,067
+It does look a little bit like a drilling
+platform.
+
+99
+00:07:26,067 --> 00:07:30,091
+And if you look at its third choice, a
+lifeboat, it actually looks very like a
+
+100
+00:07:30,091 --> 00:07:33,067
+lifeboat.
+You can see the flag on the front of the
+
+101
+00:07:33,067 --> 00:07:38,018
+boat and the bridge of the boat and the
+flag at the back, and the high surf in the
+
+102
+00:07:38,018 --> 00:07:41,011
+background.
+So its, its errors tell you a lot about
+
+103
+00:07:41,011 --> 00:07:43,097
+how it's doing it and they're very
+plausible errors.
+
+104
+00:07:43,097 --> 00:07:48,049
+If you look on the left, it gets it wrong
+possibly because the beak of the bird is
+
+105
+00:07:48,049 --> 00:07:52,475
+missing and cuz the feathers of the bird
+look very like the wet fur of an otter.
+
+106
+00:07:52,475 --> 00:07:56,027
+But it gets it in its top five, and it
+does better than me.
+
+107
+00:07:56,027 --> 00:07:59,853
+I wouldn't know if that was a quail or a
+ruffed grouse or a partridge.
+
+108
+00:07:59,853 --> 00:08:03,214
+If you look on the right, it gets it
+completely wrong.
+
+109
+00:08:03,214 --> 00:08:07,827
+It a guillotine, you can why it says that.
+You can possibly see why it says
+
+110
+00:08:07,827 --> 00:08:12,430
+orangutan, because of the sort of jungle
+looking background and something orange in
+
+111
+00:08:12,430 --> 00:08:15,449
+the middle.
+But it fails to get the right answer.
+
+112
+00:08:15,449 --> 00:08:19,286
+It can, however, deal with a wide range of
+different objects.
+
+113
+00:08:19,286 --> 00:08:23,888
+If you look on the left, I would have said
+microwave as my first answer.
+
+114
+00:08:23,888 --> 00:08:28,225
+The labels aren't very systematic.
+So actually, the correct answer there is
+
+115
+00:08:28,225 --> 00:08:30,955
+electric range.
+And it does get it in its top five.
+
+116
+00:08:30,955 --> 00:08:34,822
+In the middle, it's getting a turnstile,
+which is a distributed object.
+
+117
+00:08:34,822 --> 00:08:38,661
+It does, can't, it can do more than just
+recognize compact things.
+
+118
+00:08:38,661 --> 00:08:43,699
+And it can also deal with pictures, as
+well as real scenes, like the bulletproof
+
+119
+00:08:43,699 --> 00:08:46,959
+vest.
+And it makes some very cool errors.
+
+120
+00:08:46,959 --> 00:08:49,976
+If you look at the image on the left,
+that's an earphone.
+
+121
+00:08:49,976 --> 00:08:54,101
+It doesn't get anything, like an earphone.
+But if you look at this fourth batch, it
+
+122
+00:08:54,101 --> 00:08:57,316
+thinks it's an ant.
+And for you to think that's crazy.
+
+123
+00:08:57,316 --> 00:09:01,581
+But then if you look at it carefully, you
+can see it's a view of an ant from
+
+124
+00:09:01,581 --> 00:09:04,350
+underneath.
+The eyes are looking down at you, and you
+
+125
+00:09:04,350 --> 00:09:08,698
+can see the antennae behind it.
+It's not the kind of view of an ant you'd
+
+126
+00:09:08,698 --> 00:09:12,777
+like to have if you were a green fly.
+If you look at the one on the right, it
+
+127
+00:09:12,777 --> 00:09:16,547
+doesn't get the right answer.
+But all of its answers are, cylindrical
+
+128
+00:09:16,547 --> 00:09:22,002
+objects.
+Another task that neural nets are now very
+
+129
+00:09:22,002 --> 00:09:27,441
+good at, is speech recognition.
+Or at least part of a speech recognition
+
+130
+00:09:27,441 --> 00:09:30,643
+system.
+So speech recognition systems have several
+
+131
+00:09:30,643 --> 00:09:34,051
+stages.
+First they pre-process the sound wave, to
+
+132
+00:09:34,051 --> 00:09:39,916
+get a vector of acoustic coefficients, for
+each ten milliseconds of sound wave.
+
+133
+00:09:39,916 --> 00:09:43,638
+And so they get 100 of those actors per
+second.
+
+134
+00:09:43,638 --> 00:09:49,418
+They then take a few adjacent vectors of
+acoustic coefficients, and they need to
+
+135
+00:09:49,418 --> 00:09:52,965
+place bets on which part of which phoneme
+is being spoken.
+
+136
+00:09:52,965 --> 00:09:57,894
+So they look at this little window and
+they say, in the middle of this window,
+
+137
+00:09:57,894 --> 00:10:01,889
+what do I think the phoneme is, and which
+part of the phoneme is it?
+
+138
+00:10:01,889 --> 00:10:06,507
+And a good speech recognition system will
+have many alternative models for a
+
+139
+00:10:06,507 --> 00:10:09,131
+phoneme.
+And each model, it might have three
+
+140
+00:10:09,131 --> 00:10:12,341
+different parts.
+So it might have many thousands of
+
+141
+00:10:12,341 --> 00:10:15,609
+alternative fragments that it thinks this
+might be.
+
+142
+00:10:15,609 --> 00:10:20,075
+And you have to place bets on all those
+thousands of alternatives.
+
+143
+00:10:20,075 --> 00:10:26,171
+And then once you place those bets you
+have a decoding stage that does the best
+
+144
+00:10:26,171 --> 00:10:32,211
+job it can of using plausible bets, but
+piecing them together into a sequence of
+
+145
+00:10:32,211 --> 00:10:37,641
+bets that corresponds to the kinds of
+things that people say.
+
+146
+00:10:37,641 --> 00:10:44,094
+Currently, deep neural networks pioneered
+by George Dahl and Abdel-rahman Mohammed
+
+147
+00:10:44,094 --> 00:10:48,410
+of the University of Toronto are doing
+better than previous machine learning
+
+148
+00:10:48,410 --> 00:10:52,783
+methods for the acoustic model, and
+they're now beginning to be used in
+
+149
+00:10:52,783 --> 00:10:58,529
+practical systems.
+So, Dahl and Mohammed, developed a system,
+
+150
+00:10:58,529 --> 00:11:05,214
+that uses many layers of, binary neurons,
+to, take some acoustic frames, and make
+
+151
+00:11:05,214 --> 00:11:09,986
+bets about the labels.
+They were doing it on a fairly small
+
+152
+00:11:09,986 --> 00:11:13,656
+database and then used 183 alternative
+labels.
+
+153
+00:11:13,656 --> 00:11:20,094
+And to get their system to work well, they
+did some pre-training, which will be
+
+154
+00:11:20,094 --> 00:11:23,825
+described in the second half of the
+course.
+
+155
+00:11:23,825 --> 00:11:30,471
+After standard post processing, they got
+20.7 percent error rate on a very standard
+
+156
+00:11:30,471 --> 00:11:34,154
+benchmark, which is kind of like the NMIST
+for speech.
+
+157
+00:11:34,154 --> 00:11:39,704
+The best previous result on that benchmark
+for speak independent recognition was
+
+158
+00:11:39,704 --> 00:11:43,467
+24.4%.
+And a very experienced speech researcher
+
+159
+00:11:43,467 --> 00:11:49,369
+at Microsoft research realized that, that
+was a big enough improvement, that
+
+160
+00:11:49,369 --> 00:11:54,698
+probably this would change the way speech
+recognition systems were done.
+
+161
+00:11:54,698 --> 00:11:58,951
+And indeed, it has.
+So, if you look at recent results from
+
+162
+00:11:58,951 --> 00:12:04,811
+several different leading speech groups,
+Microsoft showed that this kind of deep
+
+163
+00:12:04,811 --> 00:12:09,651
+neural network, when used as the acoustic
+model in the speech system.
+
+164
+00:12:09,651 --> 00:12:14,927
+Reduced the error rate from 27.4 percent
+to 18.5%, or alternatively, you could view
+
+165
+00:12:14,927 --> 00:12:21,018
+it as reducing the amount of training data
+you needed from 2,000 hours down to 309
+
+166
+00:12:21,018 --> 00:12:26,814
+hours to get comparable performance.
+Ibm which has the best system for one of
+
+167
+00:12:26,814 --> 00:12:33,058
+the standard speech recognition tasks for
+large recovery speech recognition, showed
+
+168
+00:12:33,058 --> 00:12:38,297
+that even it's very highly tuned system
+that was getting 18.8 percent can be
+
+169
+00:12:38,297 --> 00:12:41,613
+beaten by one of these deep neural
+networks.
+
+170
+00:12:41,613 --> 00:12:46,768
+And Google, fairly recently, trained a
+deep neural network on a large amount of
+
+171
+00:12:46,768 --> 00:12:51,301
+speech, 5,800 hours.
+That was still much less than they trained
+
+172
+00:12:51,301 --> 00:12:55,769
+their mixture model on.
+But even with much less data, it did a lot
+
+173
+00:12:55,769 --> 00:12:58,708
+better than the technology they had
+before.
+
+174
+00:12:58,708 --> 00:13:03,291
+So it reduced the error rate from sixteen
+percent to 12.3 percent and the error rate
+
+175
+00:13:03,291 --> 00:13:07,284
+is still falling.
+And in the latest Android, if you do voice
+
+176
+00:13:07,284 --> 00:13:12,770
+search, it's using one of these deep
+neurall networks in order to do very good
+
+177
+00:13:12,770 --> 00:13:14,017
+speech recognition.

@@ -1,0 +1,555 @@
+
+1
+00:00:00,098 --> 00:00:05,058
+In this video, I'm gonna tell you a little
+bit about real neurons on the real brain
+
+2
+00:00:05,058 --> 00:00:10,046
+which provide the inspiration for the
+artificial neural network that we're gonna
+
+3
+00:00:10,046 --> 00:00:14,094
+learn about in this course.
+In most of the course, we won't talk much
+
+4
+00:00:14,094 --> 00:00:20,085
+about real neurons but I wanted to give
+you a quick overview of the beginning.
+
+5
+00:00:21,032 --> 00:00:26,097
+There's several different reasons to study
+how networks of neurons can compute
+
+6
+00:00:26,097 --> 00:00:29,059
+things.
+The first is to understand how the brain
+
+7
+00:00:29,059 --> 00:00:34,036
+actually works.
+You might think we could do that just by
+
+8
+00:00:34,036 --> 00:00:38,041
+experiments on the brain.
+But it's very big and complicated, and it
+
+9
+00:00:38,041 --> 00:00:42,081
+dies when you poke it around.
+And so we need to use computer simulations
+
+10
+00:00:42,081 --> 00:00:46,085
+to help us understand what we're
+discovering in empirical studies.
+
+11
+00:00:47,017 --> 00:00:52,016
+The second is to understand the style of
+parallel computation, this inspired by the
+
+12
+00:00:52,016 --> 00:00:56,727
+fact that the brain can compute with a big
+parallel network, a world of relatively
+
+13
+00:00:56,727 --> 00:00:59,080
+slow neurons.
+If you can understand that style of
+
+14
+00:00:59,080 --> 00:01:04,013
+parallel computation we might be able to
+make better parallel computers.
+
+15
+00:01:04,013 --> 00:01:08,039
+It's very different from the way
+computation is done on a conventional
+
+16
+00:01:08,039 --> 00:01:11,076
+serial processor.
+It should be very good for things that
+
+17
+00:01:11,076 --> 00:01:16,057
+brains are good at like vision, and it
+should also be bad for things that brains
+
+18
+00:01:16,057 --> 00:01:19,040
+are bad at by multiplying two numbers
+together.
+
+19
+00:01:20,054 --> 00:01:25,037
+A third reason, which is the relevant one
+for this course, is to solve practical
+
+20
+00:01:25,037 --> 00:01:29,065
+problems by using novel learning
+algorithms that were inspired by the
+
+21
+00:01:29,065 --> 00:01:32,052
+brain.
+These algorithms can be very useful even
+
+22
+00:01:32,052 --> 00:01:35,021
+if they're not actually how the brain
+works.
+
+23
+00:01:35,021 --> 00:01:40,011
+So in most of this course we won't talk
+much about how the brain actually works.
+
+24
+00:01:40,011 --> 00:01:45,012
+It's just used as a source of inspiration
+to tell us the big, parallel networks of
+
+25
+00:01:45,012 --> 00:01:47,081
+neurons can compute very complicated
+things.
+
+26
+00:01:49,037 --> 00:01:55,002
+I'm gonna talk more in this video though
+about how the brain actually works.
+
+27
+00:01:55,002 --> 00:02:01,003
+A typical cortical neuron has a gross
+physical structure that consists of a cell
+
+28
+00:02:01,003 --> 00:02:06,090
+body, and an axon where it sends messages
+to other neurons, and a denditric tree
+
+29
+00:02:06,090 --> 00:02:10,031
+where it receives messages from other
+neurons.
+
+30
+00:02:10,068 --> 00:02:16,019
+Where an axon from one neuron contacts a
+dendritic tree of another neuron, there's
+
+31
+00:02:16,019 --> 00:02:22,027
+a structure called a synapse.
+And a spike of activity traveling along
+
+32
+00:02:22,027 --> 00:02:29,009
+the axon, causes charge to be injected
+into the post synaptic neuron at a
+
+33
+00:02:29,009 --> 00:02:33,072
+synapse.
+A neuron generates spikes when it's
+
+34
+00:02:33,072 --> 00:02:39,031
+received enough charge in its dendritic
+tree to depolarize a part of the cell body
+
+35
+00:02:39,031 --> 00:02:43,075
+called the axon hillock.
+And when that gets depolarized, the neuron
+
+36
+00:02:43,075 --> 00:02:48,006
+sends a spike out along its axon.
+And the spike's just a wave of
+
+37
+00:02:48,006 --> 00:02:50,096
+depolarization that travels along the
+axon.
+
+38
+00:02:52,052 --> 00:02:57,046
+Synapses themselves have interesting
+structure.
+
+39
+00:02:57,046 --> 00:03:01,071
+They contain little vesicles of
+transmitter chemical and when a spike
+
+40
+00:03:01,072 --> 00:03:07,011
+arrives in the axon it causes these
+vesicles to migrate to the surface and be
+
+41
+00:03:07,011 --> 00:03:11,039
+released into the synaptic cleft.
+There's several different kinds of
+
+42
+00:03:11,039 --> 00:03:14,024
+transmitter chemical.
+There's one that implement positive
+
+43
+00:03:14,024 --> 00:03:17,053
+weights and ones that implement negative
+weights.
+
+44
+00:03:17,053 --> 00:03:22,073
+The transmitter molecules diffuse across
+the synaptic clef and bind to receptor
+
+45
+00:03:22,073 --> 00:03:26,041
+molecules in the membrane of the
+post-synaptic neuron, and by binding to
+
+46
+00:03:26,041 --> 00:03:31,040
+these big molecules in the membrane they
+change their shape, and that creates holes
+
+47
+00:03:31,040 --> 00:03:36,043
+in the membrane.
+These holes are like specific ions to flow
+
+48
+00:03:36,043 --> 00:03:41,018
+in or out of the post-synaptic neuron and
+that changes their state of
+
+49
+00:03:41,018 --> 00:03:46,092
+depolarization.
+Synapses adapt, and that's what most of
+
+50
+00:03:46,092 --> 00:03:50,052
+learning is, changing the effectiveness of
+a synapse.
+
+51
+00:03:50,052 --> 00:03:56,007
+They can adapt by varying the number of
+vesicles that get released when a spike
+
+52
+00:03:56,007 --> 00:03:59,019
+arrives.
+Or by varying the number of receptor
+
+53
+00:03:59,019 --> 00:04:03,084
+molecules that are sensitive to the
+released transmitter molecules.
+
+54
+00:04:04,046 --> 00:04:07,097
+Synapses are very slow compared with
+computer memory.
+
+55
+00:04:07,097 --> 00:04:13,014
+But they have a lot of advantages over the
+random access memory on a computer,
+
+56
+00:04:13,014 --> 00:04:17,086
+they're very small and very low power.
+And they can adapt.
+
+57
+00:04:17,086 --> 00:04:22,003
+That's the most important property.
+They use locally available signals to
+
+58
+00:04:22,003 --> 00:04:26,077
+change their strengths, and that's how we
+learn to perform complicated computations.
+
+59
+00:04:27,012 --> 00:04:31,045
+The issue of course is how do they decide
+how to change their strength?
+
+60
+00:04:31,045 --> 00:04:34,093
+What is the, what are the rules for how
+they should adapt.
+
+61
+00:04:36,012 --> 00:04:39,035
+So, all on one slide this is how the brain
+works.
+
+62
+00:04:39,035 --> 00:04:42,051
+Each neuron receives inputs from other
+neurons.
+
+63
+00:04:42,051 --> 00:04:46,022
+A few of the neurons receive inputs from
+the receptors.
+
+64
+00:04:46,022 --> 00:04:50,059
+It's a large number of neurons, but only a
+small fraction of them.
+
+65
+00:04:50,059 --> 00:04:55,028
+And, the neurons communicate with each
+other within in the cortex by sending
+
+66
+00:04:55,028 --> 00:05:01,005
+these spikes of activity.
+The effective in input line on a neuron is
+
+67
+00:05:01,005 --> 00:05:05,017
+controlled by synaptic weight, which can
+be positive or negative.
+
+68
+00:05:05,017 --> 00:05:09,087
+And these synaptic weights adapt.
+And by adapting these weights the whole
+
+69
+00:05:09,087 --> 00:05:12,090
+network learns to perform different kinds
+of computation.
+
+70
+00:05:12,090 --> 00:05:16,040
+For example recognizing objects,
+understanding language, making plans,
+
+71
+00:05:16,040 --> 00:05:23,037
+controlling the movements of your body.
+You have about ten to the eleven neurons,
+
+72
+00:05:23,037 --> 00:05:26,056
+each of which has about ten to the four
+weights.
+
+73
+00:05:26,056 --> 00:05:31,056
+So you probably ten to the fifteen or
+maybe only about ten to the fourteen
+
+74
+00:05:31,056 --> 00:05:35,043
+synaptic weights.
+And a huge number of these weights, quite
+
+75
+00:05:35,043 --> 00:05:40,049
+a large fraction of them, can affect the
+ongoing computation in a very small
+
+76
+00:05:40,049 --> 00:05:43,036
+fraction of a second, in a few
+milliseconds.
+
+77
+00:05:43,036 --> 00:05:48,069
+That's much better bandwidth to stored
+knowledge than even a modern workstation
+
+78
+00:05:48,069 --> 00:05:52,071
+has.
+One final point about the brain is that
+
+79
+00:05:52,071 --> 00:05:56,045
+the cortex is modular, at least it learns
+to be modular.
+
+80
+00:05:56,045 --> 00:06:00,039
+Different bits of the cotex end up doing
+different things.
+
+81
+00:06:00,039 --> 00:06:05,032
+Genetically, the inputs from the senses go
+to different bits of the cortex.
+
+82
+00:06:05,032 --> 00:06:08,099
+And that determines a lot about what they
+end up doing.
+
+83
+00:06:08,099 --> 00:06:14,019
+If you damage the brain of an adult, local
+damage to the brain causes specific
+
+84
+00:06:14,019 --> 00:06:17,032
+effects.
+Damage to one place might cause you to
+
+85
+00:06:17,032 --> 00:06:22,092
+lose your ability to understand language.
+Damage to another place might cause you to
+
+86
+00:06:22,092 --> 00:06:29,045
+lose your ability to recognize objects.
+We know a lot about how functions are
+
+87
+00:06:29,045 --> 00:06:34,057
+located in the brain because when you use
+a part of the brain for doing something it
+
+88
+00:06:34,057 --> 00:06:39,046
+requires energy, and so it demands more
+blood flow, and you can see the blood flow
+
+89
+00:06:39,046 --> 00:06:43,008
+in a brain scanner.
+That allows you to see which bits of the
+
+90
+00:06:43,008 --> 00:06:48,083
+brain you're using for particular tasks.
+But the remarkable thing about cortex is
+
+91
+00:06:48,083 --> 00:06:53,090
+it looks pretty much the same all over,
+and that strongly suggests that it's got a
+
+92
+00:06:53,090 --> 00:06:57,005
+fairly flexible universal learning
+algorithm in it.
+
+93
+00:06:57,005 --> 00:07:01,058
+That's also suggested by the fact that if
+you damage the brain early on, functions
+
+94
+00:07:01,058 --> 00:07:07,056
+will relocate to other parts of the brain.
+So it's not genetically predetermined, at
+
+95
+00:07:07,056 --> 00:07:12,048
+least not directly, which part of the
+brain will perform which function.
+
+96
+00:07:12,048 --> 00:07:18,009
+There's convincing experiments on baby
+ferrets that show that if you cut off the
+
+97
+00:07:18,009 --> 00:07:23,050
+input to the auditory cortex that comes
+from the ears, and instead, reroute the
+
+98
+00:07:23,050 --> 00:07:29,025
+visual input to auditory cortex, then the
+auditory cortex that was destined to deal
+
+99
+00:07:29,025 --> 00:07:34,094
+with sounds will actually learn to deal
+with visual input, and create neurons that
+
+100
+00:07:34,094 --> 00:07:38,048
+look very like the neurons in the visual
+system.
+
+101
+00:07:40,048 --> 00:07:45,026
+This suggest the cortex is made of general
+purpose stuff that has the ability to turn
+
+102
+00:07:45,026 --> 00:07:48,094
+into special purpose hardware for
+particular tasks in response to
+
+103
+00:07:48,094 --> 00:07:52,050
+experience.
+And that gives you a nice combination of,
+
+104
+00:07:52,050 --> 00:07:58,025
+rapid parallel computation once you have
+learnt, plus flexibility, so you can put,
+
+105
+00:07:58,025 --> 00:08:03,093
+you can learn new functions, so you are
+learning, to do the parallel computation.
+
+106
+00:08:03,093 --> 00:08:09,068
+Its quiet like a FPGA, where you build
+standard parallel hardware, then after its
+
+107
+00:08:09,068 --> 00:08:15,094
+built, you put in information that tells
+it what particular parallel computation to
+
+108
+00:08:15,094 --> 00:08:19,005
+do.
+Conventional computers get their
+
+109
+00:08:19,005 --> 00:08:21,097
+flexibility by having a stored sequential
+program.
+
+110
+00:08:21,097 --> 00:08:26,031
+But this required very fast central
+processors to access the lines in the
+
+111
+00:08:26,031 --> 00:08:29,093
+sequential program and perform long
+sequential computations.
