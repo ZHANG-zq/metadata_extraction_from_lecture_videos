@@ -8,14 +8,9 @@
 
 ## Libraries used:
 
-  ["Stanford CoreNLP"](https://nlp.stanford.edu/software/)
-  
-  ["mdlp-discretization"](https://github.com/navicto/Discretization-MDLPC)
-  
-  ["pysrt"](https://github.com/byroot/pysrt)
-  
-  ["nltk"](https://github.com/nltk/nltk)
-  
-  ["sklearn"](https://www.baidu.com/link?url=jwc9RTQO2oPgvGY7YDPDKrrZHs3o7oxo_eezrWG78VECamw_wCCTKkttpQuFI55A&wd=&eqid=cef2d2f2000063d70000000659256a78)
-  
-  matplotlib
+*   ["Stanford CoreNLP"](https://nlp.stanford.edu/software/)
+*   ["mdlp-discretization"](https://github.com/navicto/Discretization-MDLPC)
+*   ["pysrt"](https://github.com/byroot/pysrt)
+*   ["nltk"](https://github.com/nltk/nltk)
+*   ["sklearn"](https://www.baidu.com/link?url=jwc9RTQO2oPgvGY7YDPDKrrZHs3o7oxo_eezrWG78VECamw_wCCTKkttpQuFI55A&wd=&eqid=cef2d2f2000063d70000000659256a78)
+*   matplotlib
