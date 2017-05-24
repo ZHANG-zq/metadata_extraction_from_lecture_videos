@@ -3,7 +3,7 @@
 
 
 
-# papers ["A_multimodal_approach_for_extracting_content_descriptive_metadata_from_lecture_videos"](https://www.researchgate.net/profile/Vidhya_Balasubramanian/publication/274311880_A_multimodal_approach_for_extracting_content_descriptive_metadata_from_lecture_videos/links/561ce64608aea80367266454/A-multimodal-approach-for-extracting-content-descriptive-metadata-from-lecture-videos.pdf)
+# papers ["A_multimodal_approach_for_extracting_content_descriptive_metadata_from_lecture_videos"]
 
 
 ## Libraries used:
