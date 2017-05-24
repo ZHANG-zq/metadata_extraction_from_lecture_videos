@@ -3,7 +3,7 @@
 
 
 
-# papers ["A_multimodal_approach_for_extracting_content_descriptive_metadata_from_lecture_videos"]
+# A_multimodal_approach_for_extracting_content_descriptive_metadata_from_lecture_videos
 
 
 ## Libraries used:
