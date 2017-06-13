@@ -3,8 +3,13 @@
 
 
 
-# A_multimodal_approach_for_extracting_content_descriptive_metadata_from_lecture_videos
+# A multimodal approach for extracting content descriptive metadata from lecture videos
 
+## 论文摘要：
+
+这篇论文主要包括一个Multimodal Metadata Extraction System 和一个Video Lecture Database System。这里实现了Multimodal Metadata Extraction System。
+
+Multimodal Metadata Extraction System的框架如上图所示，分别从语音和幻灯片上提取n-gram，然后两个独立的贝叶斯分类器将n-gram分类为关键词和非关键词，再根据规则来合并。
 
 ## Libraries used:
 
