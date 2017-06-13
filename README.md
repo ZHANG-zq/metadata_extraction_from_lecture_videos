@@ -2,12 +2,8 @@
 
 ## 论文摘要：
 
-这篇论文主要包括一个Multimodal Metadata Extraction System 和一个Video Lecture Database System。这里实现了Multimodal Metadata Extraction System。
-
+这篇论文主要包括一个Multimodal Metadata Extraction System 和一个Video Lecture Database System。这里实现了Multimodal Metadata Extraction System。Multimodal Metadata Extraction System的框架如下图所示，分别从语音和幻灯片上提取n-gram，然后两个独立的贝叶斯分类器将n-gram分类为关键词和非关键词，再根据规则来合并。
 ![figure 1](./material/1.jpg)
-
-Multimodal Metadata Extraction System的框架如上图所示，分别从语音和幻灯片上提取n-gram，然后两个独立的贝叶斯分类器将n-gram分类为关键词和非关键词，再根据规则来合并。
-
 
 ### step 1.文本预处理
 *   关键词抽取的第一步是文本预处理，也就是分别在从语音和幻灯片上获取的文本进行stemming、过滤stopword、POS词性标注、抽取N-gram。
@@ -40,9 +36,8 @@ Multimodal Metadata Extraction System的框架如上图所示，分别从语音�
 # 实现论文2 ：[MMToC A Multimodal Method for Table of Content Creation in Educational Videos](http://www.researchgate.net/publication/304417832_MMToC_A_Multimodal_Method_for_Table_of_Content_Creation_in_Educational_Videos)
 
 ## 论文摘要：
-
+*   这篇文章与上一篇不同之处在于这篇文章是抽取目录，上一篇论文是抽取关键词。论文的整体框架如下图所示
 ![figure 4](./material/4.jpg)
-*   这篇文章与上一篇不同之处在于这篇文章是抽取目录，上一篇论文是抽取关键词。
 
 ### step 1
 *   文本预处理步骤与上一篇论文差不多
