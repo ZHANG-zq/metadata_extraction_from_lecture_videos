@@ -29,7 +29,8 @@ Multimodal Metadata Extraction System的框架如上图所示，分别从语音�
 然后分别把两个模态得到的特征值训练两个独立的朴素贝叶斯分类器，用这两个分类器可分别得到语音和幻灯片的keyphrase
 
 ### 5.多模态抽取的关键词的合并
-    从两个模态抽取的关键词按以下规则合并：![figure 3](./material/3.jpg)
+    从两个模态抽取的关键词按以下规则合并：
+    ![figure 3](./material/3.jpg)
 
 ## Libraries used:
 
