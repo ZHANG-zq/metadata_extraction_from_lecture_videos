@@ -8,7 +8,7 @@ Multimodal Metadata Extraction System的框架如上图所示，分别从语音�
 
 
 ### 1.文本预处理
-关键词抽取的第一步是文本预处理，也就是分别在从语音和幻灯片上获取的文本进行stemming、过滤stopword、POS词性标注、抽取N-gram。
+    关键词抽取的第一步是文本预处理，也就是分别在从语音和幻灯片上获取的文本进行stemming、过滤stopword、POS词性标注、抽取N-gram。
 
 ### 2.提取N-gram的语音特征
 *   特征一：Adaptive Term Dispersion(ATD)，帮助识别那些在语音上分布平均的keyphrase。
@@ -23,11 +23,11 @@ Multimodal Metadata Extraction System的框架如上图所示，分别从语音�
 *   特征三：Phrase Height，计算每个phrase高度除以最小phrase高度
 
 ### 4.特征值离散化、抽取keyphrase
-	由于抽取的很多特征值是连续的实数，贝叶斯分类器不好训练，所以要先将特征值离散到几个区间范围，这篇文章使用了Entropy-MDL方法进行离散化处理。
-	然后分别把两个模态得到的特征值训练两个独立的朴素贝叶斯分类器，用这两个分类器可分别得到语音和幻灯片的keyphrase
+    由于抽取的很多特征值是连续的实数，贝叶斯分类器不好训练，所以要先将特征值离散到几个区间范围，这篇文章使用了Entropy-MDL方法进行离散化处理。
+然后分别把两个模态得到的特征值训练两个独立的朴素贝叶斯分类器，用这两个分类器可分别得到语音和幻灯片的keyphrase
 
 ### 5.多模态抽取的关键词的合并
-	从两个模态抽取的关键词按以下规则合并：
+    从两个模态抽取的关键词按以下规则合并：
 
 
 ## Libraries used:
