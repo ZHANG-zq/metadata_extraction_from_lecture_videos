@@ -30,17 +30,12 @@ Multimodal Metadata Extraction System的框架如上图所示，分别从语音�
 
 ### 5.多模态抽取的关键词的合并
     从两个模态抽取的关键词按以下规则合并：
-    ![figure 3](./material/3.jpg)
-
-## Libraries used:
-
-*   ["Stanford CoreNLP"](https://nlp.stanford.edu/software/)
-*   ["mdlp-discretization"](https://github.com/navicto/Discretization-MDLPC)
-*   ["pysrt"](https://github.com/byroot/pysrt)
-*   ["nltk"](https://github.com/nltk/nltk)
-*   ["sklearn"](https://www.baidu.com/link?url=jwc9RTQO2oPgvGY7YDPDKrrZHs3o7oxo_eezrWG78VECamw_wCCTKkttpQuFI55A&wd=&eqid=cef2d2f2000063d70000000659256a78)
-*   matplotlib
-
+![figure 3](./material/3.jpg)
+<br />
+<br />
+<br />
+<br />
+<br />
 
 # 实现论文2 ：[MMToC A Multimodal Method for Table of Content Creation in Educational Videos](http://www.researchgate.net/publication/304417832_MMToC_A_Multimodal_Method_for_Table_of_Content_Creation_in_Educational_Videos)
 
@@ -56,4 +51,17 @@ Multimodal Metadata Extraction System的框架如上图所示，分别从语音�
 *   基于visually salient keywords，找与其相近的5个spoken salient keywords（同义词），它们的新score就是它们scores的平均值。所有的visually salient keywords与其同义词用于接下来的分段。
 
 *   分段后，所有visually salient keywords的visual score加上其spoken score（如果有的话），然后每段留下5个得分最高的词。然后拿这5个关键词回到字幕文件里进行分析，用窗口大小为3的sliding window扫描文本，与5个关键词co-occurrence最多的三个phrase选为这一段的目录。
+<br />
+<br />
+<br />
+<br />
+<br />
+## Libraries used:
+
+*   ["Stanford CoreNLP"](https://nlp.stanford.edu/software/)
+*   ["mdlp-discretization"](https://github.com/navicto/Discretization-MDLPC)
+*   ["pysrt"](https://github.com/byroot/pysrt)
+*   ["nltk"](https://github.com/nltk/nltk)
+*   ["sklearn"](https://www.baidu.com/link?url=jwc9RTQO2oPgvGY7YDPDKrrZHs3o7oxo_eezrWG78VECamw_wCCTKkttpQuFI55A&wd=&eqid=cef2d2f2000063d70000000659256a78)
+*   matplotlib
 
