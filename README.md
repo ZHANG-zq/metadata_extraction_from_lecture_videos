@@ -1,9 +1,4 @@
-# metadata-extraction-from-lecture-videos
-  see papers ["A_multimodal_approach_for_extracting_content_descriptive_metadata_from_lecture_videos"](https://www.researchgate.net/profile/Vidhya_Balasubramanian/publication/274311880_A_multimodal_approach_for_extracting_content_descriptive_metadata_from_lecture_videos/links/561ce64608aea80367266454/A-multimodal-approach-for-extracting-content-descriptive-metadata-from-lecture-videos.pdf)  and  ["MMToC A Multimodal Method for Table of Content Creation in Educational Videos"](http://www.researchgate.net/publication/304417832_MMToC_A_Multimodal_Method_for_Table_of_Content_Creation_in_Educational_Videos)
-
-
-
-# ["A multimodal approach for extracting content descriptive metadata from lecture videos"](https://www.researchgate.net/profile/Vidhya_Balasubramanian/publication/274311880_A_multimodal_approach_for_extracting_content_descriptive_metadata_from_lecture_videos/links/561ce64608aea80367266454/A-multimodal-approach-for-extracting-content-descriptive-metadata-from-lecture-videos.pdf)
+# 论文1 ：[A multimodal approach for extracting content descriptive metadata from lecture videos](https://www.researchgate.net/profile/Vidhya_Balasubramanian/publication/274311880_A_multimodal_approach_for_extracting_content_descriptive_metadata_from_lecture_videos/links/561ce64608aea80367266454/A-multimodal-approach-for-extracting-content-descriptive-metadata-from-lecture-videos.pdf)
 
 ## 论文摘要：
 
@@ -43,3 +38,18 @@ Multimodal Metadata Extraction System的框架如上图所示，分别从语音�
 *   ["nltk"](https://github.com/nltk/nltk)
 *   ["sklearn"](https://www.baidu.com/link?url=jwc9RTQO2oPgvGY7YDPDKrrZHs3o7oxo_eezrWG78VECamw_wCCTKkttpQuFI55A&wd=&eqid=cef2d2f2000063d70000000659256a78)
 *   matplotlib
+
+
+# 论文2 ：[MMToC A Multimodal Method for Table of Content Creation in Educational Videos](http://www.researchgate.net/publication/304417832_MMToC_A_Multimodal_Method_for_Table_of_Content_Creation_in_Educational_Videos)
+
+## 论文摘要：
+这篇文章与上一篇不同之处在于这篇文章是抽取目录，上一篇文章是抽取关键词。
+
+从幻灯片上得到每个词（visually salient keywords）的不同特征值，然后用rank-SVM根据训练样本得到的权重来将不同特征值加权平均成一个值，这样幻灯片上的每个词就有一个visual saliency score。
+
+在字幕文件上得到单词（spoken salient keywords）后，先用tf-idf过滤低频词，再用text-rank给每一个词打分，这样字幕上的每个词也有一个spoken saliency score。
+
+基于visually salient keywords，找与其相近的5个spoken salient keywords（同义词），它们的新score就是它们scores的平均值。所有的visually salient keywords与其同义词用于接下来的分段。
+
+分段后，所有visually salient keywords的visual score加上其spoken score（如果有的话），然后每段留下5个得分最高的词。然后拿这5个关键词回到字幕文件里进行分析，用窗口大小为3的sliding window扫描文本，与5个关键词co-occurrence最多的三个phrase选为这一段的目录。
+
