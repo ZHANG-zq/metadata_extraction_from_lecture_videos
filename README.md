@@ -29,9 +29,9 @@
 
 ### step 6.基于关键词的分段
 *   这里的分段使用了一个改进版的TextTiling算法：
-*   1) Tokenization: 首先将语音文本分为一系列独立的lexical units，每个lexical unit包含N个单词;
-*   2) Lexical score determination: 比较所有相邻的lexical units pair，并计算相似值（基于关键词的BOW向量的余弦相似值）;
-*   3) Boudary identification: 将最终sequence的similarity values作图并smooth，标记出peaks和valleys，subtopic的边界会在图的最大的valley处取得。
+*   1) 先把语音文本分成块,每块N个句子;
+*   2) 比较所有相邻块，并计算相似值（基于关键词的BOW向量的余弦相似值）;
+*   3) 将所有相似值画成二维走势图，非常相似处会出现波峰，很不相似的地方出现波谷。选择波谷处作为分界线，把块组成段，这些段很可能是有关同一个Subtopic的。
 
 <br />
 <br />
