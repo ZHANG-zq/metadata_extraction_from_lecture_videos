@@ -23,6 +23,7 @@ NB_CLASSIFIER_PATH = "NB_Classifier.json"
 NUM_TRAINING_DATA = 3
 NLP_SERVER = None
 eps = 1e-7
+#Nounce = 0
 DEFAULT_WINDOW_LEN = 50
 stem_map = {}
 
